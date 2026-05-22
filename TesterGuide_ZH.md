@@ -4,8 +4,8 @@
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 最新測試版下載連結 (Latest Beta Download Links)
-* **發布時間 (Release Time)**: 2026-05-22 11:00:16
-* **更新日誌 (Release Notes)**: WeChat Sync Test
+* **發布時間 (Release Time)**: 2026-05-22 12:25:09
+* **更新日誌 (Release Notes)**: Beta Release - 2026-05-22 12:18:35
 * **🤖 安卓 APK 下載 (Android APK)**: [點此前往 Firebase 下載](https://appdistribution.firebase.dev/i/fe4596fd42afcc707d2552)
 * **🍏 蘋果 iOS 安裝 (iOS IPA)**: [點此加入 TestFlight (or Firebase Ad-Hoc)](https://appdistribution.firebase.dev/i/cb34026fba8051a27d2552)
 <!-- LATEST_RELEASE_END -->
