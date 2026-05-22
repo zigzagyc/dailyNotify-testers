@@ -9,11 +9,13 @@ To help you get started with testing the application, please select your preferr
 
 ---
 
+<!-- LATEST_RELEASE_START -->
 ### 📥 Latest Beta Download Links
 These are kept up-to-date automatically whenever a new test build is distributed.
 
-* **🤖 Android APK Download**: [Click here to download from Firebase App Distribution](https://appdistribution.firebase.dev/i/fe4596fd42afcc707d2552)
-* **🍏 iOS IPA Installation**: [Click here to join TestFlight / Firebase Ad-Hoc](https://appdistribution.firebase.dev/i/cb34026fba8051a27d2552)
+* **🤖 Android APK Download**: [Click here to download from Firebase App Distribution](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
+* **🍏 iOS IPA Installation**: [Click here to register your device on Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
+<!-- LATEST_RELEASE_END -->
 
 ---
 *Thank you for helping us test and make dailyNotify excellent!*
