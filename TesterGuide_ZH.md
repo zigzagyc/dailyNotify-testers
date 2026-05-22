@@ -7,7 +7,7 @@
 * **發布時間 (Release Time)**: 2026-05-22 13:55:32
 * **更新日誌 (Release Notes)**: Beta Release - 2026-05-22 13:55
 * **🤖 安卓 APK 下載 (Android APK)**: [點此前往 Firebase 下載](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
-* **🍏 蘋果 iOS 安裝 (iOS IPA)**: [點此加入 TestFlight (or Firebase Ad-Hoc)](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
+* **🍏 蘋果 iOS 安裝 (iOS IPA)**: [點此前往 Firebase 註冊設備](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
 <!-- LATEST_RELEASE_END -->
 
 ---
