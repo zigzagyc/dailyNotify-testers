@@ -47,14 +47,13 @@
 請將以下安裝說明分享給微信群組中的其他測試人員：
 
 ### 🍏 蘋果手機 (iOS / iPhone) 使用者：
-由於目前使用 Ad-Hoc 簽名測試，安裝步驟如下：
-1. **用 iPhone Safari 瀏覽器打開**或掃碼分发連結：`https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee`
-   * *💡 微信內瀏覽器限制*：如果在微信中打開，請點擊螢幕右上角的 **「...」** 按鈕，選擇 **「在 Safari 瀏覽器中打開」** (Open in Safari)。
-2. 按照螢幕提示註冊您的設備（安裝臨時的 Firebase Profile 憑證以獲取設備的 UDID）。
-3. **重要：註冊設備後，請立即告知管理員（寄郵件至 yuecheng@gmail.com）**，管理員會為您重新生成專屬的測試版 IPA 安裝包。
-4. 管理員重新生成並上傳後，您的手機將收到一封來自 Firebase 的邀請安裝郵件，在設備上點擊郵件中的連結即可順利安裝 App！
-
-*💡 註：如果同一個 Apple 帳號在兩台不同的 iPhone 設備上測試，這是完全可行的！您只需要在這兩台設備上分別點擊連結進行設備註冊，並告知管理员重新生成安裝包即可。*
+我們目前使用 **Apple TestFlight** 進行 Beta 測試，安裝步驟如下：
+1. **提供您的 Apple ID 信箱**：請在微信群組中分享您的個人 Apple ID 信箱，或寄郵件至管理員 (yuecheng@gmail.com) 獲取測試邀請。
+2. **安裝 TestFlight 應用程式**：在 iPhone App Store 下載並安裝 Apple 官方的 **[TestFlight](https://apps.apple.com/app/testflight/id899247664)** 應用程式。
+3. **接受邀請並安裝**：
+   * 您的 Apple ID 信箱將收到一封來自 Apple TestFlight 的邀請信。
+   * 在 iPhone 上打開該郵件，點擊 **「View in TestFlight」** 或點擊連結接受邀請。
+   * TestFlight 應用程式會自動打開，點擊 **「安裝 (Install)」** 即可順利安裝 `PNCC Care` 應用程式。
 
 ### 🤖 安卓手機 (Android) 使用者：
 * **直接傳送 APK 安裝**：管理員會將 `app-release.apk` 檔案直接發送到微信群組中。

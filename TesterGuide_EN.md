@@ -47,14 +47,13 @@ To avoid account conflicts and ensure a clean experience when the app goes live:
 Please share these instructions in your WeChat group so other testers can get set up easily:
 
 ### 🍏 For iPhone (iOS) Users:
-Since we are using Ad-Hoc provisioning for this test, please follow these steps:
-1. **Open the invite link in iPhone Safari** or scan the QR code: `https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee`
-   * *💡 WeChat Redirection Tip*: If opened in WeChat, tap the **three dots `...`** in the top-right corner, and select **"Open in Safari"** (在 Safari 瀏覽器中打開).
-2. Follow the on-screen instructions to register your device (this installs a temporary Firebase profile to register your physical UDID).
-3. **Crucial: After registering your device, please let the admin know (yuecheng@gmail.com)** to regenerate the testing IPA for your device.
-4. Once the admin regenerates and uploads the new build, you will receive an invitation email from Firebase on your device. Simply open the email and tap "Install" to download the app!
-
-*💡 Note: If you are using two devices with the same Apple account, yes, this works perfectly! You just need to open the invite link on both devices to register their respective UDIDs, notify the admin to rebuild, and then install the app on both.*
+We are currently using **Apple TestFlight** for Beta testing. Please follow these steps:
+1. **Provide your Apple ID email**: Share your personal Apple ID email address in the WeChat group or email the developer (yuecheng@gmail.com) to receive an invitation.
+2. **Install the TestFlight App**: Search for and download the official **[TestFlight](https://apps.apple.com/app/testflight/id899247664)** app from the App Store on your iPhone.
+3. **Accept Invite & Install**:
+   * Open the TestFlight invitation email received on your Apple ID inbox.
+   * Tap **"View in TestFlight"** or tap the link on your iPhone.
+   * The TestFlight app will automatically open. Tap **"Install"** to download and install `PNCC Care`.
 
 ### 🤖 For Android Users:
 * **Direct APK Install**: The administrator will send the `app-release.apk` file directly in the WeChat group.

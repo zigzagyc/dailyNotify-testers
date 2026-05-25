@@ -14,7 +14,7 @@ To help you get started with testing the application, please select your preferr
 These are kept up-to-date automatically whenever a new test build is distributed.
 
 * **🤖 Android APK Download**: [Click here to download from Firebase App Distribution](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
-* **🍏 iOS IPA Installation**: [Click here to register your device on Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
+* **🍏 iOS IPA Installation**: Contact the developer (yuecheng@gmail.com) or share your Apple ID email in WeChat to get a **TestFlight** invitation.
 <!-- LATEST_RELEASE_END -->
 
 ---
