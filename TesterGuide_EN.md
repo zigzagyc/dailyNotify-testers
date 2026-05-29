@@ -4,10 +4,10 @@ Welcome to the **dailyNotify** internal testing group!
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 Latest Beta Download Links
-* **Release Time**: 2026-05-22 13:55:32
-* **Release Notes**: Beta Release - 2026-05-22 13:55
+* **Release Time**: 2026-05-29 15:43:20
+* **Release Notes**: Beta Release - 2026-05-29 15:43:00
 * **🤖 Android APK Download**: [Click here to download from Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
-* **🍏 iOS IPA Installation**: [Click here to register your device on Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
+* **🍏 iOS IPA Installation**: Please provide your Apple ID email to the developer (yuecheng@gmail.com) to receive a **TestFlight** invitation.
 <!-- LATEST_RELEASE_END -->
 
 ---
