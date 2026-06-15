@@ -4,8 +4,8 @@
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 最新測試版下載連結 (Latest Beta Download Links)
-* **發布時間 (Release Time)**: 2026-05-29 15:43:20
-* **更新日誌 (Release Notes)**: Beta Release - 2026-05-29 15:43:00
+* **發布時間 (Release Time)**: 2026-06-15 16:35:19
+* **更新日誌 (Release Notes)**: Beta Release - 2026-06-15 16:34:20
 * **🤖 安卓 APK 下載 (Android APK)**: [點此前往 Firebase 下載](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
 * **🍏 蘋果 iOS 安裝 (iOS IPA)**: 請提供您的 Apple ID 信箱給管理員 (yuecheng@gmail.com) 以獲取 **TestFlight** 邀請
 <!-- LATEST_RELEASE_END -->
