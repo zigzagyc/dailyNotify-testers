@@ -4,8 +4,8 @@ Welcome to the **dailyNotify** internal testing group!
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 Latest Beta Download Links
-* **Release Time**: 2026-07-23 21:50:41
-* **Release Notes**: v1.0.1 Performance & Reliability Update (Fixed keyboard input freeze, added Deep Link QR pairing)
+* **Release Time**: 2026-07-23 22:04:34
+* **Release Notes**: v1.0.2 Release Update (Upgraded version for App Store Connect train 1.0.2, replaced default launch image with app icon, fixed keyboard input responsiveness)
 * **🤖 Android APK Download**: [Click here to download from Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
 * **🍏 iOS IPA Installation**: Please provide your Apple ID email to the developer (yuecheng@gmail.com) to receive a **TestFlight** invitation.
 <!-- LATEST_RELEASE_END -->
@@ -63,7 +63,7 @@ We are currently using **Apple TestFlight** for Beta testing. Please follow thes
 
 ---
 
-## 🌟 New Features in Latest Beta (v1.0.1)
+## 🌟 New Features in Latest Beta (v1.0.2)
 
 ### 1. 🔗 Instant Deep-Link Pairing via LINE / WhatsApp / SMS / WeChat
 - **Sharing**: Tap **"Share Invite Link"** on your pairing card.

@@ -4,8 +4,8 @@
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 最新測試版下載連結 (Latest Beta Download Links)
-* **發布時間 (Release Time)**: 2026-07-23 21:50:41
-* **更新日誌 (Release Notes)**: v1.0.1 Performance & Reliability Update (Fixed keyboard input freeze, added Deep Link QR pairing)
+* **發布時間 (Release Time)**: 2026-07-23 22:04:34
+* **更新日誌 (Release Notes)**: v1.0.2 Release Update (Upgraded version for App Store Connect train 1.0.2, replaced default launch image with app icon, fixed keyboard input responsiveness)
 * **🤖 安卓 APK 下載 (Android APK)**: [點此前往 Firebase 下載](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
 * **🍏 蘋果 iOS 安裝 (iOS IPA)**: 請提供您的 Apple ID 信箱給管理員 (yuecheng@gmail.com) 以獲取 **TestFlight** 邀請
 <!-- LATEST_RELEASE_END -->
@@ -63,7 +63,7 @@
 
 ---
 
-## 🌟 最新 Beta 版本 (v1.0.1) 新增功能說明
+## 🌟 最新 Beta 版本 (v1.0.2) 新增功能說明
 
 ### 1. 🔗 跨平台一鍵配對 (LINE / 微信 / WhatsApp / 簡訊)
 - **分享邀請**：在配對卡片上點擊 **「傳送配對邀請 (Share Invite Link)」**。
