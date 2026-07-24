@@ -1,30 +1,63 @@
-# dailyNotify (PNCC關懷) - Tester Guides & Download Portal 🚀
+# dailyNotify (PNCC Care) 🌟
 
-Welcome to the internal testing portal for **dailyNotify (PNCC關懷)**.
-
-To help you get started with testing the application, please select your preferred language below to view detailed installation, setup, and verification instructions:
-
-* 🇹🇼 **[中文測試人員指南 (Chinese Tester Guide)](TesterGuide_ZH.md)**
-* 🇺🇸 **[English Tester Guide](TesterGuide_EN.md)**
+A comprehensive, cross-platform (iOS & Android) Flutter safety monitoring application for seniors and caregivers.
 
 ---
 
-<!-- LATEST_RELEASE_START -->
-### 📥 Latest Beta Download Links
-* **Release Time**: 2026-06-15 16:35:19
-* **Release Notes**: Beta Release - 2026-06-15 16:34:20
-* **🤖 Android APK Download**: [Click here to download from Firebase App Distribution](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
-* **🍏 iOS IPA Installation**: Contact the developer (yuecheng@gmail.com) or share your Apple ID email in WeChat to get a **TestFlight** invitation.
-<!-- LATEST_RELEASE_END -->
+## 🚀 Key Features
 
-## Support & Contact 💬
+### 1. 🔗 Instant Deep-Link Pairing & Multi-Channel Sharing
+- **Zero-Friction Pairing**: Share invitation links (`dailynotify://pair?id=UID`) directly via **LINE, WhatsApp, SMS (Messages), or WeChat**.
+- **One-Tap Auto-Pairing**: Tapping the invitation link in any chat app opens `dailyNotify` automatically and prompts the user to confirm the pairing request.
 
-For any support requests, questions, or feedback regarding **PNCC Care (dailyNotify)**, please feel free to reach out to us:
+### 2. 🔍 Multi-Field Caregiver & Senior Search
+- Search across multiple contact handles:
+  - **Phone Number** (`+1...`)
+  - **Full Name / First & Last Name**
+  - **WeChat ID** (`wx_...`)
+  - **LINE ID**
+  - **WhatsApp Number**
+  - **Email Address**
+- Result items display clear contact tags (`📱 Phone`, `💬 WeChat`, `🟢 LINE`, `✉️ Email`).
 
-*   **Email**: [yuecheng@gmail.com](mailto:yuecheng@gmail.com)
-*   **Response Time**: We usually respond to support emails within 24–48 hours.
-*   **User Guide**: Refer to our [User & Tester Guide](TesterGuide_EN.md) (or [Chinese Guide](TesterGuide_ZH.md)) for step-by-step instructions on setting up profiles, device pairing, and configuring safety check-in alerts.
-*   **Report an Issue**: You can open an issue directly in this repository if you encounter any bugs or technical issues.
+### 3. 📅 Senior Multi-Range Safety Calendar View
+- Inspect senior check-in history across flexible time ranges:
+  - **1 Day (1D)**
+  - **2 Days (2D)**
+  - **3 Days (3D)**
+  - **1 Week (1W / 7 Days)**
+  - **1 Month (1M / 30 Days)**
+- Color-coded daily indicators: 🟢 **OK (Checked in)** | 🔴 **Expired / Alert** | 🟠 **Paused / Vacation**
+
+### 4. ⚠️ Consecutive Alert Aggregation
+- Automatically consolidates consecutive missed check-in days into a single summary card:
+  - *"Not responding since N days ago / 自 N 天前起未回報"*
+- Prevents notification clutter and provides immediate actionable context for caregivers.
+
+### 5. 🛡️ Caregiver-Only Mode Timer & Notification Suppression
+- Profiles operating in **Caregiver-Only Mode** (`isCaregiver == true && isElderly == false`) automatically have check-in timers disabled (`checkInFrequency = 0`).
+- Local check-in warning popups and persistent notifications are suppressed so caregivers are not prompted with check-in reminders intended for seniors.
+
+### 6. 📱 Collapsible Pairing QR Code Card
+- Default-collapsed QR code header on `CaregiverScreen` optimizes primary screen real estate while offering quick 1-tap share access.
 
 ---
-*Thank you for helping us test and make dailyNotify excellent!*
+
+## 🛠️ Testing & Build Instructions
+
+### Prerequisites
+- **Flutter SDK**: `^3.11.3` (Dart `^3.11`)
+- **iOS**: Xcode 15+ (CocoaPods `1.15+`, deployment target `iOS 15.5`)
+- **Android**: Android Studio / Gradle 8.x (SDK `34+`)
+
+### Commands
+```bash
+# Run unit & logic test suite
+flutter test
+
+# Build Android Release APK
+flutter build apk --release
+
+# Build iOS IPA Bundle
+flutter build ipa
+```

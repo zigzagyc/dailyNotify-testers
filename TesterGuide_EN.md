@@ -4,8 +4,8 @@ Welcome to the **dailyNotify** internal testing group!
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 Latest Beta Download Links
-* **Release Time**: 2026-06-15 16:35:19
-* **Release Notes**: Beta Release - 2026-06-15 16:34:20
+* **Release Time**: 2026-07-23 21:50:41
+* **Release Notes**: v1.0.1 Performance & Reliability Update (Fixed keyboard input freeze, added Deep Link QR pairing)
 * **🤖 Android APK Download**: [Click here to download from Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
 * **🍏 iOS IPA Installation**: Please provide your Apple ID email to the developer (yuecheng@gmail.com) to receive a **TestFlight** invitation.
 <!-- LATEST_RELEASE_END -->
@@ -60,6 +60,41 @@ We are currently using **Apple TestFlight** for Beta testing. Please follow thes
   * Simply tap the APK file in your WeChat chat window, download it, and select **Install**.
   * *Note*: If prompted by your phone's security, enable "Allow installation from this source" for WeChat.
 * **Firebase Link**: If using the Firebase link, tap the link in WeChat, select the **three dots `...`** and click **"Open in Browser" (在瀏覽器中打開)** to download the APK via Chrome.
+
+---
+
+## 🌟 New Features in Latest Beta (v1.0.1)
+
+### 1. 🔗 Instant Deep-Link Pairing via LINE / WhatsApp / SMS / WeChat
+- **Sharing**: Tap **"Share Invite Link"** on your pairing card.
+- **Channels Supported**: LINE, WhatsApp, SMS/Messages, and WeChat/Copy Link.
+- **One-Tap Connection**: Recipients tap `dailynotify://pair?id=UID` in any chat app to open `dailyNotify` and confirm pairing automatically.
+
+### 2. 🔍 Multi-Field Pairing Search
+- Search caregivers or seniors by:
+  - **Phone Number** (`+1...`)
+  - **First & Last Name**
+  - **WeChat ID**
+  - **LINE ID**
+  - **WhatsApp Number**
+  - **Email Address**
+
+### 3. 📅 Senior Safety Multi-Range Calendar View
+- Tap the **Calendar icon (`Icons.calendar_month`)** on any senior's card.
+- Select your desired inspection timeframe:
+  - `1 Day (1D)` | `2 Days (2D)` | `3 Days (3D)` | `1 Week (1W)` | `1 Month (1M)`
+- View color-coded daily health status: 🟢 **OK** | 🔴 **Expired / Alert** | 🟠 **Paused**
+
+### 4. ⚠️ Consecutive Alert Aggregation
+- Multiple consecutive missed check-in days are automatically consolidated into a single summary card:
+  - *"Not responding since N days ago / 自 N 天前起未回報"*
+
+### 5. 🛡️ Caregiver-Only Mode Timer & Notification Suppression
+- Profiles set to **Caregiver-Only Mode** (`isCaregiver == true && isElderly == false`) automatically have check-in timers disabled (`checkInFrequency = 0`).
+- Local check-in warning popups and persistent notifications are suppressed.
+
+### 6. 📱 Collapsible Pairing QR Code Card
+- Pairing QR code card is default-collapsed to save primary screen real estate. Tap header to toggle expansion.
 
 ---
 

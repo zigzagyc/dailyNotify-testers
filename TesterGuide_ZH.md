@@ -4,8 +4,8 @@
 
 <!-- LATEST_RELEASE_START -->
 ### 📥 最新測試版下載連結 (Latest Beta Download Links)
-* **發布時間 (Release Time)**: 2026-06-15 16:35:19
-* **更新日誌 (Release Notes)**: Beta Release - 2026-06-15 16:34:20
+* **發布時間 (Release Time)**: 2026-07-23 21:50:41
+* **更新日誌 (Release Notes)**: v1.0.1 Performance & Reliability Update (Fixed keyboard input freeze, added Deep Link QR pairing)
 * **🤖 安卓 APK 下載 (Android APK)**: [點此前往 Firebase 下載](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
 * **🍏 蘋果 iOS 安裝 (iOS IPA)**: 請提供您的 Apple ID 信箱給管理員 (yuecheng@gmail.com) 以獲取 **TestFlight** 邀請
 <!-- LATEST_RELEASE_END -->
@@ -60,6 +60,41 @@
   * 您只需在微信聊天視窗中點擊該 APK 檔案進行下載，下載完成後直接選擇 **「安裝」**。
   * *註*：若手機安全系統彈出提示，請授權「允許微信安裝應用程式」或「允許安裝來自未知來源的應用」。
 * **Firebase 連結下載**：若點擊 Firebase 測試網頁連結，請點擊微信右上角 **「...」** 並選擇 **「在瀏覽器中打開」**，再使用 Chrome 等手機瀏覽器進行下載安裝。
+
+---
+
+## 🌟 最新 Beta 版本 (v1.0.1) 新增功能說明
+
+### 1. 🔗 跨平台一鍵配對 (LINE / 微信 / WhatsApp / 簡訊)
+- **分享邀請**：在配對卡片上點擊 **「傳送配對邀請 (Share Invite Link)」**。
+- **支援渠道**：LINE、WhatsApp、簡訊 (SMS)、微信 (複製連結)。
+- **一鍵自動配對**：對方在任何聊天軟體中點擊 `dailynotify://pair?id=UID` 連結，將自動開啟 `PNCC Care` 並彈出配對確認視窗！
+
+### 2. 🔍 多欄位智慧搜尋 (Multi-Field Search)
+- 支援透過以下任意資訊搜尋關懷對象或家屬：
+  - **電話號碼** (`+1...`)
+  - **真實姓名 / 顯示名稱**
+  - **微信 ID (WeChat ID)**
+  - **LINE ID**
+  - **WhatsApp 號碼**
+  - **Email 電子郵件**
+
+### 3. 📅 長輩安全狀態多時間區間行事曆 (Calendar View)
+- 在關懷對象卡片上點擊 **行事曆圖示 (`Icons.calendar_month`)**。
+- 支援自由切換 5 種時間區間：
+  - `1天 (1D)` | `2天 (2D)` | `3天 (3D)` | `1週 (1W)` | `1個月 (1M)`
+- 每日安全狀態色塊標示：🟢 **正常 (OK)** | 🔴 **未回報/警報** | 🟠 **暫停監測**
+
+### 4. ⚠️ 連續未回報警報聚合 (Alert Aggregation)
+- 當長輩連續多天未回報安全狀態時，系統會自動聚合為單一警報卡片：
+  - *"⚠️ 自 N 天前起未回報 (Not responding since N days ago)"*
+
+### 5. 🛡️ 關懷者專用模式自動停用計時器 (Caregiver-Only Mode)
+- 身分為 **純關懷者模式** (`isCaregiver == true && isElderly == false`) 的帳號，系統會自動停用安全計時器 (`checkInFrequency = 0`)。
+- 自動抑制本地回報提醒與持久通知，確保家屬不會收到針對長輩的回報提示。
+
+### 6. 📱 可折疊配對二維碼卡片 (Collapsible QR Card)
+- 關懷者頁面最上方的二維碼卡片預設改為**折疊狀態**，大幅省下主螢幕空間。點擊標題列即可展開 QR Code 或發送邀請。
 
 ---
 
