@@ -36,13 +36,9 @@ If you are using command-line tools (`adb`) on a computer, follow these steps to
 ---
 
 ### 🍏 For iPhone (iOS) Users:
-1. **Install TestFlight**: Download Apple's official **[TestFlight App](https://apps.apple.com/app/testflight/id899247664)** from the iPhone App Store.
-2. **Get Invitation**:
-   * Share your **Apple ID email** with the admin (`yuecheng@gmail.com`).
-   * You will receive a TestFlight email invitation from Apple.
-3. **Accept & Install**:
-   * Open the email on your iPhone and tap **"View in TestFlight"**.
-   * TestFlight will open automatically. Tap **"Install"** to install `PNCC Care`.
+`PNCC care` is officially approved and available on the Apple App Store!
+1. **Search on App Store**: Open the App Store on your iPhone and search for **"PNCC care"**.
+2. **Direct Link**: [Click here to download PNCC care on Apple App Store](https://apps.apple.com/app/pncc-care/id6742517865)
 
 ---
 

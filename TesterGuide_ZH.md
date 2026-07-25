@@ -36,13 +36,9 @@
 ---
 
 ### 🍏 蘋果手機 (iOS / iPhone) 使用者：
-1. **下載 TestFlight**：在 iPhone App Store 搜尋並下載 Apple 官方的 **[TestFlight App](https://apps.apple.com/app/testflight/id899247664)**。
-2. **獲取邀請**：
-   * 請將您的 **Apple ID 信箱** 提供給管理員 (`yuecheng@gmail.com`)。
-   * 您的信箱將收到一封來自 Apple TestFlight 的邀請信。
-3. **接受並安裝**：
-   * 打開邀請信件，點擊 **「View in TestFlight」** 或測試連結。
-   * TestFlight 應用程式會自動打開，點擊 **「安裝 (Install)」** 即可安裝 `PNCC Care` 測試版。
+`PNCC care` 已通過 Apple 官方審核並上架 App Store！
+1. **直接前往 App Store 下載**：在 iPhone 上打開 App Store，搜尋 **「PNCC care」**。
+2. **或直接點擊連結**：[點此前往 Apple App Store 下載 PNCC care](https://apps.apple.com/app/pncc-care/id6742517865)
 
 ---
 

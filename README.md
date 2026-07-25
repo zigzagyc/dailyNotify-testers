@@ -11,7 +11,7 @@
 ## 📥 最新測試版下載 (Latest Beta Release v1.0.2)
 
 - **🤖 Android APK 下載**: [下載 app-release.apk (Direct APK Download)](./app-release.apk)
-- **🍏 iOS TestFlight 安裝**: 請將您的 Apple ID 信箱提供給管理員 (`yuecheng@gmail.com`)，或透過 **[TestFlight](https://apps.apple.com/app/testflight/id899247664)** 接受邀請安裝。
+- **🍏 iOS App Store 下載**: [Apple App Store 搜尋「PNCC care」下載](https://apps.apple.com/app/pncc-care/id6742517865)
 
 ---
 
