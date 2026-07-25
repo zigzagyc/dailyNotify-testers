@@ -1,223 +1,92 @@
-# dailyNotify (PNCC關懷) - Internal closed-loop Tester Guide 🌟
+# dailyNotify (PNCC Care) - Tester Installation & Task Guide 🌟
 
-Welcome to the **dailyNotify** internal testing group! 
-
-<!-- LATEST_RELEASE_START -->
-### 📥 Latest Beta Download Links
-* **Release Time**: 2026-07-23 22:04:34
-* **Release Notes**: v1.0.2 Release Update (Upgraded version for App Store Connect train 1.0.2, replaced default launch image with app icon, fixed keyboard input responsiveness)
-* **🤖 Android APK Download**: [Click here to download from Firebase](https://appdistribution.firebase.dev/i/9fb3e0a381cc30ee)
-* **🍏 iOS IPA Installation**: Please provide your Apple ID email to the developer (yuecheng@gmail.com) to receive a **TestFlight** invitation.
-<!-- LATEST_RELEASE_END -->
-
----
-
-## 🎯 Core Testing Concept (Dual-Roles & Multi-Device Testing)
+Welcome to the **dailyNotify (PNCC Care)** internal testing group!
 
 > [!NOTE]
-> **💡 Key Clarification: Why is every device "both a Caregiver and a Care Receiver" at the same time?**
-> You have a very sharp eye! In our app architecture, **every single phone running the app has both roles built-in simultaneously**. 
-> You can switch between these two identities instantly using the two tabs at the bottom of the screen:
-> 1. **"My Care" Tab (Senior / Care Receiver side)**: Displays your personal safety state (Green or Yellow) and allows you to perform check-ins.
-> 2. **"People I Care For" Tab (Caregiver side)**: Shows your caregiver dashboard where you monitor other seniors, view active alerts, and perform remote resets.
-
-### Then why do we still need multiple devices and multiple accounts?
-Although a single phone can easily switch tabs to view both interfaces, **a single user profile cannot pair with itself or trigger alert notifications to itself**.
-To test real **cross-device data synchronization, QR-code pairing, and instant emergency alert updates**, you need a "closed-loop multi-device test":
-* You will need **two separate devices** (e.g., your primary phone A and a backup phone B).
-* Both devices must be logged in under **different accounts** (e.g., Account A and Account B).
-* By pairing these two different accounts, you establish a real-time care link across space.
+> 💡 **No Technical Background Required (No Code Compilation)**:
+> This repository is dedicated to serving pre-compiled application packages (`app-release.apk`) and testing guides. **Testers do not need Flutter, Xcode, or any coding tools**. Simply follow the step-by-step instructions below to install and test on your mobile devices.
 
 ---
 
-## 🔑 Device & Account Recommendations
-To avoid account conflicts and ensure a clean experience when the app goes live:
-
-*   **Primary Phone (Device A)**: Log in with your **main personal account** (Apple/Google ID).
-    *   **Future Role**: When the app is officially released, this phone will be your actual **Caregiver device**.
-    *   **During Testing**: Focus on using the **"People I Care For"** tab on this phone to scan QR codes and monitor your backup device.
-*   **Backup Device (Device B)**: Log in with a **secondary/test account**.
-    *   **Future Role**: Simulated **"Senior" / "Care Receiver"**.
-    *   **During Testing**: Focus on using the **"My Care"** tab on this phone to trigger safety check-ins or let the timer run down to test alert escalations.
-
----
-
-## 📱 WeChat Group Sharing & Installation Guide
-
-Please share these instructions in your WeChat group so other testers can get set up easily:
-
-### 🍏 For iPhone (iOS) Users:
-We are currently using **Apple TestFlight** for Beta testing. Please follow these steps:
-1. **Provide your Apple ID email**: Share your personal Apple ID email address in the WeChat group or email the developer (yuecheng@gmail.com) to receive an invitation.
-2. **Install the TestFlight App**: Search for and download the official **[TestFlight](https://apps.apple.com/app/testflight/id899247664)** app from the App Store on your iPhone.
-3. **Accept Invite & Install**:
-   * Open the TestFlight invitation email received on your Apple ID inbox.
-   * Tap **"View in TestFlight"** or tap the link on your iPhone.
-   * The TestFlight app will automatically open. Tap **"Install"** to download and install `PNCC Care`.
+## 📥 Installation Instructions
 
 ### 🤖 For Android Users:
-* **Direct APK Install**: The administrator will send the `app-release.apk` file directly in the WeChat group.
-  * Simply tap the APK file in your WeChat chat window, download it, and select **Install**.
-  * *Note*: If prompted by your phone's security, enable "Allow installation from this source" for WeChat.
-* **Firebase Link**: If using the Firebase link, tap the link in WeChat, select the **three dots `...`** and click **"Open in Browser" (在瀏覽器中打開)** to download the APK via Chrome.
+
+#### Method A: Direct Phone Installation (Recommended & Simplest)
+1. **Download Package**: Tap and download **`app-release.apk`** directly from your phone browser or chat group.
+2. **Tap Install**: Once downloaded, tap the APK file and select **Install**.
+3. *Security Note*: If prompted with "Installation from unknown sources disabled", tap **Settings** in the popup and toggle **"Allow from this source"** to ON.
+
+#### Method B: Installation via ADB (For Testers with Computer Developer Mode)
+If you are using command-line tools (`adb`) on a computer, follow these steps to enable Developer Mode:
+1. **Enable Developer Options**:
+   * Go to phone **Settings** -> Tap **About Phone**.
+   * Locate **Build Number** and **tap it 7 times continuously**.
+   * A toast notification will pop up: *"You are now a developer!"*.
+2. **Enable USB Debugging**:
+   * Return to main Settings -> **System** -> **Developer Options**.
+   * Toggle **USB Debugging** to **ON**.
+3. **Execute Installation**:
+   * Connect your phone to your computer via USB and accept the *"Allow USB debugging?"* prompt.
+   * Run the following command in your terminal:
+     ```bash
+     adb install -r app-release.apk
+     ```
 
 ---
 
-## 🌟 New Features in Latest Beta (v1.0.2)
-
-### 1. 🔗 Instant Deep-Link Pairing via LINE / WhatsApp / SMS / WeChat
-- **Sharing**: Tap **"Share Invite Link"** on your pairing card.
-- **Channels Supported**: LINE, WhatsApp, SMS/Messages, and WeChat/Copy Link.
-- **One-Tap Connection**: Recipients tap `dailynotify://pair?id=UID` in any chat app to open `dailyNotify` and confirm pairing automatically.
-
-### 2. 🔍 Multi-Field Pairing Search
-- Search caregivers or seniors by:
-  - **Phone Number** (`+1...`)
-  - **First & Last Name**
-  - **WeChat ID**
-  - **LINE ID**
-  - **WhatsApp Number**
-  - **Email Address**
-
-### 3. 📅 Senior Safety Multi-Range Calendar View
-- Tap the **Calendar icon (`Icons.calendar_month`)** on any senior's card.
-- Select your desired inspection timeframe:
-  - `1 Day (1D)` | `2 Days (2D)` | `3 Days (3D)` | `1 Week (1W)` | `1 Month (1M)`
-- View color-coded daily health status: 🟢 **OK** | 🔴 **Expired / Alert** | 🟠 **Paused**
-
-### 4. ⚠️ Consecutive Alert Aggregation
-- Multiple consecutive missed check-in days are automatically consolidated into a single summary card:
-  - *"Not responding since N days ago / 自 N 天前起未回報"*
-
-### 5. 🛡️ Caregiver-Only Mode Timer & Notification Suppression
-- Profiles set to **Caregiver-Only Mode** (`isCaregiver == true && isElderly == false`) automatically have check-in timers disabled (`checkInFrequency = 0`).
-- Local check-in warning popups and persistent notifications are suppressed.
-
-### 6. 📱 Collapsible Pairing QR Code Card
-- Pairing QR code card is default-collapsed to save primary screen real estate. Tap header to toggle expansion.
+### 🍏 For iPhone (iOS) Users:
+1. **Install TestFlight**: Download Apple's official **[TestFlight App](https://apps.apple.com/app/testflight/id899247664)** from the iPhone App Store.
+2. **Get Invitation**:
+   * Share your **Apple ID email** with the admin (`yuecheng@gmail.com`).
+   * You will receive a TestFlight email invitation from Apple.
+3. **Accept & Install**:
+   * Open the email on your iPhone and tap **"View in TestFlight"**.
+   * TestFlight will open automatically. Tap **"Install"** to install `PNCC Care`.
 
 ---
 
-## 👥 First-Time Setup & Device Separation (Multi-Profile Selection)
-When launching the app on your testing devices, our **Multi-Profile Architecture** ensures that each device has a unique identity:
+## 🎯 Master Test Task Matrix & Task Signup
 
-1. On your **Primary Phone**: Create/Select your personal profile.
-2. On your **Backup/Test Phone**: Create/Select a separate profile (e.g. named "Test Senior").
-3. This isolates your active profiles perfectly even if the devices share the same iCloud or Google credentials!
+To prevent multiple testers from redundantly testing simple features while leaving complex scenarios (e.g. cross-platform, N-on-1 care) untouched, we established the **[Master Test Task Matrix (TEST_MATRIX.md)](./TEST_MATRIX.md)**!
 
----
-
-## ⚙️ Senior Device Configuration & Settings Guide
-To set up your simulation correctly, go to the **Settings** screen on your **Backup Phone (Device B / Senior)** and adjust the following parameters:
-
-### 1. Edit Personal Information (Profile Settings)
-* **How-to**: Tap the **"Edit"** icon next to the profile avatar at the top of the Settings screen.
-* **Configurations**:
-  * **Display Name**: Set your senior's test name (e.g., "User A", "Test Senior").
-  * **Preferred Contact Method**: Choose SMS, Phone Call, WhatsApp, Line, or WeChat, and input the respective contact ID or phone number.
-
-### 2. Configure Safety Timers
-* **How-to**: Scroll down to the **"Monitoring Configuration"** section.
-* **Configurations**:
-  * **Check-In Frequency**: The app's default check-in frequency is **1440 minutes (1 day)**. Tap to open the dialog and set a shorter testing interval (e.g., set to `2` minutes).
-  * **Alert Timeout**: Tap to set the warning countdown duration (e.g., set to `1` minutes).
-  * *💡 Testing Tip*: Keep these set to **1 or 2 minutes** during testing to avoid waiting hours to trigger alerts!
-
-### 3. Enable Fall Detection
-* **How-to**: Scroll down to the **"Sensors"** section.
-* **Configurations**:
-  * Toggle the **"Enable Fall Detection"** switch to **ON**.
-
-### 4. Switch Languages
-* **How-to**: Under the **"Language"** section, tap the dropdown menu.
-* **Available Options**:
-  * System Default
-  * English
-  * Traditional Chinese (zh_Hant)
-  * Simplified Chinese (zh)
-
-### 5. Select Bible Translations
-* **How-to**: Scroll down to the **"Bible Preferences"** section.
-* **Configurations**:
-  * **Bible Language**: Select English or Chinese (中文).
-  * **Bible Version**:
-    * If Chinese: select **CUV (和合本)**.
-    * If English: select **NIV** or **KJV**.
-  * Once saved, your devotional verses on the Read page will dynamically switch translations!
+### 💡 How to Claim & Execute a Test Task:
+1. Open **[TEST_MATRIX.md](./TEST_MATRIX.md)**.
+2. Choose a Task ID suitable for your device setup (e.g., `TASK-12: Android Caregiver ↔ iOS Senior` or `TASK-05: 1~2 Min Short Safety Timer`).
+3. Follow the **Step-by-Step bilingual instructions** specified for that Task ID.
+4. After completing the test, submit a test report using the template below or file a report on GitHub Issues.
 
 ---
 
-## 📲 Home Screen Widget Testing Guide
-The Home Screen Widget allows caregivers to monitor their senior's status **in real-time without even opening the app**.
+## 📝 Test Report Template
 
-### Testing Steps:
-1. **Add Widget**:
-   * On your **Primary Phone (Caregiver)**, long-press the home screen.
-   * Tap **"Add Widget (+)"**, search for **"PNCC關懷"** (or **dailyNotify**), and place it on your screen.
-2. **Verify Safe State (OK)**:
-   * Perform a check-in on the Senior device.
-   * Return to your Caregiver home screen and verify the widget immediately displays **Green "OK"** status.
-3. **Verify Vacation / Paused State**:
-   * Set a "Pause Date Range (Vacation)" in the Senior device settings.
-   * Verify the widget updates to **Grey "Paused"** status.
-4. **Verify Overdue Alert State (Expired)**:
-   * Let the Senior device miss its check-in until the emergency alert triggers (red alert banner displays).
-   * Return to your Caregiver home screen and verify the widget immediately switches to a prominent **Red "Expired"** status.
+When submitting feedback or reporting a bug, copy and complete this form:
 
----
+```markdown
+### 📋 PNCC Care Test Feedback Form
 
-## 🔔 Push Notification Testing Guide
-Our notification system handles background check-in reminders, warnings, and sensor impacts.
-
-### Testing Scenarios:
-
-1. **Check-In Reminder Notification**
-   * **How to trigger**: In the Senior settings, set the Check-In Frequency to `2` minutes. Close the app or put it in the background.
-   * **Verification**: When there are 2 minutes remaining before check-in is due, the Senior phone should receive a notification: *“Are you okay? It's been a while since we heard from you. Please tap to check in.”*
-
-2. **Overdue Emergency Warning Notification**
-   * **How to trigger**: Let the Senior device timer completely expire (after the grace period).
-   * **Verification**: The Senior phone should receive an urgent reminder: *“You missed your check-in! Please open the app immediately to cancel or send alerts.”*
-
-3. **Fall Detection Impact Notification 🚨**
-   * **How to trigger**:
-     1. Ensure **"Enable Fall Detection"** is toggled **ON** in the Senior settings.
-     2. With the app running (or in the background), **gently tap or quickly shake** the Senior device to simulate a sudden physical impact.
-   * **Verification**:
-     * The Senior phone must instantly display a high-priority red notification: *“Severe impact detected. Sending emergency alerts in 30 seconds. Tap to Cancel.”*
-     * A loud sirens/alert sound should play.
-     * **Test Cancel Action**: Tap the notification or hit "Cancel" in the app within 30 seconds, and verify that the countdown stops and no emergency alert is sent to the Caregiver's dashboard.
+- **Claimed Task ID**: [e.g. TASK-12]
+- **Tester Name / Handle**: [e.g. Tester Alex]
+- **Device Models & OS Versions**: [e.g. Pixel 4a (Android 13) & iPhone 13 (iOS 17.4)]
+- **Account Email & Mode**: [e.g. tester1@gmail.com / Caregiver Mode]
+- **Test Result**: 
+  - [ ] 🟢 Pass (All functions working cleanly)
+  - [ ] 🔴 Bug Found
+- **Problem Description**:
+  (If a bug is found, describe the exact behavior observed)
+- **Steps to Reproduce**:
+  1. ...
+  2. ...
+- **Screenshots / Video Clips**:
+  (Attach screenshots or screen recordings)
+```
 
 ---
 
-## 🔄 Closed-Loop Test Scenarios to Verify
+## 🐞 Jira-Like Issue Tracking on GitHub
 
-Please run through these scenarios and provide detailed feedback to the development team:
+We have enabled **GitHub Issues** on this repository for Jira-like task and bug management:
+- **Claim Test Task**: Click **"Claim Test Task"** on GitHub Issues to sign up for a task scenario.
+- **File Bug Report**: Click **"Report a Bug"** to fill in problem details. The development team will mark status as `In Progress` or `Resolved` so you can track progress transparently!
 
-### Test Scenario A: Care Group Pairing (QR Code Scan) 🔗
-1. **Primary Phone (Device A)**: Go to the **"People I Care For"** tab, tap **Add Senior / Pair**. A custom QR Code will appear.
-2. **Backup Phone (Device B)**: Go to the **"My Care"** tab settings or pairing screen, open the QR scanner, and scan Device A's screen.
-3. **Verification**: The profiles should pair instantly. The simulated Senior must show up on Device A's caregiver dashboard list in real time.
-
-### Test Scenario B: Active Check-In Sync (Green State) 🟢
-1. **Backup Phone (Device B)**: In the **"My Care"** tab, view the green dashboard. It should display a peaceful message with the next due time (no ticking countdown).
-2. **Verification**: Tap the screen to check in, and verify that Device A's **"People I Care For"** list's "Last Active Time" (最後活動) updates instantly in the background.
-
-### Test Scenario C: Grace Period & Active Alert (Yellow/Red State) 🚨
-1. **Backup Phone (Device B)**: Let the check-in timer run down into the Grace Period.
-   * **Verification**: The screen turns yellow/orange and starts a ticking countdown. Tap **Check In** to verify it returns to green immediately.
-2. **Primary Phone (Device A)**: If Device B's timer completely expires.
-   * **Verification**: Verify that a prominent **red emergency alert banner** displays on Device A's **"People I Care For"** dashboard showing the **Alert Duration** and **Last Active Relative Time**.
-
-### Test Scenario D: Spiritual Comfort (Daily Devotional) 📖
-* Switch to the **Devotional** screen on both devices. Read the daily verses to verify font scaling, readability, and content presentation.
-
----
-
-## 📝 Submitting Feedback
-Please document:
-* Your device models (e.g. iPhone 15 Pro, Xiaomi MI 9) and OS versions.
-* Screen layout issues (text wrapping, overflowing elements).
-* Any delayed updates, Firestore sync lag, or application crashes.
-
-Thank you for helping us elevate **dailyNotify** to production release standard! 🚀
+Thank you for your valuable time and effort! 🚀
