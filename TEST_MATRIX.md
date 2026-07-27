@@ -16,7 +16,9 @@
 > **認領方式**：您只需在表格中用逗號 `,` 加上您的名字即可（例如：`張三, 李四, 王五`）。
 
 > [!IMPORTANT]
-> 💡 **超簡單！小學生也能看懂的認領任務 2 種方法（Choose Method 1 or 2）**：
+> 💡 **零基礎快速上手！認領任務 2 種方法 (Choose Method 1 or 2)**：
+>
+> 🐞 **若在測試中發現任何問題，請點此提交 Bug 報告** ➔ **[👉 點此提交 Bug 報告 (Report a Bug)](https://github.com/zigzagyc/dailyNotify-testers/issues/new?template=bug_report.md)**
 >
 > ### 🔴 方法 1：在網頁上直接用「小鉛筆 ✏️」改名認領（最直觀）
 > 1. **第一步：找到小鉛筆** ➔ 在本頁面右上方，找到一個 **小鉛筆圖示 ✏️ (Edit this file)** 並點擊它。
@@ -24,7 +26,7 @@
 > 3. **第三步：點擊綠色保存按鈕** ➔ 滾動到頁面最底部，點擊綠色的 **「Commit changes... (保存修改)」** 綠色按鈕即完成認領！
 >
 > ### 🟢 方法 2：點擊連結直接填表認領（最省心）
-> 1. 直接點擊這個發起連結 ➔ **[👉 點此一鍵認領測試任務](https://github.com/zigzagyc/dailyNotify-testers/issues/new?template=task_signup.md)**
+> 1. 直接點擊這個發起連結 ➔ **[👉 點此一鍵認領測試任務 (Claim a Task)](https://github.com/zigzagyc/dailyNotify-testers/issues/new?template=task_signup.md)**
 > 2. 在表格中填寫您想測試的 `Task ID`（如 `TASK-05`）和您的名字。
 > 3. 點擊頁面最下方的綠色 **「Submit new issue (提交)」** 按鈕即可！
 
