@@ -8,17 +8,22 @@
 
 ---
 
-## 📥 最新測試版下載 (Latest Beta Release v1.1.3 Build 21)
+## 📥 最新測試版下載 (Latest Beta Release v1.1.4 Build 22)
 
 - **🤖 Android APK 下載**: [下載 app-release.apk (Direct APK Download)](./app-release.apk)
 - **🍏 iOS App Store 下載**: [Apple App Store 搜尋「PNCC care」下載](https://apps.apple.com/app/pncc-care/id6742517865)
+- **⌚️ Apple Watch 手錶應用**: 於 iPhone 的「Watch」應用程式之「可用的 App」列表，一鍵安裝「PNCC care Watch App」至 Apple Watch！
 
-### ✨ v1.1.3 更新亮點 (What's New in v1.1.3):
-1. **虛擬三鍵導航欄適配 (Navigation Bar Adaptation)**: 針對小米 Mi 9 等配備傳統虛擬三鍵（返回/主頁/多任務）之設備，全面優化底部防遮擋 SafeArea 間距，軟體資訊與彈窗按鈕完整可見。
-2. **長輩首頁平安狀態與按鈕整合 (Compact Senior Safety Card)**: 將平安狀態與超大按鈕高度融合為單一卡片，消除冗餘綠色色塊，第一螢幕免滾動即可完整操作。
-3. **橫向旋轉雙欄響應式佈局 (Landscape Responsive Layout)**: 設備橫向旋轉時自動切換為左右雙欄佈局，平安按鈕與今日金句並排呈現，一覽無遺。
-4. **桌面小工具直達模式切換 (Desktop Widget Deep Linking)**: 點擊長輩小工具或家屬小工具可直接跳轉至對應身份視圖，並智能推薦開啟雙模式。
-5. **照護者自訂警報橫幅 (Custom Alert Banner)**: 照護者警報畫面提供自訂背景調色盤，可切換脈衝閃爍特效，並支援不干擾的簡潔橫幅模式。
+### ✨ v1.1.4 更新亮點 (What's New in v1.1.4):
+1. **⌚️ Apple Watch 獨立手錶伴侶應用 (Apple Watch Companion App)**:
+   - 全新獨立 watchOS 應用程式，可在手錶上獨立查看長輩平安狀態、今日經文，並支援手錶一鍵「我很好 / I'm OK」打卡。
+   - 雙向即時同步（WatchConnectivity）：手錶與手機隨時無縫同步平安狀態與緊急警報。
+   - 支援 iPhone「Watch」App 內自動探索與一鍵安裝。
+2. **虛擬三鍵導航欄適配 (Navigation Bar Adaptation)**: 針對小米 Mi 9 等配備傳統虛擬三鍵（返回/主頁/多任務）之設備，全面優化底部防遮擋 SafeArea 間距，軟體資訊與彈窗按鈕完整可見。
+3. **長輩首頁平安狀態與按鈕整合 (Compact Senior Safety Card)**: 將平安狀態與超大按鈕高度融合為單一卡片，消除冗餘綠色色塊，第一螢幕免滾動即可完整操作。
+4. **橫向旋轉雙欄響應式佈局 (Landscape Responsive Layout)**: 設備橫向旋轉時自動切換為左右雙欄佈局，平安按鈕與今日金句並排呈現，一覽無遺。
+5. **桌面小工具直達模式切換 (Desktop Widget Deep Linking)**: 點擊長輩小工具或家屬小工具可直接跳轉至對應身份視圖，並智能推薦開啟雙模式。
+6. **照護者自訂警報橫幅 (Custom Alert Banner)**: 照護者警報畫面提供自訂背景調色盤，可切換脈衝閃爍特效，並支援不干擾的簡潔橫幅模式。
 
 ---
 
