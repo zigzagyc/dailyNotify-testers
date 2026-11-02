@@ -8,13 +8,13 @@
 
 ---
 
-## 📥 最新測試版下載 (Latest Beta Release v1.1.4 Build 24)
+## 📥 最新測試版下載 (Latest Beta Release v1.1.5 Build 25)
 
 - **🤖 Android APK 下載**: [下載 app-release.apk (Direct APK Download)](./app-release.apk)
 - **🍏 iOS App Store 下載**: [Apple App Store 搜尋「PNCC care」下載](https://apps.apple.com/app/pncc-care/id6742517865)
 - **⌚️ Apple Watch 手錶應用**: 於 iPhone 的「Watch」應用程式之「可用的 App」列表，一鍵安裝「PNCC care Watch App」至 Apple Watch！
 
-### ✨ v1.1.4 更新亮點 (What's New in v1.1.4):
+### ✨ v1.1.5 更新亮點 (What's New in v1.1.5):
 1. **⌚️ Apple Watch 獨立手錶伴侶應用 (Apple Watch Companion App)**:
    - 全新獨立 watchOS 應用程式，可在手錶上獨立查看長輩平安狀態、今日經文，並支援手錶一鍵「我很好 / I'm OK」打卡。
    - 雙向即時同步（WatchConnectivity）：手錶與手機隨時無縫同步平安狀態與緊急警報。
