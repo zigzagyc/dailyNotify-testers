@@ -8,7 +8,7 @@
 
 ---
 
-## 📥 最新測試版下載 (Latest Beta Release v1.1.4 Build 23)
+## 📥 最新測試版下載 (Latest Beta Release v1.1.4 Build 24)
 
 - **🤖 Android APK 下載**: [下載 app-release.apk (Direct APK Download)](./app-release.apk)
 - **🍏 iOS App Store 下載**: [Apple App Store 搜尋「PNCC care」下載](https://apps.apple.com/app/pncc-care/id6742517865)
