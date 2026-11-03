@@ -2,11 +2,11 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>PNCC關懷 - 完整產品設計論文、競賽手冊與長輩家屬操作指南</title>
+<title>PNCC關懷 - 完整產品設計論文、設定大全與圖文手冊</title>
 <style>
   @page {
     size: A4;
-    margin: 18mm 16mm 18mm 16mm;
+    margin: 16mm 14mm 16mm 14mm;
     @bottom-right {
       content: counter(page);
     }
@@ -17,10 +17,10 @@
     print-color-adjust: exact !important;
   }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #1E293B;
-    line-height: 1.65;
-    font-size: 11.5pt;
+    line-height: 1.6;
+    font-size: 11pt;
     margin: 0;
     padding: 0;
     background: #FFFFFF;
@@ -28,73 +28,73 @@
   .cover {
     page-break-after: always;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .cover-logo {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(135deg, #2563EB, #1D4ED8);
-    border-radius: 26px;
-    margin: 0 auto 20px auto;
+    border-radius: 24px;
+    margin: 0 auto 16px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 52px;
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+    font-size: 48px;
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.25);
   }
   .cover-title {
-    font-size: 30pt;
+    font-size: 28pt;
     font-weight: 800;
     color: #0F172A;
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
   }
   .cover-subtitle {
-    font-size: 16pt;
+    font-size: 15pt;
     font-weight: 600;
     color: #2563EB;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
   }
   .cover-desc {
-    font-size: 12.5pt;
+    font-size: 11.5pt;
     color: #475569;
     max-width: 620px;
-    margin: 0 auto 30px auto;
-    line-height: 1.7;
+    margin: 0 auto 24px auto;
+    line-height: 1.65;
   }
   .cover-badges {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .cover-badge {
     background: #F1F5F9;
     color: #334155;
-    padding: 5px 14px;
-    border-radius: 14px;
-    font-size: 10.5pt;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 10pt;
     font-weight: 600;
   }
   .cover-meta {
-    margin-top: 50px;
-    font-size: 10.5pt;
+    margin-top: 40px;
+    font-size: 10pt;
     color: #64748B;
     border-top: 1px solid #E2E8F0;
-    padding-top: 15px;
+    padding-top: 12px;
   }
   .chapter {
     page-break-before: always;
-    padding-top: 10px;
+    padding-top: 6px;
   }
   .chapter-header {
     border-bottom: 3px solid #2563EB;
-    padding-bottom: 8px;
-    margin-bottom: 18px;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
   }
   .chapter-num {
-    font-size: 11pt;
+    font-size: 10.5pt;
     font-weight: 700;
     color: #2563EB;
     text-transform: uppercase;
@@ -102,72 +102,55 @@
     margin-bottom: 2px;
   }
   .chapter-title {
-    font-size: 19pt;
+    font-size: 18pt;
     font-weight: 800;
     color: #0F172A;
     margin: 0;
   }
   .chapter-intro {
-    font-size: 12pt;
+    font-size: 11pt;
     color: #334155;
     background: #F8FAFC;
     border-left: 4px solid #2563EB;
-    padding: 10px 14px;
-    margin-bottom: 18px;
+    padding: 8px 12px;
+    margin-bottom: 14px;
     border-radius: 0 6px 6px 0;
   }
   h3 {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 700;
     color: #0F172A;
-    margin-top: 18px;
-    margin-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 6px;
     border-left: 3px solid #3B82F6;
     padding-left: 8px;
   }
   h4 {
-    font-size: 12pt;
+    font-size: 11.5pt;
     font-weight: 700;
     color: #1E293B;
-    margin-top: 14px;
-    margin-bottom: 6px;
-  }
-  p {
-    margin: 0 0 10px 0;
-  }
-  ul, ol {
-    margin: 4px 0 12px 20px;
-    padding: 0;
-  }
-  li {
+    margin-top: 12px;
     margin-bottom: 4px;
   }
+  p { margin: 0 0 8px 0; }
+  ul, ol { margin: 4px 0 10px 18px; padding: 0; }
+  li { margin-bottom: 3px; }
   .card {
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
     border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 14px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.03);
   }
-  .callout {
-    border-radius: 6px;
-    padding: 10px 14px;
-    margin: 14px 0;
-    font-size: 11pt;
-  }
-  .callout-blue { background: #EFF6FF; border-left: 4px solid #3B82F6; color: #1E3A8A; }
-  .callout-green { background: #F0FDF4; border-left: 4px solid #22C55E; color: #14532D; }
-  .callout-amber { background: #FFFBEB; border-left: 4px solid #F59E0B; color: #78350F; }
-  .callout-red { background: #FEF2F2; border-left: 4px solid #EF4444; color: #7F1D1D; }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 14px 0;
-    font-size: 10.5pt;
+    margin: 10px 0;
+    font-size: 10pt;
   }
   th, td {
-    padding: 8px 10px;
+    padding: 6px 8px;
     text-align: left;
     border: 1px solid #CBD5E1;
   }
@@ -176,25 +159,44 @@
     color: #0F172A;
     font-weight: 700;
   }
-  .role-grid {
+  .screenshot-container {
+    text-align: center;
+    margin: 12px 0 16px 0;
+    page-break-inside: avoid;
+  }
+  .screenshot-container img {
+    max-width: 260px;
+    max-height: 420px;
+    border-radius: 12px;
+    border: 2px solid #CBD5E1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display: inline-block;
+  }
+  .screenshot-dual {
     display: flex;
-    gap: 10px;
-    margin: 14px 0;
+    justify-content: center;
+    gap: 16px;
+    margin: 12px 0 16px 0;
+    page-break-inside: avoid;
   }
-  .role-card {
-    flex: 1;
-    border-radius: 8px;
-    padding: 12px;
-    color: white;
+  .screenshot-dual img {
+    max-width: 230px;
+    max-height: 380px;
+    border-radius: 12px;
+    border: 2px solid #CBD5E1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   }
-  .role-senior { background: linear-gradient(135deg, #2563EB, #1D4ED8); }
-  .role-caregiver { background: linear-gradient(135deg, #059669, #047857); }
-  .role-dual { background: linear-gradient(135deg, #7C3AED, #6D28D9); }
+  .screenshot-caption {
+    font-size: 9.5pt;
+    font-weight: 600;
+    color: #475569;
+    margin-top: 6px;
+  }
   .badge {
     display: inline-block;
     padding: 2px 6px;
     border-radius: 4px;
-    font-size: 9.5pt;
+    font-size: 9pt;
     font-weight: bold;
     color: white;
   }
@@ -202,18 +204,19 @@
   .badge-amber { background: #F59E0B; }
   .badge-red { background: #EF4444; }
   .badge-blue { background: #3B82F6; }
+  .badge-grey { background: #64748B; }
 </style>
 </head>
 <body>
 
-  <!-- COVER PAGE -->
+  <!-- 封面 -->
   <div class="cover">
     <div class="cover-logo">❤</div>
     <h1 class="cover-title">PNCC 關懷 (dailyNotify)</h1>
     <div class="cover-subtitle">以科技傳遞尊嚴：長輩安康有尊嚴 · 子女牽掛得安心</div>
     <div class="cover-desc">
-      全方位技術架構分析、設計困境與解決方案、跨裝置物聯網生態系與長者照護臨床實務指南。<br>
-      涵蓋設計初心、工程抉擇、六大報平安觸發機制、雙向照護模式與異常應變處置手冊。
+      全方位技術架構分析、每一項功能設定與功能後果詳解、全彩圖文實機截圖與臨床長者照護實務指南。<br>
+      涵蓋設計初心、工程抉擇、六大報平安觸發機制、雙向照護模式、設定詳解與異常應變處置手冊。
     </div>
     <div class="cover-badges">
       <div class="cover-badge">📱 蘋果 iOS &amp; 安卓跨平台</div>
@@ -226,14 +229,14 @@
     <div class="cover-meta">
       <strong>產品版本：</strong> v1.1.5 (Build 25) · <strong>發布年份：</strong> 2026年11月<br>
       <strong>設計與架構師：</strong> ZigzagYC &amp; PNCC 關懷核心開發團隊<br>
-      <strong>競賽與評審分類：</strong> 社會影響力 (Social Impact)、智慧健康照護 (mHealth)、銀髮通用無障礙 (Accessibility) 與 IoT 生態
+      <strong>App Store 應用代號：</strong> 6742517865 · <strong>App ID：</strong> com.zigzagyc.dailyNotify
     </div>
   </div>
 
-  <!-- CHAPTER 1: DESIGN TARGET -->
+  <!-- 第一章：設計初心 -->
   <div class="chapter">
     <div class="chapter-header">
-      <div class="chapter-num">第一章 · 設計初心與願景</div>
+      <div class="chapter-num">第一章 · 設計初心與核心哲學</div>
       <h2 class="chapter-title">設計目標：為什麼要打造「PNCC 關懷」？</h2>
     </div>
     <div class="chapter-intro">
@@ -241,290 +244,385 @@
     </div>
 
     <h3>1.1 核心社會痛點</h3>
-    <p>現代高齡化與少子化趨勢，造成無數「獨居長者」與在異地打拼的「遠距子女」。這衍生出兩大深層心理摩擦：</p>
+    <p>現代高齡化與少子化趨勢，造成無數獨居長者與在異地打拼的遠距子女。這衍生出深層心理磨擦：</p>
     <ul>
       <li><strong>子女無休止的焦慮牽掛：</strong>「媽媽今早起床了嗎？爸爸昨晚有沒有在浴室滑倒？萬一發生意外，要過多久才會被發現？」</li>
-      <li><strong>長輩對隱私侵犯與繁瑣科技的抗拒：</strong>長輩渴望被尊重、保有自主隱私。在客廳臥室安裝攝影機讓長輩感覺像被「囚禁與監視」；每天例行公事般的電話詢問（「你有沒有吃藥？人還好嗎？」）容易被誤解為嘮叨或被視為老弱無能；傳統求救吊墜常被鎖在抽屜，因為戴在身上如同貼上「失能者」的標籤。</li>
+      <li><strong>長輩對隱私侵犯與繁瑣科技的抗拒：</strong>長輩渴望被尊重、保有自主隱私。在客廳臥室安裝攝影機讓長輩感覺像被囚禁與犯人般監控；每天例行公事般的電話詢問（「你有沒有吃藥？人還好嗎？」）容易被誤解為嘮叨或被視為老弱無能；傳統求救吊墜常被鎖在抽屜，因為戴在身上如同貼上「失能者」的標籤。</li>
     </ul>
 
     <h3>1.2 設計北極星指標：「被動與主動的尊嚴平衡」</h3>
     <p>我們的核心設計哲學是：<strong>報平安絕不應該是「被監控的負擔」，而是一場尊嚴、溫暖且毫不費力的晨間儀式，耗時不到 2 秒鐘。</strong></p>
-    <p>PNCC 關懷從底層重新思考，讓長輩「根本無須學習新軟體」，而是將報平安自然融入長者每天原有的生活起居中：</p>
+    <p>PNCC 關懷讓長輩「根本無須學習新軟體」，而是融入日常生活起居中：早晨醒來摸一下床頭的電子時鐘、散步看一眼手錶、在被窩裡對智慧音箱說句話、讀一段每日金句。</p>
+  </div>
+
+  <!-- 第二章：帳號、登入與角色架構 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第二章 · 帳號登入與角色架構</div>
+      <h2 class="chapter-title">無密碼生物辨識登入與多世代角色切換</h2>
+    </div>
+    <div class="chapter-intro">
+      支援 Apple Face ID / Google 一鍵登入與長輩、照護者、雙向模式動態轉換。
+    </div>
+
+    <h3>2.1 無密碼生物辨識登入</h3>
+    <div class="screenshot-container">
+      <img src="assets/01_login_methods.png" alt="登入方式">
+      <div class="screenshot-caption">圖 2.1：跨平台生物辨識登入畫面 (Apple、Google 與家庭信箱)</div>
+    </div>
     <ul>
-      <li>早晨醒來摸一下床頭的電子時鐘。</li>
-      <li>泡茶散步時看一眼手腕上的手錶。</li>
-      <li>在被窩裡對著智慧音箱說一句溫暖的話。</li>
-      <li>讀一段撫慰心靈的每日金句。</li>
+      <li><strong>Sign in with Apple（蘋果用戶推薦）：</strong> 點擊黑色按鈕，透過 Face ID / 觸控 ID 一鍵登入，**完全不用記密碼**。</li>
+      <li><strong>Sign in with Google（安卓用戶推薦）：</strong> 點擊 Google 按鈕直接選擇手機既有帳號。</li>
+      <li><strong>電子郵件註冊：</strong> 輸入信箱與 6 位數以上密碼建立專屬家庭帳號。</li>
     </ul>
+
+    <h3>2.2 三大身分角色詳解</h3>
+    <div class="screenshot-container">
+      <img src="assets/02_role_selection.png" alt="角色選擇">
+      <div class="screenshot-caption">圖 2.2：身分切換介面 (長輩、照護者與雙向模式)</div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>身分角色</th>
+          <th>適用對象與人因考量</th>
+          <th>介面特點與功能後果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>長輩模式 (Senior)</strong></td>
+          <td>獨居或同住的高齡父母。追求極致簡潔與低認知負荷。</td>
+          <td>展示超大綠色「我很好」卡片、即時平安狀態、今日經文與床頭護眼時鐘。完全隱藏複雜管理選單。</td>
+        </tr>
+        <tr>
+          <td><strong>照護者模式 (Caregiver)</strong></td>
+          <td>成年子女、親屬、社工與志工。</td>
+          <td>提供多位長輩儀表板。呈現各長輩顏色燈號、倒數計時器、最後活動時間戳記與一鍵撥號/簡訊。</td>
+        </tr>
+        <tr>
+          <td><strong>雙向模式 (Dual Mode)</strong></td>
+          <td>三明治世代（自己需向遠方兒女報平安，同時看護老家父母）。</td>
+          <td>加入底部雙標籤導航欄。點擊長輩分頁為自己打卡，點擊照護者分頁即時看護老家父母。</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>隨時切換角色：</strong> 進入設定 (⚙️) &rarr; 滑至底部點擊 <strong>「切換身分模式」(⇄)</strong> &rarr; 點選卡片即刻生效，無須重新登入。</p>
   </div>
 
-  <!-- CHAPTER 2: CHALLENGES & RESOLUTIONS -->
+  <!-- 第三章：長輩首頁與六大打卡途徑 -->
   <div class="chapter">
     <div class="chapter-header">
-      <div class="chapter-num">第二章 · 工程挑戰與解法</div>
-      <h2 class="chapter-title">技術瓶頸、架構抉擇與創新突圍</h2>
+      <div class="chapter-num">第三章 · 長輩端功能與六大觸發途徑</div>
+      <h2 class="chapter-title">長輩首頁與多元打卡管道全解析</h2>
     </div>
     <div class="chapter-intro">
-      要跨越跨平台作業系統碎片化、老舊硬體邊界、背景電源限制與長輩認知障礙，必須在底層進行諸多精密的工程攻堅。
+      六大報平安觸發途徑，長者想怎麼報就怎麼報，完全不需改變生活作息。
     </div>
 
-    <h3>2.1 挑戰一：健忘性與長輩「被困在軟體裡」的恐懼</h3>
-    <div class="card">
-      <p><strong>問題癥結：</strong>高齡長者常忘記開軟體，且對手機小按鈕、多層導航或彈跳視窗感到迷惘，一旦誤觸無法返回便會產生挫折感，甚至從此抗拒使用。</p>
-      <p><strong>突破解法：</strong></p>
-      <ul>
-        <li><strong>整合式超大安全卡片：</strong>將平安指示燈與「我很好」按鈕熔鑄為第一螢幕單一 48dp+ 巨型觸控卡片，免滾動即可一覽無餘。</li>
-        <li><strong>點擊後 500ms 自動縮小退出：</strong>長輩按下一鍵後，系統給予明確震動回饋，並在半秒後自動縮小返回桌面，長輩絕不會被「困在畫面中」。</li>
-        <li><strong>無密碼化驗證：</strong>支援 Apple Face ID/Touch ID 與 Google 一鍵登入，徹底告別輸入密碼的噩夢。</li>
-      </ul>
+    <h3>3.1 長輩首頁人因設計</h3>
+    <div class="screenshot-container">
+      <img src="assets/03_senior_safe_checkin.png" alt="長輩首頁">
+      <div class="screenshot-caption">圖 3.1：長輩首頁整合式超大安全卡片與平安燈號</div>
     </div>
+    <p>長輩首頁專注於單一無捲動視覺中心：</p>
+    <ul>
+      <li><strong>整合式巨型卡片：</strong> 平安狀態與「我很好」按鈕熔鑄為 48dp+ 醒目卡片，老花眼亦能看清。</li>
+      <li><strong>500 毫秒自動退出：</strong> 按下後震動回饋並自動退回手機桌面，長輩絕不會被困在 App 中。</li>
+    </ul>
 
-    <h3>2.2 挑戰二：遠距照護中的「狼來了」假警報危機</h3>
-    <div class="card">
-      <p><strong>問題癥結：</strong>市面上的照護系統最常因頻繁的「誤報」導致子女焦慮麻痺、最終全家放棄使用（例如長者只是午睡片刻或出門買菜）。</p>
-      <p><strong>突破解法：</strong></p>
-      <ul>
-        <li><strong>雙層階梯式安全計時器：</strong>區分「安全時段」（計時器一，如 24 小時）與「預警緩衝期」（計時器二，如 25 小時）。進入緩衝期僅呈現安靜黃燈，只有超過緩衝期才會向家屬推送高優先級警報。</li>
-        <li><strong>跌倒感測 30 秒撤銷緩衝窗：</strong>手機不慎掉落地板是日常常態。當偵測到衝擊時，手機本地發出蜂鳴並顯示 30 秒倒數，長輩只需點擊「我沒事」即可撤銷，絕不驚動子女。</li>
-        <li><strong>一鍵休假 / 暫停監護模式：</strong>當長輩旅遊、返鄉或住院時，長輩或家屬可自訂起訖日期暫停警報，介面顯示寧靜灰色的「休假中」標籤。</li>
-      </ul>
+    <h3>3.2 六大報平安觸發管道詳細說明</h3>
+    <div class="screenshot-dual">
+      <img src="assets/12_apple_watch_safe.png" alt="Apple Watch">
+      <img src="assets/11_home_widgets.png" alt="小工具與靈動島">
     </div>
+    <div class="screenshot-caption">圖 3.2：Apple Watch 手錶伴侶 (左) 與 桌面小工具/鎖定畫面即時動態 (右)</div>
 
-    <h3>2.3 挑戰三：虛擬三鍵底欄遮擋與邊界適配</h3>
-    <div class="card">
-      <p><strong>問題癥結：</strong>許多長者使用小米 Mi 9 等配備傳統虛擬三鍵（返回/主頁/多任務）的安卓手機。原先彈窗下方的確認按鈕與底部版本說明容易被系統導航列遮擋。</p>
-      <p><strong>突破解法：</strong>透過原生平台通道動態獲取視窗 Inset 數值，針對虛擬按鍵高度加入動態 SafeArea 補償乘數，並支援橫向旋轉雙欄響應式佈局，確保所有機型百分之百完整顯示。</p>
-    </div>
-
-    <h3>2.4 挑戰四：蘋果 iOS 瘦身腳本遺漏與閃退修復 (Build 24/25)</h3>
-    <div class="card">
-      <p><strong>問題癥結：</strong>在引入 Apple Watch 伴侶應用與桌面 Widget 時，Xcode 建置設定遺漏了 <code>Thin Binary</code> 階段，導致生成的 IPA 缺少 <code>Flutter.framework</code> 與 <code>App.framework</code>，在 iPhone 13 啟動時發生瞬間閃退。</p>
-      <p><strong>突破解法：</strong>精準在 <code>project.pbxproj</code> 中恢復瘦身動態庫嵌入腳本，設定於 <code>Embed Watch Content</code> 之後執行，成功打包出包含全架構動態庫的 36.7 MB 正式版 IPA，並升級至 1.1.5 (Build 25) 實機驗證通過。</p>
-    </div>
-  </div>
-
-  <!-- CHAPTER 3: FUNCTION ANATOMY -->
-  <div class="chapter">
-    <div class="chapter-header">
-      <div class="chapter-num">第三章 · 功能剖析與設計細節</div>
-      <h2 class="chapter-title">功能架構：怎麼運作？為什麼這樣設計？</h2>
-    </div>
-    <div class="chapter-intro">
-      深入剖析六大多模態打卡機制、雙向照護模式、獨立經文閱讀器與 AES 加密配對的底層架構。
-    </div>
-
-    <h3>3.1 六大報平安觸發機制</h3>
     <table>
       <thead>
         <tr>
           <th>觸發途徑</th>
-          <th>情境與運作原理</th>
-          <th>設計抉擇與考量</th>
+          <th>使用方式</th>
+          <th>運作原理與功能後果</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>1. 手機超大卡片一鍵打卡</strong></td>
-          <td>專為習慣拿手機的長輩設計。48dp+ 觸控面積、綠色平安視覺、觸覺震動。</td>
-          <td>點擊後自動關閉，避免長輩不知道如何退出軟體。</td>
+          <td>打開軟體，點擊綠色卡片。</td>
+          <td>重置計時器一與二，寫入 Firestore，更新桌面小工具，觸覺震動並於 500ms 後自動縮小退出。</td>
         </tr>
         <tr>
           <td><strong>2. Apple Watch 手錶伴侶</strong></td>
-          <td>長輩在庭院澆花、散步或沐浴時，手腕輕點「我很好」即可打卡。</td>
-          <td>獨立 watchOS SwiftUI 應用，離線儲存打卡並透過 WatchConnectivity 雙向同步。</td>
+          <td>抬腕看錶，點擊「我很好」。</td>
+          <td>透過 WatchConnectivity 發送加密封包給 iPhone；若 iPhone 不在身邊則手錶本地快取，連線後自動補傳。</td>
         </tr>
         <tr>
           <td><strong>3. Amazon Alexa 智慧語音</strong></td>
-          <td>長輩在床上不便起身或視力退化時：「Alexa，跟 Daily Notify 說我很好。」</td>
-          <td>整合 AWS Polly 智慧語音合成（中文智宇女聲），讓長輩如同在跟親切家人對話。</td>
+          <td>對音箱說：「Alexa，跟 Daily Notify 說我很好。」</td>
+          <td>Echo 音箱連線 AWS Lambda，驗證 6 位數憑證，重置雲端計時器，Alexa 以中文智宇女聲回讀今日金句。</td>
         </tr>
         <tr>
           <td><strong>4. 床頭護眼電子鐘 (Daydream)</strong></td>
-          <td>舊手機/平板插上電源自動化身為 OLED 黑底護眼時鐘，早晨醒來摸一下螢幕即自動打卡！</td>
-          <td>黑色低眩光不干擾睡眠，將「起床」動作無縫轉化為安全打卡信號。</td>
+          <td>手機插上充電器，早晨醒來摸一下螢幕。</td>
+          <td>黑底護眼時鐘，觸摸螢幕任意位置退出時鐘並**自動完成今日打卡**！</td>
         </tr>
         <tr>
           <td><strong>5. 桌面小工具與即時動態</strong></td>
-          <td>在手機桌面/鎖定畫面直接點擊綠色大按鈕打卡，免開啟 App。</td>
-          <td>本地即時快取，確保點擊時零延遲反饋。</td>
+          <td>在手機桌面/鎖定畫面直接點擊綠色按鈕打卡。</td>
+          <td>WidgetKit / AppWidgetProvider 攔截點擊，本地即時變更為 Safe 並非同步上傳雲端。</td>
         </tr>
         <tr>
           <td><strong>6. 跌倒重力衝擊感測</strong></td>
-          <td>運用三軸加速度計與陀螺儀偵測劇烈衝擊，啟動本地警報。</td>
-          <td>嚴格設定 30 秒防誤觸撤銷期，防止手機摔落地板引發虛驚。</td>
+          <td>被動防護。手機感測到重摔撞擊。</td>
+          <td>手機發出警報聲並倒數 30 秒，長者未按「我沒事」撤銷時，自動向家屬發送跌倒警報。</td>
         </tr>
       </tbody>
     </table>
-
-    <h3>3.2 每日經文與靈性慰藉</h3>
-    <p><strong>為什麼將照護與聖經金句結合？</strong> 許多長者排斥標籤化的「老人照護軟體」，但晨起靈修、閱讀金句卻是喜樂的習慣。透過優美的金句分享，長輩使用軟體不再是「被迫被查勤」，而是開啟充滿祝福的一天。支援和合本（CUV）、英文 NIV、KJV 離線全文閱讀，且軟體介面語言與經文語言完全獨立設定。</p>
-
-    <h3>3.3 即時 QR Code 加密配對：為什麼不用輸入帳號？</h3>
-    <p>讓長輩在手機上打長篇英數 Email 或身分字號極易出錯。PNCC 關懷採用動態 AES 加密 QR Code：長輩點擊「我的照護者」產生條碼，家屬開啟相機掃描 3 秒即綁定成功，可由多位兒女同時掃描組成關懷圈。</p>
   </div>
 
-  <!-- CHAPTER 4: USER MANUAL -->
+  <!-- 第四章：設定大全與功能後果 -->
   <div class="chapter">
     <div class="chapter-header">
-      <div class="chapter-num">第四章 · 長輩與家屬使用手冊</div>
-      <h2 class="chapter-title">非技術人員完整步驟指引</h2>
+      <div class="chapter-num">第四章 · 設定大全與功能後果詳解</div>
+      <h2 class="chapter-title">每一項功能設定、選項含義與相應後果</h2>
     </div>
     <div class="chapter-intro">
-      淺顯易懂的圖文步驟，指導長輩與家屬登入、切換角色、配置參數與管理家庭關聯。
+      詳盡介紹設定畫面中的每一個開關、數值、計時器、滑桿及調整後的系統反應與功能後果。
     </div>
 
-    <h3>4.1 登入與帳號管理</h3>
-    <ol>
-      <li><strong>下載安裝：</strong> 於蘋果 App Store 搜尋「PNCC care」，或安卓下載「app-release.apk」安裝。</li>
-      <li><strong>選擇登入方式：</strong>
-        <ul>
-          <li><strong>Sign in with Apple (蘋果用戶推薦)：</strong> 點擊黑色按鈕，以 Face ID / 觸控 ID 一鍵登入。</li>
-          <li><strong>Sign in with Google (安卓用戶推薦)：</strong> 點擊 Google 按鈕直接選擇手機上的帳號。</li>
-          <li><strong>電子郵件註冊：</strong> 輸入信箱與 6 位數以上密碼建立帳號。</li>
-        </ul>
-      </li>
-      <li><strong>帳號管理：</strong> 點擊右上角<strong>設定圖示 (⚙️)</strong>，可查看當前登入信箱與軟體版本，滑至底部點擊「登出」可更換帳號。</li>
-    </ol>
-
-    <h3>4.2 選擇身分與切換角色 (長輩、照護者、雙向模式)</h3>
-    <div class="role-grid">
-      <div class="role-card role-senior">
-        <strong>長輩模式 (Senior)</strong><br>
-        超大綠色卡片、每日靈修經文、床頭護眼夜鐘，介面乾淨純粹。
-      </div>
-      <div class="role-card role-caregiver">
-        <strong>照護者模式 (Caregiver)</strong><br>
-        多位長輩即時燈號、倒數計時、最後活動時間與一鍵撥號/簡訊。
-      </div>
-      <div class="role-card role-dual">
-        <strong>雙向模式 (Dual Mode)</strong><br>
-        同時是長輩也是子女。自己向兒女報平安，同時看護老家長輩。
-      </div>
+    <div class="screenshot-dual">
+      <img src="assets/07_settings_main.png" alt="設定首頁">
+      <img src="assets/09_ipad_settings_detail.png" alt="iPad 設定詳情">
     </div>
-    <p><strong>隨時切換模式：</strong> 進入設定 (⚙️) &rarr; 滑至底部點擊 <strong>「切換身分模式」(⇄)</strong> &rarr; 選擇卡片即刻生效，無須重新登入。</p>
+    <div class="screenshot-caption">圖 4.1：手機端設定選單 (左) 與 平板大螢幕詳細設定視圖 (右)</div>
 
-    <h3>4.3 參數設定詳解 (選項含義與調整建議)</h3>
+    <h3>4.1 安全計時器與休假配置</h3>
     <table>
       <thead>
         <tr>
           <th>設定項目</th>
-          <th>適用身分</th>
-          <th>含義與調整指引</th>
+          <th>可選範圍 / 數值</th>
+          <th>詳細運作機制與功能後果 (Consequence)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>平安打卡週期 (計時器一)</strong></td>
-          <td>長輩 / 雙向</td>
-          <td>長輩預期多久打卡一次（預設 1440 分鐘 = 24 小時）。綠色安全燈在此時間內持續倒數。</td>
+          <td>60 至 2880 分鐘<br>(預設：1440m = 24小時)</td>
+          <td><strong>機制：</strong> 正常平安安全窗倒數。<br><strong>後果：</strong> 計時器一歸零後，首頁狀態從綠燈轉為黃燈預警，向長輩手機發送打卡提醒。<strong>若設為 0 則關閉所有安全監測與警報</strong>。</td>
         </tr>
         <tr>
           <td><strong>警報逾時時限 (計時器二)</strong></td>
-          <td>長輩 / 雙向</td>
-          <td>超過週期後的寬限時間（預設 1500 分鐘 = 25 小時）。此階段轉為黃燈預警，若超時則通知家屬。若兩計時器皆設為 0 則關閉警報。</td>
+          <td>0 至 720 分鐘<br>(預設：60分鐘寬限，或0)</td>
+          <td><strong>機制：</strong> 計時器一到期後的寬限緩衝期。<br><strong>後果：</strong> 計時器二歸零後，狀態翻轉為紅燈緊急警報，向所有已綁定的家屬發送高優先級警報推播與橫幅。若設為 0 則計時器一到期立即報警。</td>
         </tr>
         <tr>
-          <td><strong>休假 / 暫停監護</strong></td>
-          <td>長輩 / 雙向</td>
-          <td>設定起始與結束日期。暫停期間停止倒數與發送警報，家屬端顯示灰色「休假中」標籤。</td>
-        </tr>
-        <tr>
-          <td><strong>跌倒感測與靈敏度</strong></td>
-          <td>長輩 / 雙向</td>
-          <td>開啟衝擊偵測。鋪地毯環境建議「高靈敏度」，木地板建議「中」，磁磚建議「低」。</td>
-        </tr>
-        <tr>
-          <td><strong>介面語言與聖經譯本</strong></td>
-          <td>所有身分</td>
-          <td>雙軌獨立：介面語言可選繁中、簡中、英文；聖經譯本可選和合本、NIV、KJV。</td>
-        </tr>
-        <tr>
-          <td><strong>照護者警報橫幅自訂</strong></td>
-          <td>照護者 / 雙向</td>
-          <td>可自由選擇紅燈警報底色與脈衝閃爍動畫，或切換為簡潔橫幅模式。</td>
+          <td><strong>休假 / 暫停監護模式</strong></td>
+          <td>日期範圍選擇器 (起訖日期)</td>
+          <td><strong>機制：</strong> 長輩出遊、返鄉或住院期間暫停監測。<br><strong>後果：</strong> 暫停期間計時器凍結，不觸發黃燈與紅燈警報，家屬端顯示灰色「休假中」徽章。完全避免誤報干擾。</td>
         </tr>
       </tbody>
     </table>
 
-    <h3>4.4 建立關懷關係 (掃碼配對步驟)</h3>
-    <ol>
-      <li><strong>長輩手機端：</strong> 開啟設定 &rarr; 點選 <strong>「我的照護者」</strong>，螢幕顯示專屬加密 QR Code。</li>
-      <li><strong>子女手機端：</strong> 進入照護者儀表板 &rarr; 點擊右下角藍色 <strong>「+」</strong> &rarr; 點擊 <strong>「掃描 QR Code」</strong>。</li>
-      <li><strong>對準掃描：</strong> 對準長輩螢幕掃描，長輩卡片立刻出現在子女的手機首頁中！多位兒女可重複掃描同一張二維碼共同看護。</li>
-    </ol>
+    <h3>4.2 被動感測與自動報平安機制</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>設定項目</th>
+          <th>可選設定</th>
+          <th>詳細運作機制與功能後果 (Consequence)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>充電狀態變動自動報平安</strong></td>
+          <td>開啟 / 關閉 (預設開啟)</td>
+          <td><strong>機制：</strong> 廣播接收器監聽插上或拔掉充電線動作。<br><strong>後果：</strong> 長輩晚上睡前插上充電、或早晨拔掉充電線時，系統靜默視為一次有效活動並重置計時器！長輩完全不用開軟體。</td>
+        </tr>
+        <tr>
+          <td><strong>解鎖螢幕自動報平安</strong></td>
+          <td>開啟 / 關閉 (預設開啟)</td>
+          <td><strong>機制：</strong> 監聽系統螢幕解鎖 (ACTION_USER_PRESENT) 事件。<br><strong>後果：</strong> 長輩只要解鎖手機看照片、讀簡訊或聽語音，系統自動確認長者平安並重置安全計時器。</td>
+        </tr>
+        <tr>
+          <td><strong>Apple 健康 / Google 健身同步</strong></td>
+          <td>開啟 / 關閉 (預設關閉)</td>
+          <td><strong>機制：</strong> 讀取 HealthKit 或 Google Fit 步數與心率。<br><strong>後果：</strong> 過去 1 小時內步數大於 100 步、或 Apple Watch 記錄到活動心率時，自動確認安全並更新最後活動時間。</td>
+        </tr>
+        <tr>
+          <td><strong>跌倒撞擊靈敏度</strong></td>
+          <td>高 (地毯軟地面)<br>標準 (木地板)<br>低 (堅硬瓷磚)</td>
+          <td><strong>機制：</strong> 設定加速度計重力衝擊閾值。<br><strong>後果：</strong> 「高」在 1.8G 觸發，「標準」在 2.5G，「低」在 3.2G。偵測到撞擊後強制啟動 30 秒本機倒數取消窗，防止手機掉落地面造成誤報。</td>
+        </tr>
+        <tr>
+          <td><strong>搖晃求助警報</strong></td>
+          <td>開啟 / 關閉 (預設關閉)</td>
+          <td><strong>機制：</strong> 連續劇烈搖晃手機感測。<br><strong>後果：</strong> 長輩突發心悸或遭受威脅時，用力搖晃設備 3 秒立即啟動 10 秒倒數，隨後發送求救警報並呼叫聯絡人。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.3 地理圍欄與安全區域</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>設定項目</th>
+          <th>可選設定</th>
+          <th>詳細運作機制與功能後果 (Consequence)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>啟用安全區域</strong></td>
+          <td>開啟 / 關閉</td>
+          <td><strong>機制：</strong> 背景 GPS 圓形地理圍欄監測。<br><strong>後果：</strong> 長輩處於設定的安全區域（如家中）時自動放寬或暫停計時；若長者離開指定區域，恢復監測或通知家屬（防走失重要功能）。</td>
+        </tr>
+        <tr>
+          <td><strong>安全區坐標</strong></td>
+          <td>地圖選點器 / 目前 GPS</td>
+          <td><strong>後果：</strong> 設定安全區域中心點（如長輩住家）。</td>
+        </tr>
+        <tr>
+          <td><strong>安全區半徑</strong></td>
+          <td>50m, 100m, 200m, 500m</td>
+          <td><strong>後果：</strong> 設定防護範圍半徑。200 公尺半徑足以涵蓋長輩住家、前後院與庭院周遭。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.4 介面外觀、語言與照護者自訂</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>設定項目</th>
+          <th>可選設定</th>
+          <th>詳細運作機制與功能後果 (Consequence)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>軟體介面語言</strong></td>
+          <td>繁體中文 / 簡體中文 / 英文</td>
+          <td><strong>後果：</strong> 改變按鈕、選單與說明文字語言。與聖經譯本完全解耦獨立。</td>
+        </tr>
+        <tr>
+          <td><strong>聖經譯本</strong></td>
+          <td>和合本 (CUV)<br>英文 NIV<br>英文 KJV</td>
+          <td><strong>後果：</strong> 決定每日金句與離線閱讀器語言。長輩看中文聖經，海外子女用英文介面，互不衝突。</td>
+        </tr>
+        <tr>
+          <td><strong>打卡後自動縮小退出</strong></td>
+          <td>開啟 / 關閉 (預設開啟)</td>
+          <td><strong>後果：</strong> 開啟時點擊打卡 500ms 後自動返回手機桌面；關閉時保持留在長輩首頁。</td>
+        </tr>
+        <tr>
+          <td><strong>照護者警報橫幅脈衝閃爍</strong></td>
+          <td>開啟 / 關閉 (預設開啟)</td>
+          <td><strong>後果：</strong> 紅燈時橫幅持續呼吸閃爍以加強警示；關閉時呈現靜態紅底。</td>
+        </tr>
+        <tr>
+          <td><strong>即時動態 (iOS 靈動島)</strong></td>
+          <td>平時顯示 / 逾時顯示開關</td>
+          <td><strong>後果：</strong> 決定鎖定畫面是否在安全平時持續常駐倒數，或僅在黃燈/紅燈逾時時才彈出提示。</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  <!-- CHAPTER 5: CLINICAL CAREGIVER SCENARIOS -->
+  <!-- 第五章：配對與照護者儀表板 -->
   <div class="chapter">
     <div class="chapter-header">
-      <div class="chapter-num">第五章 · 照護者實戰處置手冊</div>
-      <h2 class="chapter-title">照護者會遇到哪些狀態？在軟體中該如何處置？</h2>
+      <div class="chapter-num">第五章 · 配對綁定與照護者儀表板</div>
+      <h2 class="chapter-title">三秒動態掃碼配對與五大即時狀態處置手冊</h2>
     </div>
     <div class="chapter-intro">
-      家屬在日常生活中面對綠燈、黃燈、紅燈、跌倒警報與離線時的具體標準處置流程。
+      手把手教您如何配對長輩與子女，以及照護者在不同燈號時的標準應變處置標準流程。
     </div>
 
-    <h3>5.1 五大即時狀態應變指引</h3>
+    <h3>5.1 三秒動態 AES QR Code 掃碼配對</h3>
+    <ol>
+      <li><strong>長輩手機端：</strong> 開啟設定 &rarr; 點選 <strong>「我的照護者」</strong>，螢幕呈現專屬加密 QR Code。</li>
+      <li><strong>子女手機端：</strong> 進入照護者儀表板 &rarr; 點擊右下角藍色圓形 <strong>「+」</strong> 號 &rarr; 點擊 <strong>「掃描 QR Code」</strong>。</li>
+      <li><strong>對準掃描：</strong> 對準長輩螢幕掃描，長輩卡片立刻出現在子女儀表板上！多位兒女可重複掃描同一張二維碼組成關懷圈。</li>
+    </ol>
+
+    <h3>5.2 照護者儀表板功能與多長輩管理</h3>
+    <div class="screenshot-dual">
+      <img src="assets/04_caregiver_dashboard.png" alt="照護者儀表板">
+      <img src="assets/08_ipad_caregiver_grid.png" alt="iPad 照護者網格">
+    </div>
+    <div class="screenshot-caption">圖 5.1：手機端照護者儀表板 (左) 與 平板多長輩看護網格 (右)</div>
+
+    <h3>5.3 照護者面對五大即時狀態之處置指引 (SOP)</h3>
     <div class="card">
       <h4><span class="badge badge-green">狀態一：綠燈 · 平安守護中 (Safe)</span></h4>
-      <p><strong>畫面特徵：</strong> 長輩卡片呈現溫潤綠色，標註「平安打卡完畢」，顯示最後打卡時間（如「今天 08:30 AM 透過 Apple Watch」）。</p>
-      <p><strong>家屬處置：</strong> 完全安心！子女無須採取任何打擾動作。可點擊快捷按鈕傳送溫馨關懷短訊。</p>
+      <p><strong>狀態解讀：</strong> 長輩在安全週期內打卡（如今天 08:30 AM 透過 Apple Watch）。</p>
+      <p><strong>處置指引：</strong> 全家安心！無須採取任何打擾動作。可點擊快捷圖示發送溫馨祝福簡訊。</p>
     </div>
 
     <div class="card">
-      <h4><span class="badge badge-amber">狀態二：黃燈 · 預警緩衝期 (Warning / Overdue)</span></h4>
-      <p><strong>畫面特徵：</strong> 綠燈週期已滿，進入計時器二之寬限階段。卡片呈現柔和黃色。</p>
-      <p><strong>家屬處置：</strong> 切勿慌張。長輩可能只是睡得較晚、出門散步或未隨身攜帶手機。可撥打一般電話或傳訊息問候：「媽媽早安，今天精神好嗎？」</p>
+      <h4><span class="badge badge-amber">狀態二：黃燈 · 預警寬限期 (Warning / Overdue)</span></h4>
+      <p><strong>狀態解讀：</strong> 計時器一到期，進入計時器二之緩衝階段。長輩可能睡晚、洗澡或散步中。</p>
+      <p><strong>處置指引：</strong> **切勿慌張**。發送一般簡訊或撥打親切問候電話：「媽媽早安，今天精神好嗎？」</p>
     </div>
 
     <div class="card">
       <h4><span class="badge badge-red">狀態三：紅燈 · 逾時緊急警報 (Emergency Timeout)</span></h4>
-      <p><strong>畫面特徵：</strong> 寬限期已完全耗盡，無任何裝置打卡。系統跳出紅色醒目橫幅並發出推播。</p>
-      <p><strong>家屬處置：</strong>
+      <p><strong>狀態解讀：</strong> 雙層計時器皆耗盡，無任何裝置打卡。系統跳出紅色橫幅並發出警報推播。</p>
+      <p><strong>處置指引：</strong>
         <ol>
           <li>直接點擊卡片上的「電話圖示」緊急呼叫長輩。</li>
           <li>若無人接聽，撥打鄰居、社區管理室或居住在附近的親友協助查看。</li>
-          <li>若依舊失聯，依家庭約定啟動緊急救援程序。</li>
+          <li>若依舊失聯，依家庭約定立即前往住處或啟動安全訪視程序。</li>
         </ol>
       </p>
     </div>
 
     <div class="card">
       <h4><span class="badge badge-red">狀態四：紅燈 · 跌倒警報觸發 (Fall Detected)</span></h4>
-      <p><strong>畫面特徵：</strong> 長輩手機感應到劇烈撞擊，且 30 秒內未被手動取消，推送跌倒警報。</p>
-      <p><strong>家屬處置：</strong> 第一時間撥打電話確認長輩神智與傷勢；若無人回應，請就近親屬或撥打 119/911 前往住處馳援。</p>
+      <p><strong>狀態解讀：</strong> 長輩手機感應到劇烈撞擊，且 30 秒內未被手動取消。</p>
+      <p><strong>處置指引：</strong> 第一時間撥通電話確認長輩神智與是否受傷；若無法取得聯繫，請立即請就近親友或撥打 119/911 前往住處馳援。</p>
     </div>
 
     <div class="card">
-      <h4><span class="badge badge-blue">狀態五：灰燈 · 休假/暫停監護 (Vacation)</span></h4>
-      <p><strong>畫面特徵：</strong> 長輩卡片顯示平靜灰色「休假中」徽章。</p>
-      <p><strong>家屬處置：</strong> 系統已暫停所有警報與計時器，長輩與親友團聚或就醫期間免除誤報干擾。</p>
+      <h4><span class="badge badge-grey">狀態五：灰燈 · 休假/暫停監護 (Vacation)</span></h4>
+      <p><strong>狀態解讀：</strong> 長輩正處於出遊或住院設定期內，所有警報均已暫停。</p>
+      <p><strong>處置指引：</strong> 免除假警報干擾，安心陪伴長輩度假或休養。</p>
     </div>
   </div>
 
-  <!-- CHAPTER 6: ROADMAP -->
+  <!-- 第六章：靈修、限制與未來藍圖 -->
   <div class="chapter">
     <div class="chapter-header">
-      <div class="chapter-num">第六章 · 發展瓶頸與未來藍圖</div>
-      <h2 class="chapter-title">當前限制與未來願景規劃 (Roadmap)</h2>
+      <div class="chapter-num">第六章 · 每日靈修、當前限制與未來藍圖</div>
+      <h2 class="chapter-title">靈修閱讀、工程極限與未來 24 個月演進藍圖</h2>
     </div>
     <div class="chapter-intro">
-      坦承當前技術邊界，展望結合微波毫米波無感雷達、自主語音電話外呼與離線手錶雲同步的宏偉願景。
+      結合心靈平安與安全守護，坦承當前技術邊界，展望無感雷達與電信直連的宏偉願景。
     </div>
 
-    <h3>6.1 當前實作限制</h3>
+    <h3>6.1 離線聖經章節閱讀器</h3>
+    <div class="screenshot-dual">
+      <img src="assets/05_daily_scripture.png" alt="今日經文">
+      <img src="assets/06_offline_bible_reader.png" alt="離線聖經">
+    </div>
+    <div class="screenshot-caption">圖 6.1：每日經文卡片 (左) 與 離線全章節聖經閱讀器 (右)</div>
+    <p>長輩每天醒來閱讀今日金句，點擊卡片可開啟 100% 離線的全文閱讀器。支援和合本、NIV、KJV 譯本自由切換，字體大小可無級調節，將安全守護昇華為心靈享受。</p>
+
+    <h3>6.2 當前實作限制</h3>
     <ul>
       <li><strong>遠距同步依賴網路：</strong> 本地打卡、聖經閱讀、跌倒感測與床頭夜鐘皆可 100% 離線運作，但向遠方子女儀表板同步仍需要長輩手機連上 Wi-Fi 或行動網路。</li>
       <li><strong>語音智慧音箱依賴硬體：</strong> Alexa 語音打卡需配合 Amazon Echo 設備或 Alexa App。</li>
-      <li><strong>蘋果系統背景電源排程：</strong> iOS 在未開啟體能訓練（Workout）模式下，背景感測器與常駐執行緒受蘋果電源管理調度約束。</li>
+      <li><strong>蘋果系統背景電源排程：</strong> iOS 在未開啟體能訓練模式下，背景感測器與常駐執行緒受蘋果電源管理調度約束。</li>
     </ul>
 
-    <h3>6.2 未來演進願景 (未來 12-24 個月)</h3>
+    <h3>6.3 未來演進願景 (未來 12-24 個月)</h3>
     <ol>
-      <li><strong>電信自動語音電話與簡訊回退 (PSTN Call Fallback)：</strong> 若家屬未安裝 App 或網路中斷，雲端伺服器在紅燈觸發時將自動外撥真實行動電話語音通知家屬。</li>
+      <li><strong>電信自動語音電話與簡訊回退 (PSTN Call Fallback)：</strong> 若家屬手機離線或未安裝 App，當紅燈警報觸發時，雲端伺服器在紅燈觸發時將自動外撥真實行動電話語音通知家屬。</li>
       <li><strong>Matter / 60GHz 毫米波雷達無感偵測：</strong> 整合無鏡頭之毫米波雷達，被動感測長者下床走動與呼吸起伏，徹底實現「連螢幕都不用摸」的極致被動平安感知。</li>
-      <li><strong>AI 規律異常早期偵測：</strong> 機器學習演算法學習長輩起床打卡的生物節律；若長輩平時皆在 7:30 打卡，某日過 9:00 仍未動作，提前以溫和方式提醒。</li>
-      <li><strong>Apple Watch 獨立蜂巢網路連線：</strong> 支援 Apple Watch LTE 獨立直連 Firebase 雲端，外出散步免隨身帶 iPhone 即可實現全球即時通訊。</li>
+      <li><strong>AI 生物節律規律異常早期偵測：</strong> 機器學習演算法學習長輩起床打卡的生物節律；若長輩平時皆在 7:30 打卡，某日過 9:00 仍未動作，提前以溫和方式提醒。</li>
+      <li><strong>Apple Watch 獨立蜂巢網路雲同步：</strong> 支援 Apple Watch LTE 獨立直連 Firebase 雲端，外出散步免隨身帶 iPhone 即可實現全球即時通訊。</li>
     </ol>
   </div>
 
