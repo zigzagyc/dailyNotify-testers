@@ -7,7 +7,7 @@
 
   @page {
     size: A4;
-    margin: 16mm 14mm 16mm 14mm;
+    margin: 14mm 12mm 14mm 12mm;
     @bottom-right {
       content: counter(page);
     }
@@ -20,8 +20,8 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #1E293B;
-    line-height: 1.62;
-    font-size: 10.5pt;
+    line-height: 1.5;
+    font-size: 9.5pt;
     margin: 0;
     padding: 0;
     background: #FFFFFF;
@@ -29,131 +29,124 @@
   .cover {
     page-break-after: always;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 36px;
   }
   .cover-logo {
-    width: 85px;
-    height: 85px;
+    width: 76px;
+    height: 76px;
     background: linear-gradient(135deg, #2563EB, #1D4ED8);
-    border-radius: 22px;
-    margin: 0 auto 14px auto;
+    border-radius: 20px;
+    margin: 0 auto 12px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 44px;
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.25);
+    font-size: 38px;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
   }
   .cover-title {
-    font-size: 26pt;
+    font-size: 24pt;
     font-weight: 800;
     color: #0F172A;
     margin: 0 0 6px 0;
     letter-spacing: -0.5px;
   }
   .cover-subtitle {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 600;
     color: #2563EB;
-    margin: 0 0 16px 0;
+    margin: 0 0 14px 0;
   }
   .cover-desc {
-    font-size: 11pt;
+    font-size: 10.5pt;
     color: #475569;
     max-width: 620px;
-    margin: 0 auto 20px auto;
-    line-height: 1.65;
+    margin: 0 auto 16px auto;
+    line-height: 1.55;
   }
   .cover-badges {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .cover-badge {
     background: #F1F5F9;
     color: #334155;
-    padding: 4px 10px;
-    border-radius: 10px;
-    font-size: 9.5pt;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 8.5pt;
     font-weight: 600;
   }
   .cover-meta {
-    margin-top: 30px;
-    font-size: 9.5pt;
+    margin-top: 24px;
+    font-size: 9pt;
     color: #64748B;
     border-top: 1px solid #E2E8F0;
-    padding-top: 10px;
-    line-height: 1.6;
+    padding-top: 8px;
+    line-height: 1.5;
   }
+  /* Natural chapter flow without forcing blank half-pages */
   .chapter {
-    page-break-before: always;
-    padding-top: 6px;
+    page-break-before: auto;
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 2px solid #E2E8F0;
+  }
+  .chapter:first-of-type {
+    border-top: none;
+    margin-top: 0;
   }
   .chapter-header {
-    border-bottom: 3px solid #2563EB;
-    padding-bottom: 5px;
-    margin-bottom: 12px;
+    border-bottom: 2px solid #2563EB;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
   }
   .chapter-num {
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: 700;
     color: #2563EB;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 2px;
+    letter-spacing: 0.8px;
+    margin-bottom: 1px;
   }
   .chapter-title {
-    font-size: 17pt;
+    font-size: 15pt;
     font-weight: 800;
     color: #0F172A;
     margin: 0;
   }
   .chapter-intro {
-    font-size: 10.5pt;
+    font-size: 9.5pt;
     color: #334155;
     background: #F8FAFC;
-    border-left: 4px solid #2563EB;
-    padding: 8px 12px;
-    margin-bottom: 12px;
-    border-radius: 0 6px 6px 0;
+    border-left: 3px solid #2563EB;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border-radius: 0 4px 4px 0;
   }
   h3 {
-    font-size: 12pt;
-    font-weight: 700;
-    color: #0F172A;
-    margin-top: 14px;
-    margin-bottom: 5px;
-    border-left: 3px solid #3B82F6;
-    padding-left: 6px;
-  }
-  h4 {
     font-size: 11pt;
     font-weight: 700;
-    color: #1E293B;
-    margin-top: 10px;
-    margin-bottom: 3px;
+    color: #0F172A;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-left: 3px solid #3B82F6;
+    padding-left: 6px;
+    page-break-after: avoid;
   }
-  p { margin: 0 0 7px 0; }
-  ul, ol { margin: 3px 0 8px 16px; padding: 0; }
-  li { margin-bottom: 3px; }
-  .card {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 6px;
-    padding: 9px 12px;
-    margin-bottom: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  }
+  p { margin: 0 0 5px 0; }
+  ul, ol { margin: 2px 0 6px 14px; padding: 0; }
+  li { margin-bottom: 2px; }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0 12px 0;
-    font-size: 9.5pt;
+    margin: 6px 0 10px 0;
+    font-size: 8.5pt;
   }
   th, td {
-    padding: 5px 7px;
+    padding: 4px 6px;
     text-align: left;
     border: 1px solid #CBD5E1;
   }
@@ -162,104 +155,52 @@
     color: #0F172A;
     font-weight: 700;
   }
-  .screenshot-container {
-    text-align: center;
-    margin: 10px 0 14px 0;
-    page-break-inside: avoid;
-  }
-  .screenshot-container img {
-    max-width: 250px;
-    max-height: 400px;
-    border-radius: 10px;
-    border: 2px solid #CBD5E1;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    display: inline-block;
-  }
-  .screenshot-dual {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    margin: 10px 0 14px 0;
-    page-break-inside: avoid;
-  }
-  .screenshot-dual img {
-    max-width: 220px;
-    max-height: 360px;
-    border-radius: 10px;
-    border: 2px solid #CBD5E1;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  }
-  .screenshot-caption {
-    font-size: 9pt;
-    font-weight: 600;
-    color: #475569;
-    margin-top: 5px;
-  }
-  .badge {
-    display: inline-block;
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-size: 8.5pt;
-    font-weight: bold;
-    color: white;
-  }
-  .badge-green { background: #22C55E; }
-  .badge-amber { background: #F59E0B; }
-  .badge-red { background: #EF4444; }
-  .badge-blue { background: #3B82F6; }
-  .badge-grey { background: #64748B; }
-  .code-block {
-    background: #0F172A;
-    color: #E2E8F0;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 9pt;
-    margin: 8px 0;
-    overflow-x: auto;
-  }
-
+  /* Inline Compact Screenshot Grids */
   .screenshot-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-    margin: 14px 0 18px 0;
-    page-break-inside: avoid;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 8px 0 12px 0;
   }
   .screenshot-item {
     text-align: center;
     page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 4px;
   }
   .screenshot-item.narrow {
-    width: 220px;
+    width: 140px;
   }
   .screenshot-item.wide {
-    width: 440px;
+    width: 290px;
   }
   .screenshot-item img {
     width: 100%;
-    max-height: 380px;
+    max-height: 190px;
     object-fit: contain;
-    border-radius: 8px;
-    border: 1.5px solid #CBD5E1;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
     background: #F8FAFC;
+    display: block;
   }
   .screenshot-item .caption {
-    font-size: 8.5pt;
+    font-size: 7.5pt;
     font-weight: 600;
     color: #475569;
-    margin-top: 5px;
-    line-height: 1.35;
+    margin-top: 3px;
+    line-height: 1.25;
   }
+
 </style>
 </head>
 <body>
   <div class="cover">
     <div class="cover-logo">✝</div>
     <h1 class="cover-title">PNCC Care (dailyNotify)</h1>
-    <div class="cover-subtitle">Comprehensive Architectural Dossier & Complete Illustrated User Manual (56 Screenshots Edition)</div>
+    <div class="cover-subtitle">Comprehensive Architectural Dossier & Complete Illustrated User Manual (Compact Layout Edition)</div>
     <div class="cover-desc">
       A dignity-first, zero-burden elderly safety and spiritual accompaniment ecosystem engineered for solitary seniors, family guardians, and parish care networks.
     </div>
@@ -268,7 +209,7 @@
       <span class="cover-badge">iOS & iPadOS 16.0+</span>
       <span class="cover-badge">watchOS 9.0+ Independent</span>
       <span class="cover-badge">Android 9.0+</span>
-      <span class="cover-badge">56 Full Screenshots Included</span>
+      <span class="cover-badge">56 Full Screenshots</span>
     </div>
     <div class="cover-meta">
       <strong>Polish National Catholic Church (PNCC)</strong> · Christian Care & Safety Initiative<br>
@@ -282,15 +223,23 @@
       <h2 class="chapter-title">Sociological Context, Geriatric Psychology & Design Philosophy</h2>
     </div>
     <div class="chapter-intro">Reconciling family anxiety and elder dignity in an aging society. Why conventional monitoring paradigms fail, and how PNCC Care pioneers 'Passive-Active Balance'.</div>
+
+    <h3>1.1 The Solitary Senior Epidemic & The Sandwich Generation Burden</h3>
+    <p>Throughout developed economies, demographic shifts have produced unprecedented numbers of solitary elders. Adult children work demanding jobs or reside in distant cities. Simultaneously, the 'Sandwich Generation' (individuals aged 45–65) finds itself crushed between raising teenage children and overseeing elderly parents living alone.</p><p>This produces chronic psychological strain: the adult child lives in constant fear that an accident has occurred behind closed doors, while the aging parent feels a relentless pressure to demonstrate they are not becoming a burden to their family.</p>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
-        <img src="assets/07_senior_dashboard_iphone13.png" alt="Fig 1.1: Senior Dashboard on iPhone 13 (High Legibility Layout)">
-        <div class="caption">Fig 1.1: Senior Dashboard on iPhone 13 (High Legibility Layout)</div>
+        <img src="assets/07_senior_dashboard_iphone13.png" alt="Fig 1.1: Senior Dashboard on iPhone 13 (High Legibility)">
+        <div class="caption">Fig 1.1: Senior Dashboard on iPhone 13 (High Legibility)</div>
       </div>
       <div class="screenshot-item narrow">
-        <img src="assets/10_senior_dashboard_compact.png" alt="Fig 1.2: Compact Dynamic Type Adaptation for Standard Display">
-        <div class="caption">Fig 1.2: Compact Dynamic Type Adaptation for Standard Display</div>
+        <img src="assets/10_senior_dashboard_compact.png" alt="Fig 1.2: Warning State with Countdown (Amber)">
+        <div class="caption">Fig 1.2: Warning State with Countdown (Amber)</div>
       </div>
+    </div>
+
+    <h3>1.2 The Psychological Failure of Surveillance, Daily Interrogation & Panic Pendants</h3>
+    <p>Most digital health and eldercare solutions are designed from an engineering-first or institutional viewpoint, completely ignoring the psychological self-esteem of the senior:</p><ul><li><strong>Indoor Surveillance Cameras:</strong> Placing cameras in living spaces violates human dignity. Elders report feeling like laboratory specimens or prisoners under probation, frequently covering lenses with towels or unplugging routers.</li><li><strong>Routine Interrogation Phone Calls:</strong> Calling an 80-year-old father daily solely to ask <em>'Did you take your pills? Are you still alive?'</em> infantilizes the parent, turning filial love into a resented clinical inspection.</li><li><strong>Medical Emergency Pendants:</strong> Over 70% of purchased panic buttons end up locked in nightstand drawers. Seniors refuse to wear them in public because they broadcast infirmity and frailty to neighbors.</li></ul>
+    <div class="screenshot-grid">
       <div class="screenshot-item wide">
         <img src="assets/40_widgets_lockscreen_home.png" alt="Fig 1.3: iOS Lock Screen & Home Screen Glanceable Widgets">
         <div class="caption">Fig 1.3: iOS Lock Screen & Home Screen Glanceable Widgets</div>
@@ -305,12 +254,6 @@
       </div>
     </div>
 
-    <h3>1.1 The Solitary Senior Epidemic & The Sandwich Generation Burden</h3>
-    <p>Throughout developed economies, demographic shifts have produced unprecedented numbers of solitary elders. Adult children work demanding jobs or reside in distant cities. Simultaneously, the 'Sandwich Generation' (individuals aged 45–65) finds itself crushed between raising teenage children and overseeing elderly parents living alone.</p><p>This produces chronic psychological strain: the adult child lives in constant fear that an accident has occurred behind closed doors, while the aging parent feels a relentless pressure to demonstrate they are not becoming a burden to their family.</p>
-
-    <h3>1.2 The Psychological Failure of Surveillance, Daily Interrogation & Panic Pendants</h3>
-    <p>Most digital health and eldercare solutions are designed from an engineering-first or institutional viewpoint, completely ignoring the psychological self-esteem of the senior:</p><ul><li><strong>Indoor Surveillance Cameras:</strong> Placing cameras in living spaces violates human dignity. Elders report feeling like laboratory specimens or prisoners under probation, frequently covering lenses with towels or unplugging routers.</li><li><strong>Routine Interrogation Phone Calls:</strong> Calling an 80-year-old father daily solely to ask <em>'Did you take your pills? Are you still alive?'</em> infantilizes the parent, turning filial love into a resented clinical inspection.</li><li><strong>Medical Emergency Pendants:</strong> Over 70% of purchased panic buttons end up locked in nightstand drawers. Seniors refuse to wear them in public because they broadcast infirmity and frailty to neighbors.</li></ul>
-
     <h3>1.3 The 'Passive-Active Balance' Axiom: Cognitive, Motor & Visual Ergonomics</h3>
     <p>PNCC Care was designed to invert this paradigm: <strong>A safety check-in must never feel like an inspection; it must be an uplifting, effortless morning ritual taking under 2 seconds.</strong></p><p>We analyzed age-related sensory and motor degradation:</p><ul><li><strong>Presbyopia & Macular Degeneration:</strong> Addressed with high-contrast palette tokens (WCAG AAA ratio > 7:1) and massive 48dp+ interactive cards.</li><li><strong>Essential Tremors & Reduced Finger Dexterity:</strong> Addressed by replacing tiny icon buttons with full-width target hit-areas and haptic confirmation.</li><li><strong>Cognitive Friction & App Trapping:</strong> Addressed by automatically minimizing the application 500ms after a check-in is logged, guaranteeing that elders never feel trapped inside a confusing smartphone interface.</li></ul>
 
@@ -324,6 +267,9 @@
       <h2 class="chapter-title">Full-Stack System Architecture & Cross-Platform Engineering</h2>
     </div>
     <div class="chapter-intro">Technical blueprints of the unified Flutter core, watchOS native SwiftUI companion, Alexa voice skill, and platform channel bridges.</div>
+
+    <h3>2.1 Cross-Platform System Topology</h3>
+    <p>PNCC Care leverages a clean, modular cross-platform architecture that orchestrates native platform capabilities with cloud microservices:</p><ul><li><strong>Mobile Client:</strong> Built on Flutter 3.x / Dart 3.x with Provider-based reactive state management, supporting iOS 15.6+ and Android 8.0 (API 26) through Android 16 (API 36).</li><li><strong>Wearable Companion:</strong> Fully native SwiftUI application running on watchOS 9.0+ communicating via Apple's <code>WatchConnectivity</code> framework.</li><li><strong>Voice Gateway:</strong> Custom Amazon Alexa Voice Skill running on AWS Lambda (Node.js ASK SDK v2) integrated with AWS Polly neural text-to-speech.</li><li><strong>Cloud Persistence:</strong> Google Cloud Firestore NoSQL datastore with real-time websocket snapshot listeners, atomic transactions, and role-based security rules.</li></ul>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/08_senior_dashboard_iphone15.png" alt="Fig 2.1: iPhone 15 Pro Dynamic Island Integration">
@@ -333,6 +279,11 @@
         <img src="assets/12_senior_dashboard_tablet.png" alt="Fig 2.2: Android Tablet Adaptive High-DPI Grid Layout">
         <div class="caption">Fig 2.2: Android Tablet Adaptive High-DPI Grid Layout</div>
       </div>
+    </div>
+
+    <h3>2.2 Apple Watch Companion (watchOS Architecture)</h3>
+    <p>The Apple Watch companion app (<code>PNCCWatch Watch App</code>) is engineered for autonomous wrist operation:</p><ul><li><strong>Dual Operating Modes:</strong> Operates in tethered mode when the iPhone is in Bluetooth proximity, and autonomous mode when the elder is walking or gardening away from their phone.</li><li><strong>WatchConnectivity Session Manager:</strong> Implements <code>WCSessionDelegate</code>. When 'I'm OK' is tapped, it creates a cryptographically signed payload containing the UTC timestamp, battery level, and check-in source, caching locally if disconnected and flushing upon reconnection.</li><li><strong>HealthKit Integration:</strong> Configured with <code>HKHealthStore</code> background delivery permissions (<code>NSHealthShareUsageDescription</code> and <code>NSHealthUpdateUsageDescription</code>) to verify physical active energy.</li></ul>
+    <div class="screenshot-grid">
       <div class="screenshot-item wide">
         <img src="assets/23_caregiver_dashboard_raw.png" alt="Fig 2.3: iPad Pro Caregiver Console Split-View Hierarchy">
         <div class="caption">Fig 2.3: iPad Pro Caregiver Console Split-View Hierarchy</div>
@@ -347,12 +298,6 @@
       </div>
     </div>
 
-    <h3>2.1 Cross-Platform System Topology</h3>
-    <p>PNCC Care leverages a clean, modular cross-platform architecture that orchestrates native platform capabilities with cloud microservices:</p><ul><li><strong>Mobile Client:</strong> Built on Flutter 3.x / Dart 3.x with Provider-based reactive state management, supporting iOS 15.6+ and Android 8.0 (API 26) through Android 16 (API 36).</li><li><strong>Wearable Companion:</strong> Fully native SwiftUI application running on watchOS 9.0+ communicating via Apple's <code>WatchConnectivity</code> framework.</li><li><strong>Voice Gateway:</strong> Custom Amazon Alexa Voice Skill running on AWS Lambda (Node.js ASK SDK v2) integrated with AWS Polly neural text-to-speech.</li><li><strong>Cloud Persistence:</strong> Google Cloud Firestore NoSQL datastore with real-time websocket snapshot listeners, atomic transactions, and role-based security rules.</li></ul>
-
-    <h3>2.2 Apple Watch Companion (watchOS Architecture)</h3>
-    <p>The Apple Watch companion app (<code>PNCCWatch Watch App</code>) is engineered for autonomous wrist operation:</p><ul><li><strong>Dual Operating Modes:</strong> Operates in tethered mode when the iPhone is in Bluetooth proximity, and autonomous mode when the elder is walking or gardening away from their phone.</li><li><strong>WatchConnectivity Session Manager:</strong> Implements <code>WCSessionDelegate</code>. When 'I'm OK' is tapped, it creates a cryptographically signed payload containing the UTC timestamp, battery level, and check-in source, caching locally if disconnected and flushing upon reconnection.</li><li><strong>HealthKit Integration:</strong> Configured with <code>HKHealthStore</code> background delivery permissions (<code>NSHealthShareUsageDescription</code> and <code>NSHealthUpdateUsageDescription</code>) to verify physical active energy.</li></ul>
-
     <h3>2.3 Amazon Alexa Custom Voice Skill Architecture</h3>
     <p>For seniors unable to reach their phone or with severe arthritis, the Alexa skill provides hands-free safety:</p><ul><li><strong>Voice Utterance Processing:</strong> Supports English and natural Mandarin Chinese utterances (e.g., <em>'Alexa, tell Daily Notify I am okay'</em>, <em>'Alexa，跟 Daily Notify 說我很好'</em>).</li><li><strong>AWS Polly SSML Synthesis:</strong> Responses utilize AWS Polly's neural Chinese voice (<code>Zhiyu</code>) with customized speech rate and pitch prosody tags to sound warm, gentle, and respectful to elders.</li><li><strong>Cryptographic Device Pairing:</strong> A 6-digit rolling numeric code pairs the Echo speaker with the user's Firestore UID without requiring manual OAuth browser redirects.</li></ul>
 
@@ -366,10 +311,13 @@
       <h2 class="chapter-title">Engineering Challenges, Real-World Pitfalls & Breakthrough Solutions</h2>
     </div>
     <div class="chapter-intro">A candid analysis of technical obstacles, production crashes, battery management constraints, and how our team resolved them.</div>
+
+    <h3>3.1 Challenge 1: The App Store Thin Binary & Missing Framework Crash</h3>
+    <p>During the v1.1.4 release, our team encountered an acute production failure: after passing Apple review, the app crashed immediately upon launch on iPhone 13 devices.</p><p><strong>Root Cause Analysis:</strong> When adding the native watchOS target and WidgetKit extension, Xcode's <code>project.pbxproj</code> inadvertently omitted Flutter's <code>Thin Binary</code> shell script build phase (<code>xcode_backend.sh embed_and_thin</code>). As a result, the produced IPA (15.8 MB) lacked <code>Payload/Runner.app/Frameworks/Flutter.framework</code> and <code>App.framework</code>. Upon launch, Apple's dynamic linker (<code>dyld</code>) aborted execution with <code>image not found: @rpath/Flutter.framework/Flutter</code>.</p><p><strong>Permanent Resolution:</strong> We re-inserted build phase <code>3B06AD1E1E4923F5004D2608 /* Thin Binary */</code> into <code>Runner</code>'s buildPhases directly following <code>Embed Watch Content</code>. We emptied <code>inputPaths</code> to eliminate Xcode 15 dependency cycle warnings, successfully restored dynamic library embedding, verified the 36.7 MB binary on physical iPhone 13 hardware, and incremented the train to v1.1.5 (Build 25).</p>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
-        <img src="assets/01_login_options_phone.png" alt="Fig 3.1: Phone Biometric & Passwordless Login Screen">
-        <div class="caption">Fig 3.1: Phone Biometric & Passwordless Login Screen</div>
+        <img src="assets/01_login_options_phone.png" alt="Fig 3.1: Phone Biometric & Passwordless Login">
+        <div class="caption">Fig 3.1: Phone Biometric & Passwordless Login</div>
       </div>
       <div class="screenshot-item wide">
         <img src="assets/02_login_options_ipad.png" alt="Fig 3.2: iPad Optimized Landscape Authentication Portal">
@@ -379,32 +327,33 @@
         <img src="assets/03_login_social_methods.png" alt="Fig 3.3: Native Apple Sign-In & Google SSO Buttons">
         <div class="caption">Fig 3.3: Native Apple Sign-In & Google SSO Buttons</div>
       </div>
+    </div>
+
+    <h3>3.2 Challenge 2: Background Execution Throttling & Battery Optimization Policies</h3>
+    <p>Modern mobile operating systems strictly throttle background CPU execution to preserve battery life:</p><ul><li><strong>iOS BackgroundTasks & Energy Budgeting:</strong> iOS limits arbitrary background code execution. We resolved this by combining periodic <code>BGAppRefreshTask</code> schedules with silent high-priority remote APNs push notifications and HealthKit workout sessions.</li><li><strong>Android Doze Mode & Manufacturer Whitelisting:</strong> Android aggressive battery managers (e.g. Xiaomi MIUI, Huawei EMUI) terminate background services. We engineered foreground sticky services, configured battery optimization ignore prompts, and implemented system broadcast listeners that wake up transiently on power and unlock events.</li></ul>
+    <div class="screenshot-grid">
       <div class="screenshot-item narrow">
-        <img src="assets/04_role_selection_cards.png" alt="Fig 3.4: Dual Role Selector (Senior vs. Caregiver)">
-        <div class="caption">Fig 3.4: Dual Role Selector (Senior vs. Caregiver)</div>
+        <img src="assets/04_role_selection_cards.png" alt="Fig 3.4: Family Pairing QR Code Interface">
+        <div class="caption">Fig 3.4: Family Pairing QR Code Interface</div>
       </div>
-      <div class="screenshot-item wide">
-        <img src="assets/05_role_selection_ipad.png" alt="Fig 3.5: Tablet Multi-Account & Profile Selection Matrix">
-        <div class="caption">Fig 3.5: Tablet Multi-Account & Profile Selection Matrix</div>
+      <div class="screenshot-item narrow">
+        <img src="assets/05_role_selection_ipad.png" alt="Fig 3.5: Role Selection Screen (Senior vs. Caregiver)">
+        <div class="caption">Fig 3.5: Role Selection Screen (Senior vs. Caregiver)</div>
       </div>
       <div class="screenshot-item narrow">
         <img src="assets/06_role_switch_dialog.png" alt="Fig 3.6: Instant Role Toggle Confirmation Dialog">
         <div class="caption">Fig 3.6: Instant Role Toggle Confirmation Dialog</div>
       </div>
+    </div>
+
+    <h3>3.3 Challenge 3: False Alarm Mitigation & The Two-Tier Timer Mathematical Model</h3>
+    <p>The primary reason families abandon elder monitoring apps is false alarm fatigue. If an emergency siren sounds on an adult child's phone merely because Grandma took an afternoon nap or went shopping, trust collapses.</p><p>We developed a rigorous Two-Tier Inactivity Model governed by the following state equation:</p><div class='code-block'>State(t) = GREEN (Safe),    for t_now - t_last &lt;= Timer_1<br>State(t) = AMBER (Warning), for Timer_1 &lt; t_now - t_last &lt;= Timer_1 + Timer_2<br>State(t) = RED (Emergency), for t_now - t_last &gt; Timer_1 + Timer_2</div><p>Timer 1 provides a generous daily window (default: 24h). Timer 2 provides an amber warning buffer (default: 60m). High-priority family alarms only fire if both timers expire with zero check-in signals.</p>
+    <div class="screenshot-grid">
       <div class="screenshot-item wide">
         <img src="assets/55_feature_settings_account_gdpr.png" alt="Fig 3.7: GDPR/CCPA One-Click Account Deletion & Data Purge">
         <div class="caption">Fig 3.7: GDPR/CCPA One-Click Account Deletion & Data Purge</div>
       </div>
     </div>
-
-    <h3>3.1 Challenge 1: The App Store Thin Binary & Missing Framework Crash</h3>
-    <p>During the v1.1.4 release, our team encountered an acute production failure: after passing Apple review, the app crashed immediately upon launch on iPhone 13 devices.</p><p><strong>Root Cause Analysis:</strong> When adding the native watchOS target and WidgetKit extension, Xcode's <code>project.pbxproj</code> inadvertently omitted Flutter's <code>Thin Binary</code> shell script build phase (<code>xcode_backend.sh embed_and_thin</code>). As a result, the produced IPA (15.8 MB) lacked <code>Payload/Runner.app/Frameworks/Flutter.framework</code> and <code>App.framework</code>. Upon launch, Apple's dynamic linker (<code>dyld</code>) aborted execution with <code>image not found: @rpath/Flutter.framework/Flutter</code>.</p><p><strong>Permanent Resolution:</strong> We re-inserted build phase <code>3B06AD1E1E4923F5004D2608 /* Thin Binary */</code> into <code>Runner</code>'s buildPhases directly following <code>Embed Watch Content</code>. We emptied <code>inputPaths</code> to eliminate Xcode 15 dependency cycle warnings, successfully restored dynamic library embedding, verified the 36.7 MB binary on physical iPhone 13 hardware, and incremented the train to v1.1.5 (Build 25).</p>
-
-    <h3>3.2 Challenge 2: Background Execution Throttling & Battery Optimization Policies</h3>
-    <p>Modern mobile operating systems strictly throttle background CPU execution to preserve battery life:</p><ul><li><strong>iOS BackgroundTasks & Energy Budgeting:</strong> iOS limits arbitrary background code execution. We resolved this by combining periodic <code>BGAppRefreshTask</code> schedules with silent high-priority remote APNs push notifications and HealthKit workout sessions.</li><li><strong>Android Doze Mode & Manufacturer Whitelisting:</strong> Android aggressive battery managers (e.g. Xiaomi MIUI, Huawei EMUI) terminate background services. We engineered foreground sticky services, configured battery optimization ignore prompts, and implemented system broadcast listeners that wake up transiently on power and unlock events.</li></ul>
-
-    <h3>3.3 Challenge 3: False Alarm Mitigation & The Two-Tier Timer Mathematical Model</h3>
-    <p>The primary reason families abandon elder monitoring apps is false alarm fatigue. If an emergency siren sounds on an adult child's phone merely because Grandma took an afternoon nap or went shopping, trust collapses.</p><p>We developed a rigorous Two-Tier Inactivity Model governed by the following state equation:</p><div class='code-block'>State(t) = GREEN (Safe),    for t_now - t_last &lt;= Timer_1<br>State(t) = AMBER (Warning), for Timer_1 &lt; t_now - t_last &lt;= Timer_1 + Timer_2<br>State(t) = RED (Emergency), for t_now - t_last &gt; Timer_1 + Timer_2</div><p>Timer 1 provides a generous daily window (default: 24h). Timer 2 provides an amber warning buffer (default: 60m). High-priority family alarms only fire if both timers expire with zero check-in signals.</p>
 
     <h3>3.4 Challenge 4: Virtual 3-Button Navigation Bar Occlusion on Legacy Hardware</h3>
     <p>Many seniors in Asian and developing markets use legacy Android smartphones (such as Xiaomi Mi 9) featuring persistent virtual three-button navigation bars (Back, Home, Recents). Standard Flutter <code>SafeArea</code> widgets frequently left dialog confirmation buttons and bottom version labels partially covered by the system navigation buttons.</p><p><strong>Solution:</strong> We implemented a native platform channel query to obtain exact system WindowInsets metrics, adding dynamic bottom padding multipliers to all dialogs and modals, and engineered a responsive two-column landscape layout for horizontal charging docks.</p>
@@ -416,6 +365,9 @@
       <h2 class="chapter-title">The Senior Experience: Ergonomics & Six Multimodal Check-In Triggers</h2>
     </div>
     <div class="chapter-intro">Detailed breakdown of the Senior Dashboard and six independent modalities designed to fit naturally into an elder's daily routine.</div>
+
+    <h3>4.1 Senior Dashboard Anatomy: 48dp+ Unified Giant Safety Card & 500ms Auto-Dismissal</h3>
+    <p>The senior interface is intentionally constrained to a single, non-scrolling primary viewport:</p><ul><li><strong>Consolidated Safety Card:</strong> Merges status indication ('All is Well') and the primary touch target into one prominent 48dp+ high-contrast interactive card.</li><li><strong>500ms Auto-Dismissal:</strong> When pressed, the button triggers physical haptic feedback, displays an animated checkmark, and minimizes/closes the app automatically after 500ms. The senior never feels trapped inside an app.</li></ul>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/09_senior_safe_confirmed.png" alt="Fig 4.1: Confirmed Safe State (Vibrant Emerald Card)">
@@ -426,52 +378,23 @@
         <div class="caption">Fig 4.2: Senior Safe Interface on iPad Pro 12.9-inch</div>
       </div>
       <div class="screenshot-item wide">
-        <img src="assets/45_feature_giant_safe_card.png" alt="Fig 4.3: Macro View: 90pt Icon Safe Check-In Touch Target">
-        <div class="caption">Fig 4.3: Macro View: 90pt Icon Safe Check-In Touch Target</div>
-      </div>
-      <div class="screenshot-item wide">
-        <img src="assets/46_feature_emergency_sos_button.png" alt="Fig 4.4: Macro View: One-Touch Emergency SOS Trigger">
-        <div class="caption">Fig 4.4: Macro View: One-Touch Emergency SOS Trigger</div>
+        <img src="assets/45_feature_giant_safe_card.png" alt="Fig 4.3: Macro View: 90pt Icon Safe Check-In Target">
+        <div class="caption">Fig 4.3: Macro View: 90pt Icon Safe Check-In Target</div>
       </div>
       <div class="screenshot-item wide">
         <img src="assets/47_feature_countdown_deadline_header.png" alt="Fig 4.5: Macro View: Real-Time Deadline Countdown Header">
         <div class="caption">Fig 4.5: Macro View: Real-Time Deadline Countdown Header</div>
       </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/13_daily_scripture_card.png" alt="Fig 4.6: Daily Devotional Scripture Card (Multilingual)">
-        <div class="caption">Fig 4.6: Daily Devotional Scripture Card (Multilingual)</div>
-      </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/14_daily_scripture_reading.png" alt="Fig 4.7: Scripture Full-Text Reading & Version Switcher">
-        <div class="caption">Fig 4.7: Scripture Full-Text Reading & Version Switcher</div>
-      </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/15_bible_reader_chapter_view.png" alt="Fig 4.8: Offline Scripture Reader Chapter & Verse Selector">
-        <div class="caption">Fig 4.8: Offline Scripture Reader Chapter & Verse Selector</div>
-      </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/16_bible_reader_full.png" alt="Fig 4.9: Full Offline Bible Reader with Dynamic Typography">
-        <div class="caption">Fig 4.9: Full Offline Bible Reader with Dynamic Typography</div>
-      </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/17_bible_reader_modal.png" alt="Fig 4.10: Bible Reader Reader Settings & Font Adjustment">
-        <div class="caption">Fig 4.10: Bible Reader Reader Settings & Font Adjustment</div>
-      </div>
-      <div class="screenshot-item wide">
-        <img src="assets/48_feature_daily_verse_card.png" alt="Fig 4.11: Close-up: Spiritual Verse Card Typography & Border">
-        <div class="caption">Fig 4.11: Close-up: Spiritual Verse Card Typography & Border</div>
-      </div>
-      <div class="screenshot-item wide">
-        <img src="assets/49_feature_scripture_action_bar.png" alt="Fig 4.12: Close-up: Verse Copy, Share & Bookmark Toolbar">
-        <div class="caption">Fig 4.12: Close-up: Verse Copy, Share & Bookmark Toolbar</div>
-      </div>
     </div>
-
-    <h3>4.1 Senior Dashboard Anatomy: 48dp+ Unified Giant Safety Card & 500ms Auto-Dismissal</h3>
-    <p>The senior interface is intentionally constrained to a single, non-scrolling primary viewport:</p><ul><li><strong>Consolidated Safety Card:</strong> Merges status indication ('All is Well') and the primary touch target into one prominent 48dp+ high-contrast interactive card.</li><li><strong>500ms Auto-Dismissal:</strong> When pressed, the button triggers physical haptic feedback, displays an animated checkmark, and minimizes/closes the app automatically after 500ms. The senior never feels trapped inside an app.</li></ul>
 
     <h3>4.2 The Six Multimodal Check-In Triggers</h3>
     <table><thead><tr><th>Trigger Modality</th><th>Hardware / Platform</th><th>How to Use</th><th>Technical Reaction &amp; Consequence</th></tr></thead><tbody><tr><td><strong>1. Smartphone Giant Button</strong></td><td>iOS &amp; Android Phones/Tablets</td><td>Open app, tap green card.</td><td>Resets Timer 1 and Timer 2, updates Firestore timestamp, triggers haptic vibration, updates home widget, auto-exits.</td></tr><tr><td><strong>2. Apple Watch Companion</strong></td><td>watchOS 9.0+ Series 4 ~ 10 / Ultra / SE</td><td>Glance at wrist, tap 'I'm OK · 我很好'.</td><td>Sends encrypted packet via WatchConnectivity (WCSession) to iPhone. Caches locally if disconnected and flushes upon reconnection.</td></tr><tr><td><strong>3. Amazon Alexa Voice Skill</strong></td><td>Amazon Echo, Echo Dot, Echo Show</td><td>Speak aloud: <em>'Alexa, tell Daily Notify I am okay.'</em></td><td>Echo contacts AWS Lambda, validates 6-digit device token, resets cloud timer, and Alexa recites daily scripture in English or Mandarin.</td></tr><tr><td><strong>4. Bedside Nightstand Screen Saver</strong></td><td>Charging dock phone / tablet (Daydream)</td><td>Touch the dark clock screen upon waking.</td><td>Displays ambient OLED clock and scripture. Touching anywhere dismisses the clock AND silently registers today's check-in!</td></tr><tr><td><strong>5. Desktop &amp; Lock Screen Widgets</strong></td><td>iOS WidgetKit &amp; Android AppWidget</td><td>Tap green widget button on home screen.</td><td>Intercepts background tap without opening full app, updates local storage, syncs to cloud, and flips widget state to 'Safe'.</td></tr><tr><td><strong>6. 3-Axis Fall Sensor</strong></td><td>Built-in accelerometer &amp; gyroscope</td><td>Passive. Phone senses heavy impact.</td><td>Sounds local alarm siren and displays 30-second red cancel countdown. If not dismissed within 30s, dispatches emergency alerts.</td></tr></tbody></table>
+    <div class="screenshot-grid">
+      <div class="screenshot-item wide">
+        <img src="assets/46_feature_emergency_sos_button.png" alt="Fig 4.4: Macro View: One-Touch Emergency SOS Trigger">
+        <div class="caption">Fig 4.4: Macro View: One-Touch Emergency SOS Trigger</div>
+      </div>
+    </div>
   </div>
 
   <div class="chapter">
@@ -480,6 +403,9 @@
       <h2 class="chapter-title">Exhaustive Configuration & Functional Consequence Catalog</h2>
     </div>
     <div class="chapter-intro">An encyclopedic breakdown of every toggle, slider, timer, and option in PNCC Care, explaining the exact system consequences of each setting.</div>
+
+    <h3>5.1 Safety Timers & Vacation Configurations</h3>
+    <table><thead><tr><th>Setting Name</th><th>Code Key &amp; Type</th><th>Valid Range &amp; Default</th><th>Detailed Mechanism &amp; Functional Consequence</th></tr></thead><tbody><tr><td><strong>Check-In Frequency (Timer 1)</strong></td><td><code>checkInFrequency</code> (int)</td><td>60 to 2880 mins<br>(Default: 1440m / 24h)</td><td><strong>Mechanism:</strong> The active 'Safe' window countdown.<br><strong>Consequence:</strong> When Timer 1 expires, status turns from Green (Safe) to Amber (Warning). A gentle reminder notification is sent to the senior. Setting to 0 turns off safety monitoring.</td></tr><tr><td><strong>Alert Timeout (Timer 2)</strong></td><td><code>alertTimeout</code> (int)</td><td>0 to 720 mins<br>(Default: 60m grace, or 0)</td><td><strong>Mechanism:</strong> The grace buffer after Timer 1 expires.<br><strong>Consequence:</strong> When Timer 2 expires, status flips to Red (Emergency). High-priority push notifications and alert banners are dispatched to all caregivers. Setting to 0 means emergency alerts fire immediately after Timer 1 expires.</td></tr><tr><td><strong>Vacation &amp; Pause Monitoring</strong></td><td><code>pauseStartDate</code>,<br><code>pauseEndDate</code> (DateTime)</td><td>Date Range Picker</td><td><strong>Mechanism:</strong> Suppresses timer execution during holidays or hospital stays.<br><strong>Consequence:</strong> All countdowns freeze. Caregiver dashboard shows a calm grey 'Vacation' badge. Zero false alarms are dispatched during the selected window.</td></tr></tbody></table>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/18_caregiver_console_phone.png" alt="Fig 5.1: Caregiver Console Live Mobile Dashboard">
@@ -493,6 +419,11 @@
         <img src="assets/20_caregiver_console_store.png" alt="Fig 5.3: Production Caregiver Console Status Hierarchy">
         <div class="caption">Fig 5.3: Production Caregiver Console Status Hierarchy</div>
       </div>
+    </div>
+
+    <h3>5.2 Passive Activity Tracking & Hardware Automations</h3>
+    <table><thead><tr><th>Setting Name</th><th>Code Key &amp; Type</th><th>Valid Range &amp; Default</th><th>Detailed Mechanism &amp; Functional Consequence</th></tr></thead><tbody><tr><td><strong>Battery Charger Activity Tracking</strong></td><td><code>enableBatteryActivityTracking</code> (bool)</td><td>Enabled / Disabled<br>(Default: Enabled)</td><td><strong>Mechanism:</strong> Listens for system battery plug-in / unplug broadcasts.<br><strong>Consequence:</strong> When elder plugs in phone at bedtime or unplugs in the morning, the system silently resets the inactivity timer! Elder is confirmed safe with zero manual app interaction.</td></tr><tr><td><strong>Screen Unlock Activity Tracking</strong></td><td><code>enableUnlockActivityTracking</code> (bool)</td><td>Enabled / Disabled<br>(Default: Enabled)</td><td><strong>Mechanism:</strong> Intercepts ACTION_USER_PRESENT lock-screen events.<br><strong>Consequence:</strong> If elder unlocks their phone to check photos, read news, or take a call, it registers as a valid 'sign of life' and resets Timer 1.</td></tr><tr><td><strong>Apple Health / Google Fit Sync</strong></td><td><code>enableHealthActivitySync</code> (bool)</td><td>Enabled / Disabled<br>(Default: Disabled)</td><td><strong>Mechanism:</strong> Reads HealthKit / Google Fit step counts and active energy.<br><strong>Consequence:</strong> If the senior walks more than 100 steps in an hour or their Apple Watch records normal heart activity, it automatically logs activity.</td></tr><tr><td><strong>Fall Detection Sensitivity</strong></td><td><code>fallDetectionSensitivity</code> (String)</td><td>'high', 'medium', 'low'<br>(Default: 'medium')</td><td><strong>Mechanism:</strong> Adjusts 3-axis accelerometer vector magnitude threshold.<br><strong>Consequence:</strong> 'High' triggers on 1.8G impacts (soft carpet); 'Medium' on 2.5G; 'Low' on 3.2G. Always initiates a 30-second local cancel window before alerting caregivers.</td></tr><tr><td><strong>Shake to Panic Alert</strong></td><td><code>enableShakeToPanic</code> (bool)</td><td>Enabled / Disabled<br>(Default: Disabled)</td><td><strong>Mechanism:</strong> Evaluates continuous high-frequency shake gestures.<br><strong>Consequence:</strong> Violently shaking the phone for 3 seconds triggers a 10-second panic countdown, then dispatches immediate emergency alerts to family contacts.</td></tr></tbody></table>
+    <div class="screenshot-grid">
       <div class="screenshot-item wide">
         <img src="assets/21_caregiver_matrix_ipad.png" alt="Fig 5.4: 3-Column Senior Monitoring Matrix on iPad Pro">
         <div class="caption">Fig 5.4: 3-Column Senior Monitoring Matrix on iPad Pro</div>
@@ -511,12 +442,6 @@
       </div>
     </div>
 
-    <h3>5.1 Safety Timers & Vacation Configurations</h3>
-    <table><thead><tr><th>Setting Name</th><th>Code Key &amp; Type</th><th>Valid Range &amp; Default</th><th>Detailed Mechanism &amp; Functional Consequence</th></tr></thead><tbody><tr><td><strong>Check-In Frequency (Timer 1)</strong></td><td><code>checkInFrequency</code> (int)</td><td>60 to 2880 mins<br>(Default: 1440m / 24h)</td><td><strong>Mechanism:</strong> The active 'Safe' window countdown.<br><strong>Consequence:</strong> When Timer 1 expires, status turns from Green (Safe) to Amber (Warning). A gentle reminder notification is sent to the senior. Setting to 0 turns off safety monitoring.</td></tr><tr><td><strong>Alert Timeout (Timer 2)</strong></td><td><code>alertTimeout</code> (int)</td><td>0 to 720 mins<br>(Default: 60m grace, or 0)</td><td><strong>Mechanism:</strong> The grace buffer after Timer 1 expires.<br><strong>Consequence:</strong> When Timer 2 expires, status flips to Red (Emergency). High-priority push notifications and alert banners are dispatched to all caregivers. Setting to 0 means emergency alerts fire immediately after Timer 1 expires.</td></tr><tr><td><strong>Vacation &amp; Pause Monitoring</strong></td><td><code>pauseStartDate</code>,<br><code>pauseEndDate</code> (DateTime)</td><td>Date Range Picker</td><td><strong>Mechanism:</strong> Suppresses timer execution during holidays or hospital stays.<br><strong>Consequence:</strong> All countdowns freeze. Caregiver dashboard shows a calm grey 'Vacation' badge. Zero false alarms are dispatched during the selected window.</td></tr></tbody></table>
-
-    <h3>5.2 Passive Activity Tracking & Hardware Automations</h3>
-    <table><thead><tr><th>Setting Name</th><th>Code Key &amp; Type</th><th>Valid Range &amp; Default</th><th>Detailed Mechanism &amp; Functional Consequence</th></tr></thead><tbody><tr><td><strong>Battery Charger Activity Tracking</strong></td><td><code>enableBatteryActivityTracking</code> (bool)</td><td>Enabled / Disabled<br>(Default: Enabled)</td><td><strong>Mechanism:</strong> Listens for system battery plug-in / unplug broadcasts.<br><strong>Consequence:</strong> When elder plugs in phone at bedtime or unplugs in the morning, the system silently resets the inactivity timer! Elder is confirmed safe with zero manual app interaction.</td></tr><tr><td><strong>Screen Unlock Activity Tracking</strong></td><td><code>enableUnlockActivityTracking</code> (bool)</td><td>Enabled / Disabled<br>(Default: Enabled)</td><td><strong>Mechanism:</strong> Intercepts ACTION_USER_PRESENT lock-screen events.<br><strong>Consequence:</strong> If elder unlocks their phone to check photos, read news, or take a call, it registers as a valid 'sign of life' and resets Timer 1.</td></tr><tr><td><strong>Apple Health / Google Fit Sync</strong></td><td><code>enableHealthActivitySync</code> (bool)</td><td>Enabled / Disabled<br>(Default: Disabled)</td><td><strong>Mechanism:</strong> Reads HealthKit / Google Fit step counts and active energy.<br><strong>Consequence:</strong> If the senior walks more than 100 steps in an hour or their Apple Watch records normal heart activity, it automatically logs activity.</td></tr><tr><td><strong>Fall Detection Sensitivity</strong></td><td><code>fallDetectionSensitivity</code> (String)</td><td>'high', 'medium', 'low'<br>(Default: 'medium')</td><td><strong>Mechanism:</strong> Adjusts 3-axis accelerometer vector magnitude threshold.<br><strong>Consequence:</strong> 'High' triggers on 1.8G impacts (soft carpet); 'Medium' on 2.5G; 'Low' on 3.2G. Always initiates a 30-second local cancel window before alerting caregivers.</td></tr><tr><td><strong>Shake to Panic Alert</strong></td><td><code>enableShakeToPanic</code> (bool)</td><td>Enabled / Disabled<br>(Default: Disabled)</td><td><strong>Mechanism:</strong> Evaluates continuous high-frequency shake gestures.<br><strong>Consequence:</strong> Violently shaking the phone for 3 seconds triggers a 10-second panic countdown, then dispatches immediate emergency alerts to family contacts.</td></tr></tbody></table>
-
     <h3>5.3 Geofencing & Safe Zones</h3>
     <table><thead><tr><th>Setting Name</th><th>Code Key &amp; Type</th><th>Valid Range &amp; Default</th><th>Detailed Mechanism &amp; Functional Consequence</th></tr></thead><tbody><tr><td><strong>Enable Safe Zones</strong></td><td><code>enableGeofencing</code> (bool)</td><td>Enabled / Disabled</td><td><strong>Mechanism:</strong> Background GPS circular boundary monitoring.<br><strong>Consequence:</strong> When enabled, safety check-in countdowns are paused while inside home coordinates. If elder wanders outside the safe perimeter, monitoring activates or alerts caregivers.</td></tr><tr><td><strong>Safe Zone Coordinates</strong></td><td><code>safeZoneLatitude</code>,<br><code>safeZoneLongitude</code> (double)</td><td>Interactive Map Picker</td><td><strong>Consequence:</strong> Pins the center of the safe zone (e.g. Senior's Residence).</td></tr><tr><td><strong>Safe Zone Radius</strong></td><td><code>safeZoneRadius</code> (double)</td><td>50m, 100m, 200m, 500m</td><td><strong>Consequence:</strong> Sets the geographical radius. A 200m radius covers the elder's home and immediate garden/driveway.</td></tr></tbody></table>
 
@@ -530,14 +455,13 @@
       <h2 class="chapter-title">Account Lifecycle, User Roles & Establishing Family Caring Circles</h2>
     </div>
     <div class="chapter-intro">Complete guide on biometric onboarding, dynamic role switching, and 3-second AES-encrypted QR code pairing.</div>
+
+    <h3>6.1 Onboarding & Password-Free Biometric Authentication</h3>
+    <p>Getting started requires zero complicated configuration:</p><ol><li><strong>Install App:</strong> Download 'PNCC Care' from the Apple App Store or Android APK.</li><li><strong>Select Biometric Sign-In:</strong> Tap <strong>Sign in with Apple</strong> on iPhone/iPad to authenticate via Face ID / Touch ID, or tap <strong>Sign in with Google</strong> on Android.</li><li><strong>Email Registration:</strong> Available for families preferring a shared dedicated email.</li></ol>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/28_settings_main_phone.png" alt="Fig 6.1: Comprehensive Settings Menu Structure (Phone)">
         <div class="caption">Fig 6.1: Comprehensive Settings Menu Structure (Phone)</div>
-      </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/29_settings_options_sim.png" alt="Fig 6.2: Notification Escalation & Buffer Windows Panel">
-        <div class="caption">Fig 6.2: Notification Escalation & Buffer Windows Panel</div>
       </div>
       <div class="screenshot-item narrow">
         <img src="assets/30_settings_iphone13.png" alt="Fig 6.3: Physical Device Settings Navigation on iPhone 13">
@@ -548,12 +472,21 @@
         <div class="caption">Fig 6.4: iPad Split-View Dual-Pane Configuration Master</div>
       </div>
       <div class="screenshot-item wide">
-        <img src="assets/32_settings_tablet_landscape.png" alt="Fig 6.5: Tablet Landscape Advanced Parameters View">
-        <div class="caption">Fig 6.5: Tablet Landscape Advanced Parameters View</div>
-      </div>
-      <div class="screenshot-item wide">
         <img src="assets/33_settings_ipad_full.png" alt="Fig 6.6: iPad Full Settings Suite with Realtime Persistence">
         <div class="caption">Fig 6.6: iPad Full Settings Suite with Realtime Persistence</div>
+      </div>
+    </div>
+
+    <h3>6.2 Role Selection & Dynamic Transition Without Re-login</h3>
+    <p>Users choose from three specialized roles:</p><ul><li><strong>Senior Mode:</strong> Giant green check-in card, daily scripture, bedtime nightstand clock.</li><li><strong>Caregiver Mode:</strong> Multi-senior dashboard with live color badges and emergency call shortcuts.</li><li><strong>Dual Mode:</strong> Bottom navigation bar allowing sandwich generation users to check in while monitoring parents.</li></ul><p><strong>To switch roles anytime:</strong> Open Settings (⚙️) &rarr; scroll down to <strong>'Switch Profile' (⇄)</strong> &rarr; tap your desired card. The interface updates instantly without signing out!</p>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/29_settings_options_sim.png" alt="Fig 6.2: Notification Escalation & Buffer Windows Panel">
+        <div class="caption">Fig 6.2: Notification Escalation & Buffer Windows Panel</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/32_settings_tablet_landscape.png" alt="Fig 6.5: Tablet Landscape Advanced Parameters View">
+        <div class="caption">Fig 6.5: Tablet Landscape Advanced Parameters View</div>
       </div>
       <div class="screenshot-item wide">
         <img src="assets/52_feature_settings_deadline_picker.png" alt="Fig 6.7: Close-up: Check-in Deadline Hour Wheel Picker">
@@ -563,20 +496,16 @@
         <img src="assets/53_feature_settings_escalation_timers.png" alt="Fig 6.8: Close-up: Amber & Red Escalation Buffer Pickers">
         <div class="caption">Fig 6.8: Close-up: Amber & Red Escalation Buffer Pickers</div>
       </div>
+    </div>
+
+    <h3>6.3 Establishing Caring Relations: 3-Second Encrypted QR Pairing</h3>
+    <ol><li><strong>Senior Phone:</strong> Open Settings &rarr; tap <strong>'My Caregivers' (我的照護者)</strong>. The screen presents the senior's private, rotating AES-encrypted QR code.</li><li><strong>Caregiver Phone:</strong> Open Caregiver Dashboard &rarr; tap the round blue <strong>'+'</strong> button &rarr; tap <strong>'Scan QR Code'</strong>.</li><li><strong>Scan &amp; Pair:</strong> Point the caregiver's camera at the senior's screen. The senior's card appears on the caregiver's dashboard instantly. Multiple siblings can scan the same code to form a care circle.</li></ol>
+    <div class="screenshot-grid">
       <div class="screenshot-item wide">
         <img src="assets/54_feature_settings_accessibility_fonts.png" alt="Fig 6.9: Close-up: WCAG AAA Font Scaling Slider (1.0x - 1.5x)">
         <div class="caption">Fig 6.9: Close-up: WCAG AAA Font Scaling Slider (1.0x - 1.5x)</div>
       </div>
     </div>
-
-    <h3>6.1 Onboarding & Password-Free Biometric Authentication</h3>
-    <p>Getting started requires zero complicated configuration:</p><ol><li><strong>Install App:</strong> Download 'PNCC Care' from the Apple App Store or Android APK.</li><li><strong>Select Biometric Sign-In:</strong> Tap <strong>Sign in with Apple</strong> on iPhone/iPad to authenticate via Face ID / Touch ID, or tap <strong>Sign in with Google</strong> on Android.</li><li><strong>Email Registration:</strong> Available for families preferring a shared dedicated email.</li></ol>
-
-    <h3>6.2 Role Selection & Dynamic Transition Without Re-login</h3>
-    <p>Users choose from three specialized roles:</p><ul><li><strong>Senior Mode:</strong> Giant green check-in card, daily scripture, bedtime nightstand clock.</li><li><strong>Caregiver Mode:</strong> Multi-senior dashboard with live color badges and emergency call shortcuts.</li><li><strong>Dual Mode:</strong> Bottom navigation bar allowing sandwich generation users to check in while monitoring parents.</li></ul><p><strong>To switch roles anytime:</strong> Open Settings (⚙️) &rarr; scroll down to <strong>'Switch Profile' (⇄)</strong> &rarr; tap your desired card. The interface updates instantly without signing out!</p>
-
-    <h3>6.3 Establishing Caring Relations: 3-Second Encrypted QR Pairing</h3>
-    <ol><li><strong>Senior Phone:</strong> Open Settings &rarr; tap <strong>'My Caregivers' (我的照護者)</strong>. The screen presents the senior's private, rotating AES-encrypted QR code.</li><li><strong>Caregiver Phone:</strong> Open Caregiver Dashboard &rarr; tap the round blue <strong>'+'</strong> button &rarr; tap <strong>'Scan QR Code'</strong>.</li><li><strong>Scan &amp; Pair:</strong> Point the caregiver's camera at the senior's screen. The senior's card appears on the caregiver's dashboard instantly. Multiple siblings can scan the same code to form a care circle.</li></ol>
   </div>
 
   <div class="chapter">
@@ -585,6 +514,9 @@
       <h2 class="chapter-title">Caregiver Clinical Protocols & Real-Time Condition Handling</h2>
     </div>
     <div class="chapter-intro">Field guidelines and standard operating procedures for caregivers managing Green, Amber, Red, Fall, and Offline states.</div>
+
+    <h3>7.1 The Five Real-Time Conditions & Clinical SOP</h3>
+    <table><thead><tr><th>Real-Time State</th><th>Visual Indicator</th><th>What It Means</th><th>Caregiver Action Protocol (Clinical SOP)</th></tr></thead><tbody><tr><td><strong>Condition 1: Safe</strong></td><td><span class='badge badge-green'>GREEN</span></td><td>Elder checked in within safe window.</td><td>Total peace of mind! No intervention required. You may tap 'Send Warm Greeting' to share a loving note.</td></tr><tr><td><strong>Condition 2: Warning</strong></td><td><span class='badge badge-amber'>AMBER</span></td><td>Timer 1 expired; Timer 2 grace buffer active. Elder may be sleeping in or out gardening.</td><td><strong>Do not panic.</strong> Make a casual phone call or send a gentle text: <em>'Good morning Mom, hope you have a wonderful day!'</em></td></tr><tr><td><strong>Condition 3: Emergency Timeout</strong></td><td><span class='badge badge-red'>RED</span></td><td>Both timers expired with zero check-ins. High-priority alarms dispatched.</td><td>1. Immediately tap phone icon to call elder.<br>2. Call neighbor, building manager, or local relative.<br>3. Dispatch in-person safety check.</td></tr><tr><td><strong>Condition 4: Fall Detected</strong></td><td><span class='badge badge-red'>RED</span></td><td>Heavy impact sensed and 30s local cancel window was not dismissed.</td><td>Call elder immediately. If unanswered, call local emergency services (911 / 119) and head to the residence.</td></tr><tr><td><strong>Condition 5: Vacation / Paused</strong></td><td><span class='badge badge-grey'>GREY</span></td><td>Vacation Mode active for scheduled dates.</td><td>All automated alarms suppressed. Enjoy the holiday or recovery period without false alarms.</td></tr></tbody></table>
     <div class="screenshot-grid">
       <div class="screenshot-item wide">
         <img src="assets/41_widgets_grid_overview.png" alt="Fig 7.1: Interactive iOS Lock & Home Screen Widget Suite">
@@ -594,14 +526,7 @@
         <img src="assets/44_widgets_dynamic_island.png" alt="Fig 7.2: Live Activities & Dynamic Island Compact Pill">
         <div class="caption">Fig 7.2: Live Activities & Dynamic Island Compact Pill</div>
       </div>
-      <div class="screenshot-item narrow">
-        <img src="assets/39_apple_watch_companion_pair.png" alt="Fig 7.3: WCSession Bidirectional Wearable Live Sync Engine">
-        <div class="caption">Fig 7.3: WCSession Bidirectional Wearable Live Sync Engine</div>
-      </div>
     </div>
-
-    <h3>7.1 The Five Real-Time Conditions & Clinical SOP</h3>
-    <table><thead><tr><th>Real-Time State</th><th>Visual Indicator</th><th>What It Means</th><th>Caregiver Action Protocol (Clinical SOP)</th></tr></thead><tbody><tr><td><strong>Condition 1: Safe</strong></td><td><span class='badge badge-green'>GREEN</span></td><td>Elder checked in within safe window.</td><td>Total peace of mind! No intervention required. You may tap 'Send Warm Greeting' to share a loving note.</td></tr><tr><td><strong>Condition 2: Warning</strong></td><td><span class='badge badge-amber'>AMBER</span></td><td>Timer 1 expired; Timer 2 grace buffer active. Elder may be sleeping in or out gardening.</td><td><strong>Do not panic.</strong> Make a casual phone call or send a gentle text: <em>'Good morning Mom, hope you have a wonderful day!'</em></td></tr><tr><td><strong>Condition 3: Emergency Timeout</strong></td><td><span class='badge badge-red'>RED</span></td><td>Both timers expired with zero check-ins. High-priority alarms dispatched.</td><td>1. Immediately tap phone icon to call elder.<br>2. Call neighbor, building manager, or local relative.<br>3. Dispatch in-person safety check.</td></tr><tr><td><strong>Condition 4: Fall Detected</strong></td><td><span class='badge badge-red'>RED</span></td><td>Heavy impact sensed and 30s local cancel window was not dismissed.</td><td>Call elder immediately. If unanswered, call local emergency services (911 / 119) and head to the residence.</td></tr><tr><td><strong>Condition 5: Vacation / Paused</strong></td><td><span class='badge badge-grey'>GREY</span></td><td>Vacation Mode active for scheduled dates.</td><td>All automated alarms suppressed. Enjoy the holiday or recovery period without false alarms.</td></tr></tbody></table>
   </div>
 
   <div class="chapter">
@@ -610,14 +535,17 @@
       <h2 class="chapter-title">Failure Mode & Effects Analysis (FMEA) & Edge Case Matrix</h2>
     </div>
     <div class="chapter-intro">Comprehensive analysis of extreme edge cases: power outages, dead batteries, offline dead zones, and dropped devices.</div>
+
+    <h3>8.1 FMEA Matrix & Resiliency Mechanisms</h3>
+    <table><thead><tr><th>Failure Mode</th><th>Potential Impact</th><th>Detection Mechanism</th><th>Mitigation / Self-Healing Architecture</th></tr></thead><tbody><tr><td><strong>Elder's Phone Battery Dies</strong></td><td>Check-ins cannot be transmitted.</td><td>Caregiver cloud watchdog detects lack of active ping before Timer 2 expires.</td><td>Caregiver dashboard transitions to Amber warning with note 'Device Offline / Low Battery'.</td></tr><tr><td><strong>Severe Cellular Dead Zone</strong></td><td>Check-in packet delayed.</td><td>Local SQLite queue buffers check-in event.</td><td>Eventual consistency: event is time-stamped locally with verified clock; automatically uploads when connection restored.</td></tr><tr><td><strong>Accidental Phone Drop</strong></td><td>Potential false fall alarm.</td><td>Local 30-second cancellation countdown with loud alert tone.</td><td>Senior simply taps 'I'm Okay / Cancel' within 30s to dismiss; zero caregiver alarms are dispatched.</td></tr><tr><td><strong>Caregiver Phone on Do Not Disturb</strong></td><td>Alert notification missed.</td><td>Apple APNs Critical Alerts entitlement / Android NotificationChannel importance high.</td><td>Bypasses system mute switches for verified Red emergency and fall events.</td></tr></tbody></table>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/24_emergency_push_notification.png" alt="Fig 8.1: High-Priority FCM Push Notification Banner">
         <div class="caption">Fig 8.1: High-Priority FCM Push Notification Banner</div>
       </div>
       <div class="screenshot-item narrow">
-        <img src="assets/25_critical_alert_lockscreen.png" alt="Fig 8.2: iOS Lock Screen Critical Alert Bypassing Physical Mute">
-        <div class="caption">Fig 8.2: iOS Lock Screen Critical Alert Bypassing Physical Mute</div>
+        <img src="assets/25_critical_alert_lockscreen.png" alt="Fig 8.2: iOS Lock Screen Critical Alert Bypassing Mute">
+        <div class="caption">Fig 8.2: iOS Lock Screen Critical Alert Bypassing Mute</div>
       </div>
       <div class="screenshot-item wide">
         <img src="assets/26_notification_ipad_alert.png" alt="Fig 8.3: iPad Emergency Dispatch Alert Modal with Audio Chime">
@@ -628,9 +556,6 @@
         <div class="caption">Fig 8.4: Android Heads-Up Emergency Notification Channel</div>
       </div>
     </div>
-
-    <h3>8.1 FMEA Matrix & Resiliency Mechanisms</h3>
-    <table><thead><tr><th>Failure Mode</th><th>Potential Impact</th><th>Detection Mechanism</th><th>Mitigation / Self-Healing Architecture</th></tr></thead><tbody><tr><td><strong>Elder's Phone Battery Dies</strong></td><td>Check-ins cannot be transmitted.</td><td>Caregiver cloud watchdog detects lack of active ping before Timer 2 expires.</td><td>Caregiver dashboard transitions to Amber warning with note 'Device Offline / Low Battery'.</td></tr><tr><td><strong>Severe Cellular Dead Zone</strong></td><td>Check-in packet delayed.</td><td>Local SQLite queue buffers check-in event.</td><td>Eventual consistency: event is time-stamped locally with verified clock; automatically uploads when connection restored.</td></tr><tr><td><strong>Accidental Phone Drop</strong></td><td>Potential false fall alarm.</td><td>Local 30-second cancellation countdown with loud alert tone.</td><td>Senior simply taps 'I'm Okay / Cancel' within 30s to dismiss; zero caregiver alarms are dispatched.</td></tr><tr><td><strong>Caregiver Phone on Do Not Disturb</strong></td><td>Alert notification missed.</td><td>Apple APNs Critical Alerts entitlement / Android NotificationChannel importance high.</td><td>Bypasses system mute switches for verified Red emergency and fall events.</td></tr></tbody></table>
   </div>
 
   <div class="chapter">
@@ -639,19 +564,19 @@
       <h2 class="chapter-title">Spiritual Wellness, Offline Scriptures & Cognitive Routine</h2>
     </div>
     <div class="chapter-intro">Why scripture devotionals form an essential pillar of elder mental health, dignity, and daily routine formation.</div>
+
+    <h3>9.1 Spiritual Uplift vs Clinical Stigma: Why Scriptures Belong in Eldercare</h3>
+    <p>When eldercare apps focus strictly on clinical metrics (blood pressure, pill schedules, heart rates), seniors feel reduced to medical patients. By contrast, starting the morning with an uplifting Bible scripture transforms the experience into a moment of spiritual joy and gratitude. Seniors look forward to opening the app each morning.</p>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/10_emergency_notification.png" alt="Fig 9.1: Offline Recovery & Network Health Resilience Monitor">
         <div class="caption">Fig 9.1: Offline Recovery & Network Health Resilience Monitor</div>
       </div>
       <div class="screenshot-item wide">
-        <img src="assets/11_home_widgets.png" alt="Fig 9.2: Lock Screen One-Touch Trigger for Low-Bandwidth Scenarios">
-        <div class="caption">Fig 9.2: Lock Screen One-Touch Trigger for Low-Bandwidth Scenarios</div>
+        <img src="assets/11_home_widgets.png" alt="Fig 9.2: Lock Screen One-Touch Trigger for Low-Bandwidth">
+        <div class="caption">Fig 9.2: Lock Screen One-Touch Trigger for Low-Bandwidth</div>
       </div>
     </div>
-
-    <h3>9.1 Spiritual Uplift vs Clinical Stigma: Why Scriptures Belong in Eldercare</h3>
-    <p>When eldercare apps focus strictly on clinical metrics (blood pressure, pill schedules, heart rates), seniors feel reduced to medical patients. By contrast, starting the morning with an uplifting Bible scripture transforms the experience into a moment of spiritual joy and gratitude. Seniors look forward to opening the app each morning.</p>
 
     <h3>9.2 Offline Chapter Reader & Independent Decoupled Translations</h3>
     <p>Tapping the daily scripture card opens the full offline chapter reader:</p><ul><li><strong>100% Offline Database:</strong> Contains the entire Bible locally without requiring internet access.</li><li><strong>Supported Translations:</strong> Chinese Union Version (和合本), English New International Version (NIV), and English King James Version (KJV).</li><li><strong>Independent Language Setting:</strong> The senior can read Chinese scriptures while the adult child uses an English caregiver dashboard.</li></ul>
@@ -663,6 +588,9 @@
       <h2 class="chapter-title">Current Implementation Boundaries & 24-Month Future Roadmap</h2>
     </div>
     <div class="chapter-intro">Honest engineering transparency on present technical boundaries and our vision for ambient smart home eldercare.</div>
+
+    <h3>10.1 Current Implementation Limitations</h3>
+    <ul><li><strong>Internet Connectivity for Remote Sync:</strong> Local check-ins, nightstand clocks, fall detection, and scriptures work 100% offline; however, remote caregiver sync requires internet.</li><li><strong>Alexa Voice Hardware:</strong> Voice check-in requires an Amazon Echo or Alexa app.</li><li><strong>iOS Background Throttling:</strong> Continuous sensor monitoring without an active HealthKit workout is subject to Apple's battery throttling.</li></ul>
     <div class="screenshot-grid">
       <div class="screenshot-item narrow">
         <img src="assets/34_apple_watch_home_safe.png" alt="Fig 10.1: Native watchOS App Home: Safe State Display">
@@ -681,9 +609,6 @@
         <div class="caption">Fig 10.4: Close-up: Watch Force Touch & SOS Confirmation Target</div>
       </div>
     </div>
-
-    <h3>10.1 Current Implementation Limitations</h3>
-    <ul><li><strong>Internet Connectivity for Remote Sync:</strong> Local check-ins, nightstand clocks, fall detection, and scriptures work 100% offline; however, remote caregiver sync requires internet.</li><li><strong>Alexa Voice Hardware:</strong> Voice check-in requires an Amazon Echo or Alexa app.</li><li><strong>iOS Background Throttling:</strong> Continuous sensor monitoring without an active HealthKit workout is subject to Apple's battery throttling.</li></ul>
 
     <h3>10.2 Future Product Roadmap (12 to 24 Months)</h3>
     <ol><li><strong>Cellular Automated PSTN Voice &amp; SMS Fallback:</strong> If caregiver push notifications fail, cloud servers automatically dial real phone calls.</li><li><strong>Matter / 60GHz Millimeter-Wave Radar Sensors:</strong> Camera-free ambient sensors detect presence and respiration without touching any device.</li><li><strong>AI Circadian Anomaly Detection:</strong> Machine learning identifies deviations from natural routines (e.g. normally awake by 7:30 AM, inactive at 9:00 AM).</li><li><strong>Apple Watch Standalone Cellular Sync:</strong> Direct Apple Watch cloud sync without requiring an iPhone nearby.</li></ol>
