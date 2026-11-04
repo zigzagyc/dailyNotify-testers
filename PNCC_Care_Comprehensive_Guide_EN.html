@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PNCC Care - Comprehensive Product Design Dossier, Exhaustive Settings Reference & Illustrated Manual</title>
+<title>PNCC Care (dailyNotify) - Comprehensive Guide</title>
 <style>
+
   @page {
     size: A4;
     margin: 16mm 14mm 16mm 14mm;
@@ -217,28 +218,61 @@
     margin: 8px 0;
     overflow-x: auto;
   }
+
+  .screenshot-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin: 14px 0 18px 0;
+    page-break-inside: avoid;
+  }
+  .screenshot-item {
+    text-align: center;
+    page-break-inside: avoid;
+  }
+  .screenshot-item.narrow {
+    width: 220px;
+  }
+  .screenshot-item.wide {
+    width: 440px;
+  }
+  .screenshot-item img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1.5px solid #CBD5E1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    background: #F8FAFC;
+  }
+  .screenshot-item .caption {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #475569;
+    margin-top: 5px;
+    line-height: 1.35;
+  }
 </style>
 </head>
 <body>
-
-  <!-- COVER -->
   <div class="cover">
-    <div class="cover-logo">❤</div>
-    <h1 class="cover-title">PNCC Care</h1>
-    <div class="cover-subtitle">Engineering Humanity: Dignity for Elders, Peace of Mind for Families</div>
-    <div class="cover-desc">A Monumental Technical Dossier, Comprehensive Architectural Analysis, and Fully Illustrated Non-Technical User Manual.<br>Features complete breakdowns of every setting, functional consequences, failure modes, clinical caregiver protocols, and multi-device IoT integration.</div>
+    <div class="cover-logo">✝</div>
+    <h1 class="cover-title">PNCC Care (dailyNotify)</h1>
+    <div class="cover-subtitle">Comprehensive Architectural Dossier & Complete Illustrated User Manual (56 Screenshots Edition)</div>
+    <div class="cover-desc">
+      A dignity-first, zero-burden elderly safety and spiritual accompaniment ecosystem engineered for solitary seniors, family guardians, and parish care networks.
+    </div>
     <div class="cover-badges">
-      <div class="cover-badge">📱 iPhone, iPad &amp; Android</div>
-      <div class="cover-badge">⌚ watchOS Standalone Companion</div>
-      <div class="cover-badge">🗣 Amazon Alexa Voice Check-In</div>
-      <div class="cover-badge">🌙 Bedside Nightstand Ambient Clock</div>
-      <div class="cover-badge">🛡 2-Tier Timers &amp; Fall Sensor</div>
-      <div class="cover-badge">🔒 100% Private / Zero Ad Trackers</div>
+      <span class="cover-badge">Version 1.1.5 (Build 25)</span>
+      <span class="cover-badge">iOS & iPadOS 16.0+</span>
+      <span class="cover-badge">watchOS 9.0+ Independent</span>
+      <span class="cover-badge">Android 9.0+</span>
+      <span class="cover-badge">56 Full Screenshots Included</span>
     </div>
     <div class="cover-meta">
-      <strong>Product Version:</strong> v1.1.5 (Build 25) · <strong>Release Date:</strong> November 2026<br>
-      <strong>Author / Lead Architect:</strong> ZigzagYC &amp; PNCC Care Core Engineering Team<br>
-      <strong>App Store ID:</strong> 6742517865 · <strong>App ID:</strong> com.zigzagyc.dailyNotify
+      <strong>Polish National Catholic Church (PNCC)</strong> · Christian Care & Safety Initiative<br>
+      <strong>App Store ID:</strong> 6742517865 · <strong>Bundle ID:</strong> com.zigzagyc.dailyNotify
     </div>
   </div>
 
@@ -248,6 +282,28 @@
       <h2 class="chapter-title">Sociological Context, Geriatric Psychology & Design Philosophy</h2>
     </div>
     <div class="chapter-intro">Reconciling family anxiety and elder dignity in an aging society. Why conventional monitoring paradigms fail, and how PNCC Care pioneers 'Passive-Active Balance'.</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/07_senior_dashboard_iphone13.png" alt="Fig 1.1: Senior Dashboard on iPhone 13 (High Legibility Layout)">
+        <div class="caption">Fig 1.1: Senior Dashboard on iPhone 13 (High Legibility Layout)</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/10_senior_dashboard_compact.png" alt="Fig 1.2: Compact Dynamic Type Adaptation for Standard Display">
+        <div class="caption">Fig 1.2: Compact Dynamic Type Adaptation for Standard Display</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/40_widgets_lockscreen_home.png" alt="Fig 1.3: iOS Lock Screen & Home Screen Glanceable Widgets">
+        <div class="caption">Fig 1.3: iOS Lock Screen & Home Screen Glanceable Widgets</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/38_apple_watch_live_face.png" alt="Fig 1.4: Standalone Apple Watch Complication Watchface">
+        <div class="caption">Fig 1.4: Standalone Apple Watch Complication Watchface</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/42_screensaver_ambient_clock.png" alt="Fig 1.5: Low-Stimulus Ambient Clock Screensaver Mode">
+        <div class="caption">Fig 1.5: Low-Stimulus Ambient Clock Screensaver Mode</div>
+      </div>
+    </div>
 
     <h3>1.1 The Solitary Senior Epidemic & The Sandwich Generation Burden</h3>
     <p>Throughout developed economies, demographic shifts have produced unprecedented numbers of solitary elders. Adult children work demanding jobs or reside in distant cities. Simultaneously, the 'Sandwich Generation' (individuals aged 45–65) finds itself crushed between raising teenage children and overseeing elderly parents living alone.</p><p>This produces chronic psychological strain: the adult child lives in constant fear that an accident has occurred behind closed doors, while the aging parent feels a relentless pressure to demonstrate they are not becoming a burden to their family.</p>
@@ -268,10 +324,27 @@
       <h2 class="chapter-title">Full-Stack System Architecture & Cross-Platform Engineering</h2>
     </div>
     <div class="chapter-intro">Technical blueprints of the unified Flutter core, watchOS native SwiftUI companion, Alexa voice skill, and platform channel bridges.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/01_login_methods.png" alt="Full-Stack System Architecture & Cross-Platform Engineering">
-      <div class="screenshot-caption">Chapter 2: Full-Stack System Architecture & Cross-Platform Engineering</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/08_senior_dashboard_iphone15.png" alt="Fig 2.1: iPhone 15 Pro Dynamic Island Integration">
+        <div class="caption">Fig 2.1: iPhone 15 Pro Dynamic Island Integration</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/12_senior_dashboard_tablet.png" alt="Fig 2.2: Android Tablet Adaptive High-DPI Grid Layout">
+        <div class="caption">Fig 2.2: Android Tablet Adaptive High-DPI Grid Layout</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/23_caregiver_dashboard_raw.png" alt="Fig 2.3: iPad Pro Caregiver Console Split-View Hierarchy">
+        <div class="caption">Fig 2.3: iPad Pro Caregiver Console Split-View Hierarchy</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/37_apple_watch_sim_running.png" alt="Fig 2.4: watchOS Independent SwiftUI Execution Runtime">
+        <div class="caption">Fig 2.4: watchOS Independent SwiftUI Execution Runtime</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/43_screensaver_high_contrast.png" alt="Fig 2.5: High-Contrast Anti-Glare Safety Display Engine">
+        <div class="caption">Fig 2.5: High-Contrast Anti-Glare Safety Display Engine</div>
+      </div>
     </div>
 
     <h3>2.1 Cross-Platform System Topology</h3>
@@ -293,10 +366,35 @@
       <h2 class="chapter-title">Engineering Challenges, Real-World Pitfalls & Breakthrough Solutions</h2>
     </div>
     <div class="chapter-intro">A candid analysis of technical obstacles, production crashes, battery management constraints, and how our team resolved them.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/02_role_selection.png" alt="Engineering Challenges, Real-World Pitfalls & Breakthrough Solutions">
-      <div class="screenshot-caption">Chapter 3: Engineering Challenges, Real-World Pitfalls & Breakthrough Solutions</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/01_login_options_phone.png" alt="Fig 3.1: Phone Biometric & Passwordless Login Screen">
+        <div class="caption">Fig 3.1: Phone Biometric & Passwordless Login Screen</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/02_login_options_ipad.png" alt="Fig 3.2: iPad Optimized Landscape Authentication Portal">
+        <div class="caption">Fig 3.2: iPad Optimized Landscape Authentication Portal</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/03_login_social_methods.png" alt="Fig 3.3: Native Apple Sign-In & Google SSO Buttons">
+        <div class="caption">Fig 3.3: Native Apple Sign-In & Google SSO Buttons</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/04_role_selection_cards.png" alt="Fig 3.4: Dual Role Selector (Senior vs. Caregiver)">
+        <div class="caption">Fig 3.4: Dual Role Selector (Senior vs. Caregiver)</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/05_role_selection_ipad.png" alt="Fig 3.5: Tablet Multi-Account & Profile Selection Matrix">
+        <div class="caption">Fig 3.5: Tablet Multi-Account & Profile Selection Matrix</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/06_role_switch_dialog.png" alt="Fig 3.6: Instant Role Toggle Confirmation Dialog">
+        <div class="caption">Fig 3.6: Instant Role Toggle Confirmation Dialog</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/55_feature_settings_account_gdpr.png" alt="Fig 3.7: GDPR/CCPA One-Click Account Deletion & Data Purge">
+        <div class="caption">Fig 3.7: GDPR/CCPA One-Click Account Deletion & Data Purge</div>
+      </div>
     </div>
 
     <h3>3.1 Challenge 1: The App Store Thin Binary & Missing Framework Crash</h3>
@@ -318,10 +416,55 @@
       <h2 class="chapter-title">The Senior Experience: Ergonomics & Six Multimodal Check-In Triggers</h2>
     </div>
     <div class="chapter-intro">Detailed breakdown of the Senior Dashboard and six independent modalities designed to fit naturally into an elder's daily routine.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/03_senior_safe_checkin.png" alt="The Senior Experience: Ergonomics & Six Multimodal Check-In Triggers">
-      <div class="screenshot-caption">Chapter 4: The Senior Experience: Ergonomics & Six Multimodal Check-In Triggers</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/09_senior_safe_confirmed.png" alt="Fig 4.1: Confirmed Safe State (Vibrant Emerald Card)">
+        <div class="caption">Fig 4.1: Confirmed Safe State (Vibrant Emerald Card)</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/11_senior_dashboard_ipad.png" alt="Fig 4.2: Senior Safe Interface on iPad Pro 12.9-inch">
+        <div class="caption">Fig 4.2: Senior Safe Interface on iPad Pro 12.9-inch</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/45_feature_giant_safe_card.png" alt="Fig 4.3: Macro View: 90pt Icon Safe Check-In Touch Target">
+        <div class="caption">Fig 4.3: Macro View: 90pt Icon Safe Check-In Touch Target</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/46_feature_emergency_sos_button.png" alt="Fig 4.4: Macro View: One-Touch Emergency SOS Trigger">
+        <div class="caption">Fig 4.4: Macro View: One-Touch Emergency SOS Trigger</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/47_feature_countdown_deadline_header.png" alt="Fig 4.5: Macro View: Real-Time Deadline Countdown Header">
+        <div class="caption">Fig 4.5: Macro View: Real-Time Deadline Countdown Header</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/13_daily_scripture_card.png" alt="Fig 4.6: Daily Devotional Scripture Card (Multilingual)">
+        <div class="caption">Fig 4.6: Daily Devotional Scripture Card (Multilingual)</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/14_daily_scripture_reading.png" alt="Fig 4.7: Scripture Full-Text Reading & Version Switcher">
+        <div class="caption">Fig 4.7: Scripture Full-Text Reading & Version Switcher</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/15_bible_reader_chapter_view.png" alt="Fig 4.8: Offline Scripture Reader Chapter & Verse Selector">
+        <div class="caption">Fig 4.8: Offline Scripture Reader Chapter & Verse Selector</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/16_bible_reader_full.png" alt="Fig 4.9: Full Offline Bible Reader with Dynamic Typography">
+        <div class="caption">Fig 4.9: Full Offline Bible Reader with Dynamic Typography</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/17_bible_reader_modal.png" alt="Fig 4.10: Bible Reader Reader Settings & Font Adjustment">
+        <div class="caption">Fig 4.10: Bible Reader Reader Settings & Font Adjustment</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/48_feature_daily_verse_card.png" alt="Fig 4.11: Close-up: Spiritual Verse Card Typography & Border">
+        <div class="caption">Fig 4.11: Close-up: Spiritual Verse Card Typography & Border</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/49_feature_scripture_action_bar.png" alt="Fig 4.12: Close-up: Verse Copy, Share & Bookmark Toolbar">
+        <div class="caption">Fig 4.12: Close-up: Verse Copy, Share & Bookmark Toolbar</div>
+      </div>
     </div>
 
     <h3>4.1 Senior Dashboard Anatomy: 48dp+ Unified Giant Safety Card & 500ms Auto-Dismissal</h3>
@@ -337,10 +480,35 @@
       <h2 class="chapter-title">Exhaustive Configuration & Functional Consequence Catalog</h2>
     </div>
     <div class="chapter-intro">An encyclopedic breakdown of every toggle, slider, timer, and option in PNCC Care, explaining the exact system consequences of each setting.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/07_settings_main.png" alt="Exhaustive Configuration & Functional Consequence Catalog">
-      <div class="screenshot-caption">Chapter 5: Exhaustive Configuration & Functional Consequence Catalog</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/18_caregiver_console_phone.png" alt="Fig 5.1: Caregiver Console Live Mobile Dashboard">
+        <div class="caption">Fig 5.1: Caregiver Console Live Mobile Dashboard</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/19_caregiver_console_iphone13.png" alt="Fig 5.2: Multi-Senior Live Status Feed on iPhone 13">
+        <div class="caption">Fig 5.2: Multi-Senior Live Status Feed on iPhone 13</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/20_caregiver_console_store.png" alt="Fig 5.3: Production Caregiver Console Status Hierarchy">
+        <div class="caption">Fig 5.3: Production Caregiver Console Status Hierarchy</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/21_caregiver_matrix_ipad.png" alt="Fig 5.4: 3-Column Senior Monitoring Matrix on iPad Pro">
+        <div class="caption">Fig 5.4: 3-Column Senior Monitoring Matrix on iPad Pro</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/22_caregiver_matrix_tablet.png" alt="Fig 5.5: Multi-Senior Grid View on 10-inch Android Tablet">
+        <div class="caption">Fig 5.5: Multi-Senior Grid View on 10-inch Android Tablet</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/50_feature_caregiver_senior_card_safe.png" alt="Fig 5.6: Close-up: Safe Senior Status Card with Timestamp">
+        <div class="caption">Fig 5.6: Close-up: Safe Senior Status Card with Timestamp</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/51_feature_caregiver_action_triggers.png" alt="Fig 5.7: Close-up: Direct Dial & SMS Emergency Action Triggers">
+        <div class="caption">Fig 5.7: Close-up: Direct Dial & SMS Emergency Action Triggers</div>
+      </div>
     </div>
 
     <h3>5.1 Safety Timers & Vacation Configurations</h3>
@@ -362,10 +530,43 @@
       <h2 class="chapter-title">Account Lifecycle, User Roles & Establishing Family Caring Circles</h2>
     </div>
     <div class="chapter-intro">Complete guide on biometric onboarding, dynamic role switching, and 3-second AES-encrypted QR code pairing.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/04_caregiver_dashboard.png" alt="Account Lifecycle, User Roles & Establishing Family Caring Circles">
-      <div class="screenshot-caption">Chapter 6: Account Lifecycle, User Roles & Establishing Family Caring Circles</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/28_settings_main_phone.png" alt="Fig 6.1: Comprehensive Settings Menu Structure (Phone)">
+        <div class="caption">Fig 6.1: Comprehensive Settings Menu Structure (Phone)</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/29_settings_options_sim.png" alt="Fig 6.2: Notification Escalation & Buffer Windows Panel">
+        <div class="caption">Fig 6.2: Notification Escalation & Buffer Windows Panel</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/30_settings_iphone13.png" alt="Fig 6.3: Physical Device Settings Navigation on iPhone 13">
+        <div class="caption">Fig 6.3: Physical Device Settings Navigation on iPhone 13</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/31_settings_ipad_splitview.png" alt="Fig 6.4: iPad Split-View Dual-Pane Configuration Master">
+        <div class="caption">Fig 6.4: iPad Split-View Dual-Pane Configuration Master</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/32_settings_tablet_landscape.png" alt="Fig 6.5: Tablet Landscape Advanced Parameters View">
+        <div class="caption">Fig 6.5: Tablet Landscape Advanced Parameters View</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/33_settings_ipad_full.png" alt="Fig 6.6: iPad Full Settings Suite with Realtime Persistence">
+        <div class="caption">Fig 6.6: iPad Full Settings Suite with Realtime Persistence</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/52_feature_settings_deadline_picker.png" alt="Fig 6.7: Close-up: Check-in Deadline Hour Wheel Picker">
+        <div class="caption">Fig 6.7: Close-up: Check-in Deadline Hour Wheel Picker</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/53_feature_settings_escalation_timers.png" alt="Fig 6.8: Close-up: Amber & Red Escalation Buffer Pickers">
+        <div class="caption">Fig 6.8: Close-up: Amber & Red Escalation Buffer Pickers</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/54_feature_settings_accessibility_fonts.png" alt="Fig 6.9: Close-up: WCAG AAA Font Scaling Slider (1.0x - 1.5x)">
+        <div class="caption">Fig 6.9: Close-up: WCAG AAA Font Scaling Slider (1.0x - 1.5x)</div>
+      </div>
     </div>
 
     <h3>6.1 Onboarding & Password-Free Biometric Authentication</h3>
@@ -384,10 +585,19 @@
       <h2 class="chapter-title">Caregiver Clinical Protocols & Real-Time Condition Handling</h2>
     </div>
     <div class="chapter-intro">Field guidelines and standard operating procedures for caregivers managing Green, Amber, Red, Fall, and Offline states.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/08_ipad_caregiver_grid.png" alt="Caregiver Clinical Protocols & Real-Time Condition Handling">
-      <div class="screenshot-caption">Chapter 7: Caregiver Clinical Protocols & Real-Time Condition Handling</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item wide">
+        <img src="assets/41_widgets_grid_overview.png" alt="Fig 7.1: Interactive iOS Lock & Home Screen Widget Suite">
+        <div class="caption">Fig 7.1: Interactive iOS Lock & Home Screen Widget Suite</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/44_widgets_dynamic_island.png" alt="Fig 7.2: Live Activities & Dynamic Island Compact Pill">
+        <div class="caption">Fig 7.2: Live Activities & Dynamic Island Compact Pill</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/39_apple_watch_companion_pair.png" alt="Fig 7.3: WCSession Bidirectional Wearable Live Sync Engine">
+        <div class="caption">Fig 7.3: WCSession Bidirectional Wearable Live Sync Engine</div>
+      </div>
     </div>
 
     <h3>7.1 The Five Real-Time Conditions & Clinical SOP</h3>
@@ -400,10 +610,23 @@
       <h2 class="chapter-title">Failure Mode & Effects Analysis (FMEA) & Edge Case Matrix</h2>
     </div>
     <div class="chapter-intro">Comprehensive analysis of extreme edge cases: power outages, dead batteries, offline dead zones, and dropped devices.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/10_emergency_notification.png" alt="Failure Mode & Effects Analysis (FMEA) & Edge Case Matrix">
-      <div class="screenshot-caption">Chapter 8: Failure Mode & Effects Analysis (FMEA) & Edge Case Matrix</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/24_emergency_push_notification.png" alt="Fig 8.1: High-Priority FCM Push Notification Banner">
+        <div class="caption">Fig 8.1: High-Priority FCM Push Notification Banner</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/25_critical_alert_lockscreen.png" alt="Fig 8.2: iOS Lock Screen Critical Alert Bypassing Physical Mute">
+        <div class="caption">Fig 8.2: iOS Lock Screen Critical Alert Bypassing Physical Mute</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/26_notification_ipad_alert.png" alt="Fig 8.3: iPad Emergency Dispatch Alert Modal with Audio Chime">
+        <div class="caption">Fig 8.3: iPad Emergency Dispatch Alert Modal with Audio Chime</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/27_notification_android.png" alt="Fig 8.4: Android Heads-Up Emergency Notification Channel">
+        <div class="caption">Fig 8.4: Android Heads-Up Emergency Notification Channel</div>
+      </div>
     </div>
 
     <h3>8.1 FMEA Matrix & Resiliency Mechanisms</h3>
@@ -416,10 +639,15 @@
       <h2 class="chapter-title">Spiritual Wellness, Offline Scriptures & Cognitive Routine</h2>
     </div>
     <div class="chapter-intro">Why scripture devotionals form an essential pillar of elder mental health, dignity, and daily routine formation.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/06_offline_bible_reader.png" alt="Spiritual Wellness, Offline Scriptures & Cognitive Routine">
-      <div class="screenshot-caption">Chapter 9: Spiritual Wellness, Offline Scriptures & Cognitive Routine</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/10_emergency_notification.png" alt="Fig 9.1: Offline Recovery & Network Health Resilience Monitor">
+        <div class="caption">Fig 9.1: Offline Recovery & Network Health Resilience Monitor</div>
+      </div>
+      <div class="screenshot-item wide">
+        <img src="assets/11_home_widgets.png" alt="Fig 9.2: Lock Screen One-Touch Trigger for Low-Bandwidth Scenarios">
+        <div class="caption">Fig 9.2: Lock Screen One-Touch Trigger for Low-Bandwidth Scenarios</div>
+      </div>
     </div>
 
     <h3>9.1 Spiritual Uplift vs Clinical Stigma: Why Scriptures Belong in Eldercare</h3>
@@ -435,10 +663,23 @@
       <h2 class="chapter-title">Current Implementation Boundaries & 24-Month Future Roadmap</h2>
     </div>
     <div class="chapter-intro">Honest engineering transparency on present technical boundaries and our vision for ambient smart home eldercare.</div>
-
-    <div class="screenshot-container">
-      <img src="assets/11_home_widgets.png" alt="Current Implementation Boundaries & 24-Month Future Roadmap">
-      <div class="screenshot-caption">Chapter 10: Current Implementation Boundaries & 24-Month Future Roadmap</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item narrow">
+        <img src="assets/34_apple_watch_home_safe.png" alt="Fig 10.1: Native watchOS App Home: Safe State Display">
+        <div class="caption">Fig 10.1: Native watchOS App Home: Safe State Display</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/35_apple_watch_sos_red.png" alt="Fig 10.2: Wrist-Triggered Red Emergency SOS Crimson Card">
+        <div class="caption">Fig 10.2: Wrist-Triggered Red Emergency SOS Crimson Card</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/36_apple_watch_verse_read.png" alt="Fig 10.3: Standalone OLED Daily Scripture Reader on Watch">
+        <div class="caption">Fig 10.3: Standalone OLED Daily Scripture Reader on Watch</div>
+      </div>
+      <div class="screenshot-item narrow">
+        <img src="assets/56_feature_watch_emergency_tap.png" alt="Fig 10.4: Close-up: Watch Force Touch & SOS Confirmation Target">
+        <div class="caption">Fig 10.4: Close-up: Watch Force Touch & SOS Confirmation Target</div>
+      </div>
     </div>
 
     <h3>10.1 Current Implementation Limitations</h3>
