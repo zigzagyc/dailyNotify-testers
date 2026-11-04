@@ -171,14 +171,37 @@
     margin-bottom: 4px;
   }
   .screenshot-item.narrow {
-    width: 140px;
+    width: 135px;
+  }
+  .screenshot-item.tablet {
+    width: 165px;
   }
   .screenshot-item.wide {
     width: 290px;
   }
-  .screenshot-item img {
+  .screenshot-item.narrow img {
     width: 100%;
     max-height: 190px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    background: #F8FAFC;
+    display: block;
+  }
+  .screenshot-item.tablet img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    background: #F8FAFC;
+    display: block;
+  }
+  .screenshot-item.wide img {
+    width: 100%;
+    max-height: 140px;
     object-fit: contain;
     border-radius: 6px;
     border: 1px solid #CBD5E1;
@@ -275,7 +298,7 @@
         <img src="assets/08_senior_dashboard_iphone15.png" alt="Fig 2.1: iPhone 15 Pro Dynamic Island Integration">
         <div class="caption">Fig 2.1: iPhone 15 Pro Dynamic Island Integration</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/12_senior_dashboard_tablet.png" alt="Fig 2.2: Android Tablet Adaptive High-DPI Grid Layout">
         <div class="caption">Fig 2.2: Android Tablet Adaptive High-DPI Grid Layout</div>
       </div>
@@ -284,7 +307,7 @@
     <h3>2.2 Apple Watch Companion (watchOS Architecture)</h3>
     <p>The Apple Watch companion app (<code>PNCCWatch Watch App</code>) is engineered for autonomous wrist operation:</p><ul><li><strong>Dual Operating Modes:</strong> Operates in tethered mode when the iPhone is in Bluetooth proximity, and autonomous mode when the elder is walking or gardening away from their phone.</li><li><strong>WatchConnectivity Session Manager:</strong> Implements <code>WCSessionDelegate</code>. When 'I'm OK' is tapped, it creates a cryptographically signed payload containing the UTC timestamp, battery level, and check-in source, caching locally if disconnected and flushing upon reconnection.</li><li><strong>HealthKit Integration:</strong> Configured with <code>HKHealthStore</code> background delivery permissions (<code>NSHealthShareUsageDescription</code> and <code>NSHealthUpdateUsageDescription</code>) to verify physical active energy.</li></ul>
     <div class="screenshot-grid">
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/23_caregiver_dashboard_raw.png" alt="Fig 2.3: iPad Pro Caregiver Console Split-View Hierarchy">
         <div class="caption">Fig 2.3: iPad Pro Caregiver Console Split-View Hierarchy</div>
       </div>
@@ -319,7 +342,7 @@
         <img src="assets/01_login_options_phone.png" alt="Fig 3.1: Phone Biometric & Passwordless Login">
         <div class="caption">Fig 3.1: Phone Biometric & Passwordless Login</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/02_login_options_ipad.png" alt="Fig 3.2: iPad Optimized Landscape Authentication Portal">
         <div class="caption">Fig 3.2: iPad Optimized Landscape Authentication Portal</div>
       </div>
@@ -336,7 +359,7 @@
         <img src="assets/04_role_selection_cards.png" alt="Fig 3.4: Family Pairing QR Code Interface">
         <div class="caption">Fig 3.4: Family Pairing QR Code Interface</div>
       </div>
-      <div class="screenshot-item narrow">
+      <div class="screenshot-item tablet">
         <img src="assets/05_role_selection_ipad.png" alt="Fig 3.5: Role Selection Screen (Senior vs. Caregiver)">
         <div class="caption">Fig 3.5: Role Selection Screen (Senior vs. Caregiver)</div>
       </div>
@@ -373,7 +396,7 @@
         <img src="assets/09_senior_safe_confirmed.png" alt="Fig 4.1: Confirmed Safe State (Vibrant Emerald Card)">
         <div class="caption">Fig 4.1: Confirmed Safe State (Vibrant Emerald Card)</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/11_senior_dashboard_ipad.png" alt="Fig 4.2: Senior Safe Interface on iPad Pro 12.9-inch">
         <div class="caption">Fig 4.2: Senior Safe Interface on iPad Pro 12.9-inch</div>
       </div>
@@ -424,11 +447,11 @@
     <h3>5.2 Passive Activity Tracking & Hardware Automations</h3>
     <table><thead><tr><th>Setting Name</th><th>Code Key &amp; Type</th><th>Valid Range &amp; Default</th><th>Detailed Mechanism &amp; Functional Consequence</th></tr></thead><tbody><tr><td><strong>Battery Charger Activity Tracking</strong></td><td><code>enableBatteryActivityTracking</code> (bool)</td><td>Enabled / Disabled<br>(Default: Enabled)</td><td><strong>Mechanism:</strong> Listens for system battery plug-in / unplug broadcasts.<br><strong>Consequence:</strong> When elder plugs in phone at bedtime or unplugs in the morning, the system silently resets the inactivity timer! Elder is confirmed safe with zero manual app interaction.</td></tr><tr><td><strong>Screen Unlock Activity Tracking</strong></td><td><code>enableUnlockActivityTracking</code> (bool)</td><td>Enabled / Disabled<br>(Default: Enabled)</td><td><strong>Mechanism:</strong> Intercepts ACTION_USER_PRESENT lock-screen events.<br><strong>Consequence:</strong> If elder unlocks their phone to check photos, read news, or take a call, it registers as a valid 'sign of life' and resets Timer 1.</td></tr><tr><td><strong>Apple Health / Google Fit Sync</strong></td><td><code>enableHealthActivitySync</code> (bool)</td><td>Enabled / Disabled<br>(Default: Disabled)</td><td><strong>Mechanism:</strong> Reads HealthKit / Google Fit step counts and active energy.<br><strong>Consequence:</strong> If the senior walks more than 100 steps in an hour or their Apple Watch records normal heart activity, it automatically logs activity.</td></tr><tr><td><strong>Fall Detection Sensitivity</strong></td><td><code>fallDetectionSensitivity</code> (String)</td><td>'high', 'medium', 'low'<br>(Default: 'medium')</td><td><strong>Mechanism:</strong> Adjusts 3-axis accelerometer vector magnitude threshold.<br><strong>Consequence:</strong> 'High' triggers on 1.8G impacts (soft carpet); 'Medium' on 2.5G; 'Low' on 3.2G. Always initiates a 30-second local cancel window before alerting caregivers.</td></tr><tr><td><strong>Shake to Panic Alert</strong></td><td><code>enableShakeToPanic</code> (bool)</td><td>Enabled / Disabled<br>(Default: Disabled)</td><td><strong>Mechanism:</strong> Evaluates continuous high-frequency shake gestures.<br><strong>Consequence:</strong> Violently shaking the phone for 3 seconds triggers a 10-second panic countdown, then dispatches immediate emergency alerts to family contacts.</td></tr></tbody></table>
     <div class="screenshot-grid">
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/21_caregiver_matrix_ipad.png" alt="Fig 5.4: 3-Column Senior Monitoring Matrix on iPad Pro">
         <div class="caption">Fig 5.4: 3-Column Senior Monitoring Matrix on iPad Pro</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/22_caregiver_matrix_tablet.png" alt="Fig 5.5: Multi-Senior Grid View on 10-inch Android Tablet">
         <div class="caption">Fig 5.5: Multi-Senior Grid View on 10-inch Android Tablet</div>
       </div>
@@ -467,11 +490,11 @@
         <img src="assets/30_settings_iphone13.png" alt="Fig 6.3: Physical Device Settings Navigation on iPhone 13">
         <div class="caption">Fig 6.3: Physical Device Settings Navigation on iPhone 13</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/31_settings_ipad_splitview.png" alt="Fig 6.4: iPad Split-View Dual-Pane Configuration Master">
         <div class="caption">Fig 6.4: iPad Split-View Dual-Pane Configuration Master</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/33_settings_ipad_full.png" alt="Fig 6.6: iPad Full Settings Suite with Realtime Persistence">
         <div class="caption">Fig 6.6: iPad Full Settings Suite with Realtime Persistence</div>
       </div>
@@ -484,7 +507,7 @@
         <img src="assets/29_settings_options_sim.png" alt="Fig 6.2: Notification Escalation & Buffer Windows Panel">
         <div class="caption">Fig 6.2: Notification Escalation & Buffer Windows Panel</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/32_settings_tablet_landscape.png" alt="Fig 6.5: Tablet Landscape Advanced Parameters View">
         <div class="caption">Fig 6.5: Tablet Landscape Advanced Parameters View</div>
       </div>
@@ -547,7 +570,7 @@
         <img src="assets/25_critical_alert_lockscreen.png" alt="Fig 8.2: iOS Lock Screen Critical Alert Bypassing Mute">
         <div class="caption">Fig 8.2: iOS Lock Screen Critical Alert Bypassing Mute</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/26_notification_ipad_alert.png" alt="Fig 8.3: iPad Emergency Dispatch Alert Modal with Audio Chime">
         <div class="caption">Fig 8.3: iPad Emergency Dispatch Alert Modal with Audio Chime</div>
       </div>

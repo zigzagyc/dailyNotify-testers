@@ -171,14 +171,37 @@
     margin-bottom: 4px;
   }
   .screenshot-item.narrow {
-    width: 140px;
+    width: 135px;
+  }
+  .screenshot-item.tablet {
+    width: 165px;
   }
   .screenshot-item.wide {
     width: 290px;
   }
-  .screenshot-item img {
+  .screenshot-item.narrow img {
     width: 100%;
     max-height: 190px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    background: #F8FAFC;
+    display: block;
+  }
+  .screenshot-item.tablet img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    background: #F8FAFC;
+    display: block;
+  }
+  .screenshot-item.wide img {
+    width: 100%;
+    max-height: 140px;
     object-fit: contain;
     border-radius: 6px;
     border: 1px solid #CBD5E1;
@@ -275,7 +298,7 @@
         <img src="assets/08_senior_dashboard_iphone15.png" alt="图 2.1：iPhone 15 灵动岛上的平安状态小胶囊">
         <div class="caption">图 2.1：iPhone 15 灵动岛上的平安状态小胶囊</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/12_senior_dashboard_tablet.png" alt="图 2.2：安卓大平板自动适配布局">
         <div class="caption">图 2.2：安卓大平板自动适配布局</div>
       </div>
@@ -284,7 +307,7 @@
     <h3>2.2 Apple Watch 獨立手錶伴侶架構 (watchOS)</h3>
     <p>Apple Watch 獨立手錶伴侶應用 (<code>PNCCWatch Watch App</code>) 具備雙重運作模式：</p><ul><li><strong>連線/離線雙重模式：</strong> iPhone 在藍牙範圍內時透過即時管道傳輸；外出散步或手機沒電時，手錶本地快取打卡紀錄，恢復連線後自動回補。</li><li><strong>WatchConnectivity 會話管理：</strong> 實作 <code>WCSessionDelegate</code>，打卡時封裝包含 UTC 時間戳記、電量與打卡來源的加密封包。</li><li><strong>HealthKit 背景授權：</strong> 配置 <code>NSHealthShareUsageDescription</code> 與 <code>NSHealthUpdateUsageDescription</code>，透過手錶感測生理步數與活動能量。</li></ul>
     <div class="screenshot-grid">
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/23_caregiver_dashboard_raw.png" alt="图 2.3：iPad 平板大屏幕分栏看管界面">
         <div class="caption">图 2.3：iPad 平板大屏幕分栏看管界面</div>
       </div>
@@ -319,7 +342,7 @@
         <img src="assets/01_login_options_phone.png" alt="图 3.1：手机上刷脸或点一下就能登录的界面">
         <div class="caption">图 3.1：手机上刷脸或点一下就能登录的界面</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/02_login_options_ipad.png" alt="图 3.2：平板横屏登录大界面">
         <div class="caption">图 3.2：平板横屏登录大界面</div>
       </div>
@@ -336,7 +359,7 @@
         <img src="assets/04_role_selection_cards.png" alt="图 3.4：父母与子女建立看护绑定的专属二维码界面">
         <div class="caption">图 3.4：父母与子女建立看护绑定的专属二维码界面</div>
       </div>
-      <div class="screenshot-item narrow">
+      <div class="screenshot-item tablet">
         <img src="assets/05_role_selection_ipad.png" alt="图 3.5：选身份界面（长者卡片与照料者卡片）">
         <div class="caption">图 3.5：选身份界面（长者卡片与照料者卡片）</div>
       </div>
@@ -373,7 +396,7 @@
         <img src="assets/09_senior_safe_confirmed.png" alt="图 4.1：点完报平安后的翠绿色大卡片（表示今天一切安好）">
         <div class="caption">图 4.1：点完报平安后的翠绿色大卡片（表示今天一切安好）</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/11_senior_dashboard_ipad.png" alt="图 4.2：iPad 大平板上的超大报平安界面">
         <div class="caption">图 4.2：iPad 大平板上的超大报平安界面</div>
       </div>
@@ -424,11 +447,11 @@
     <h3>5.2 被動生活感測與硬體自動化</h3>
     <table><thead><tr><th>設定項目</th><th>代碼 Key 與型別</th><th>可選設定與預設</th><th>詳細運作機制與功能後果 (Consequence)</th></tr></thead><tbody><tr><td><strong>充電狀態變動自動報平安</strong></td><td><code>enableBatteryActivityTracking</code> (bool)</td><td>開啟 / 關閉 (預設開啟)</td><td><strong>機制：</strong> 廣播接收器監聽插上或拔掉充電線動作。<br><strong>後果：</strong> 長輩晚上睡前插上充電、或早晨拔掉充電線時，系統靜默視為一次有效活動並重置計時器！長輩完全不用開軟體。</td></tr><tr><td><strong>解鎖螢幕自動報平安</strong></td><td><code>enableUnlockActivityTracking</code> (bool)</td><td>開啟 / 關閉 (預設開啟)</td><td><strong>機制：</strong> 監聽系統螢幕解鎖 (ACTION_USER_PRESENT) 事件。<br><strong>後果：</strong> 長輩只要解鎖手機看照片、讀簡訊或聽語音，系統自動確認長者平安並重置安全計時器。</td></tr><tr><td><strong>Apple 健康 / Google 健身同步</strong></td><td><code>enableHealthActivitySync</code> (bool)</td><td>開啟 / 關閉 (預設關閉)</td><td><strong>機制：</strong> 讀取 HealthKit 或 Google Fit 步數與心率。<br><strong>後果：</strong> 過去 1 小時內步數大於 100 步、或 Apple Watch 記錄到活動心率時，自動確認安全並更新最後活動時間。</td></tr><tr><td><strong>跌倒撞擊靈敏度</strong></td><td><code>fallDetectionSensitivity</code> (String)</td><td>'high', 'medium', 'low'<br>(預設：'medium')</td><td><strong>機制：</strong> 設定加速度計重力衝擊閾值。<br><strong>後果：</strong> 「高」在 1.8G 觸發，「標準」在 2.5G，「低」在 3.2G。偵測到撞擊後強制啟動 30 秒本機倒數取消窗，防止手機掉落地面造成誤報。</td></tr><tr><td><strong>搖晃求助警報</strong></td><td><code>enableShakeToPanic</code> (bool)</td><td>開啟 / 關閉 (預設關閉)</td><td><strong>機制：</strong> 連續劇烈搖晃手機感測。<br><strong>後果：</strong> 長輩突發心悸或遭受威脅時，用力搖晃設備 3 秒立即啟動 10 秒倒數，隨後發送求救警報並呼叫聯絡人。</td></tr></tbody></table>
     <div class="screenshot-grid">
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/21_caregiver_matrix_ipad.png" alt="图 5.4：iPad 大屏幕一次看护全社区多位老人的总控台">
         <div class="caption">图 5.4：iPad 大屏幕一次看护全社区多位老人的总控台</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/22_caregiver_matrix_tablet.png" alt="图 5.5：安卓平板上的多老人看护卡片网格">
         <div class="caption">图 5.5：安卓平板上的多老人看护卡片网格</div>
       </div>
@@ -467,11 +490,11 @@
         <img src="assets/30_settings_iphone13.png" alt="图 6.3：真机上清晰明了的设置菜单滑动界面">
         <div class="caption">图 6.3：真机上清晰明了的设置菜单滑动界面</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/31_settings_ipad_splitview.png" alt="图 6.4：iPad 左边挑选项、右边改设置的双栏界面">
         <div class="caption">图 6.4：iPad 左边挑选项、右边改设置的双栏界面</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/33_settings_ipad_full.png" alt="图 6.6：改完立即生效的 iPad 全能设置页面">
         <div class="caption">图 6.6：改完立即生效的 iPad 全能设置页面</div>
       </div>
@@ -484,7 +507,7 @@
         <img src="assets/29_settings_options_sim.png" alt="图 6.2：设置几点算迟到、等多久发提醒的设置界面">
         <div class="caption">图 6.2：设置几点算迟到、等多久发提醒的设置界面</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/32_settings_tablet_landscape.png" alt="图 6.5：横向大平板设置窗口">
         <div class="caption">图 6.5：横向大平板设置窗口</div>
       </div>
@@ -547,7 +570,7 @@
         <img src="assets/25_critical_alert_lockscreen.png" alt="图 8.2：即使手机开了静音也一样能响铃叫醒家人的求救报警">
         <div class="caption">图 8.2：即使手机开了静音也一样能响铃叫醒家人的求救报警</div>
       </div>
-      <div class="screenshot-item wide">
+      <div class="screenshot-item tablet">
         <img src="assets/26_notification_ipad_alert.png" alt="图 8.3：平板上跳出的醒目求救弹窗与定位信息">
         <div class="caption">图 8.3：平板上跳出的醒目求救弹窗与定位信息</div>
       </div>
