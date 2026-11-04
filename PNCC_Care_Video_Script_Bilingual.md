@@ -136,32 +136,32 @@ Everyone in a family has different needs, so an app shouldn't look the same for 
 
 ---
 
-### 第 05 章 · 每天只需点一下：90pt 巨型绿色安全按钮
-#### Section 05: Just One Tap a Day: Giant 90pt Green Check-in Button
+### 第 05 章 · 每天只需点一下：通栏大圆角长方形安全按钮
+#### Section 05: Just One Tap a Day: Full-Width Rounded Rectangular Safety Button
 
-- **对应 PPT 幻灯片 (PPT Slide)**: 第 5 页 · 【长者模式 · 每日报平安】 / Slide 5: Senior Mode - 1-Tap Check-in
+- **对应 PPT 幻灯片 (PPT Slide)**: 第 5 页 · 【长者模式 · 每日报平安】 / Slide 5: Senior Mode - Full-Width Rectangular Check-in
 - **推荐剪辑时长 (Duration)**: 约 50 秒 (Estimated 50s)
 - **实操视频素材文件 (Video Clip ID)**: `CLIP_05_CHECKIN_TAP.mp4`
 - **录制目标设备 (Target Device)**: iPhone 15
 - **参考实测截图 (Referenced Still Frames)**: `07_senior_dashboard_iphone13.png`, `08_senior_dashboard_iphone15.png`, `11_senior_dashboard_ipad.png`
 
 ##### 1. 【画面构图与真机操作动作 (Visual Layout & Live Operations)】
-> **画面编排指导 (Layout)**: 全屏手机特写录屏。手指按下绿色巨型圆形按钮，按钮轻微缩放并伴随触觉微震动波纹，变为绿色打勾。
+> **画面编排指导 (Layout)**: 全屏手机特写录屏。手指按下通栏圆角长方形绿色按钮（横向通栏 60pt 高度，18pt 适老圆角），按钮伴随轻微微震与波纹，变为今日已平安对勾状态。
 >
-> **真实录屏操作动作 (Action Guide)**: 主界面中央显示醒目的 90pt 绿色圆形按钮‘报平安’。手指轻点，按钮出现温和的回弹水波纹动效，中央文字平滑切换为‘今日已平安报备’，下方即时浮现完成时间戳。
+> **真实录屏操作动作 (Action Guide)**: 主界面中央显示醒目的通栏大圆角长方形绿色按钮‘我很好 · 點此報平安’。手指在屏幕下半段任意横向位置轻触，按钮出现温和的回弹水波纹动效，中央文字平滑切换为‘今日已平安報備’，下方即时浮现完成时间戳。
 
 ##### 2. 【中英文朗读逐字稿 (Bilingual Narration Scripts)】
 
 ```text
 【中文口播逐字稿 (Chinese Voiceover Script)】
-现在大家看到的就是长辈每天看到的主屏幕。整个屏幕正中央，是一个直径达到 90 磅的巨型绿色圆形按钮，上面清晰地写着‘报平安’。每天早晨起床后，长辈只要伸出手指在上面轻轻点一下，手机就会给出一个舒适的轻微震动反馈，按钮瞬间变成平稳的对勾状态，文字提示‘今日已平安报备’。与此同时，远在几十公里外甚至异地上班的儿女手机，几乎在同一秒就收到了绿色的平安通知，全家人心里的石头瞬间就落地了。
+现在大家看到的就是长辈每天看到的主屏幕。整个屏幕中央最醒目的，是一个横向贯穿屏幕的通栏大圆角长方形绿色按钮，上面清晰地写着‘我很好 · 点此报平安’。很多软件喜欢用小圆形按钮，老人家如果眼神不好或者手抖，很容易点歪甚至按空；而 PNCC 关怀在 1.1.5 版本中特别设计为‘通栏长方形’，宽度撑满整个屏幕、高度达到 60 磅，长辈无论单手还是双手拿手机，大拇指随手一按就能轻松按中。每天早晨起床后，长辈只要在长方形按钮上轻轻点一下，手机就会给出一个舒适的微震反馈，状态瞬间变成绿色的安全对勾，提示‘今日已平安报备’。与此同时，远在几十公里外甚至异地上班的儿女手机，几乎在同一秒就收到了绿色的平安通知，全家人心里的石头瞬间就落地了。
 
 【英文口播逐字稿 (English Voiceover Script)】
-Here is the daily home screen seniors interact with. Right in the center is a giant 90-point emerald green button that clearly says 'Check In.' Every morning after getting out of bed, the parent simply gives it one light tap. The phone responds with a gentle vibration and changes to a checkmark saying 'Safe Today.' At the exact same second, family members—even if they're miles away at work—get an instant notification that their loved one is safe and sound. It's instant reassurance for the whole family.
+Here is the daily home screen seniors interact with. Right across the center is a full-width rounded rectangular emerald green button that clearly says 'I'm OK · Check In.' Unlike small circular buttons where seniors with trembling fingers or weak eyesight might miss the target, PNCC Care v1.1.5 features a full-width rectangular bar spanning the entire screen with a generous 60-point touch height. Parents can comfortably tap anywhere across the bar without aiming carefully. Every morning after getting out of bed, one light tap triggers a gentle haptic buzz and switches to a reassuring checkmark saying 'Safe Today.' At the exact same second, family members—even if they're miles away at work—get an instant notification that their loved one is safe and sound.
 ```
 
 ##### 3. 【剪辑打点与音画对齐提示 (Editing Timeline & AV Sync Markers)】
-> 00:00-00:18 静态展示大按钮界面与大字排版；00:19 手指点按特写与水波纹回弹；00:32 展示打卡成功状态；00:50 转入下节。
+> 00:00-00:18 静态展示通栏长方形大按钮界面与大字排版；00:19 手指点按长方形按钮特写与回弹；00:32 展示打卡成功状态；00:50 转入下节。
 
 ---
 
@@ -177,7 +177,7 @@ Here is the daily home screen seniors interact with. Right in the center is a gi
 ##### 1. 【画面构图与真机操作动作 (Visual Layout & Live Operations)】
 > **画面编排指导 (Layout)**: 主屏幕展示绿色安全状态与暖黄色缓冲状态的平滑渐变对比。
 >
-> **真实录屏操作动作 (Action Guide)**: 模拟到达截止时间。绿色按钮优雅淡出为暖黄色圆形按钮，文字更新为‘请尽快报平安’，上方显示‘缓冲期剩余 24 分钟’温和倒计时。点击黄色按钮后同样能立即完成报平安。
+> **真实录屏操作动作 (Action Guide)**: 模拟到达截止时间。通栏长方形按钮优雅淡出为暖黄色长条按钮，文字更新为‘请尽快报平安’，上方显示‘缓冲期剩余 24 分钟’温和倒计时。点击黄色长方形按钮后同样能立即完成报平安。
 
 ##### 2. 【中英文朗读逐字稿 (Bilingual Narration Scripts)】
 
