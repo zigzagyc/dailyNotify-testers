@@ -1,0 +1,415 @@
+1
+00:00:00,100 --> 00:00:01,962
+Hello everyone!
+
+2
+00:00:01,911 --> 00:00:10,650
+Today we're introducing PNCC Care, a family safety app built specifically for seniors living alone and the family members who care for them.
+
+3
+00:00:10,650 --> 00:00:17,236
+When older parents live by themselves, adult children naturally worry about falls or sudden emergencies.
+
+4
+00:00:17,236 --> 00:00:22,411
+But installing cameras all over the house feels intrusive and strips away their privacy.
+
+5
+00:00:22,411 --> 00:00:31,750
+PNCC Care takes a respectful approach: with just one simple tap on a phone or smartwatch each day, parents let their family know they're safe and well.
+
+6
+00:00:31,750 --> 00:00:40,786
+It works across iPhones, iPads, Apple Watches, and Android devices—simple, straightforward, and ready to use right out of the box.
+
+7
+00:00:42,140 --> 00:00:48,027
+Many apps look completely different across devices, which easily confuses older users.
+
+8
+00:00:47,976 --> 00:00:54,715
+PNCC Care uses a unified system that connects phones, tablets, and smartwatches seamlessly.
+
+9
+00:00:54,715 --> 00:00:57,701
+Best of all, it works offline-first.
+
+10
+00:00:57,701 --> 00:01:05,914
+Even if home Wi-Fi drops out or someone is in the basement with no signal, tapping the check-in button saves the record safely on the device.
+
+11
+00:01:05,914 --> 00:01:11,239
+As soon as the connection returns, it automatically syncs with the rest of the family.
+
+12
+00:01:11,239 --> 00:01:19,414
+It uses less than 2 kilobytes of data a day and barely sips battery, so even older smartphones run it smoothly without slowdowns.
+
+13
+00:01:20,780 --> 00:01:27,305
+For many seniors, remembering complicated passwords or typing verification codes is frustrating.
+
+14
+00:01:27,255 --> 00:01:32,117
+With PNCC Care, seniors never have to type in a single password.
+
+15
+00:01:32,117 --> 00:01:36,655
+When they open the app for the first time, they see a clean camera scanner.
+
+16
+00:01:36,655 --> 00:01:44,280
+The adult child simply opens their own app, shows a secure family QR code, and points the parent's phone camera at it.
+
+17
+00:01:44,280 --> 00:01:48,255
+With a quick beep, the two phones are paired in under a second.
+
+18
+00:01:48,255 --> 00:01:54,942
+The parent is immediately brought right to their daily home screen—just like scanning a barcode at the grocery store.
+
+19
+00:01:56,300 --> 00:02:01,587
+Everyone in a family has different needs, so an app shouldn't look the same for everyone.
+
+20
+00:02:01,537 --> 00:02:04,975
+PNCC Care features two distinct modes.
+
+21
+00:02:04,975 --> 00:02:13,250
+For older parents, 'Senior Safe Mode' strips away all confusing menus and buttons, leaving only giant, friendly controls.
+
+22
+00:02:13,250 --> 00:02:21,175
+For adult children or caregivers, the 'Caregiver Console' displays an overview of all family members on one clean dashboard.
+
+23
+00:02:21,175 --> 00:02:28,537
+You can switch between them with one tap, giving seniors effortless simplicity while giving caregivers complete peace of mind.
+
+24
+00:02:29,900 --> 00:02:33,500
+Here is the daily home screen seniors interact with.
+
+25
+00:02:33,450 --> 00:02:40,500
+Right across the center is a full-width rounded rectangular emerald green button that clearly says 'I'm OK · Check In.
+
+26
+00:02:40,500 --> 00:02:55,312
+Unlike small circular buttons where seniors with trembling fingers or weak eyesight might miss the target, PNCC Care v1.1.5 features a full-width rectangular bar spanning the entire screen with a generous 60-point touch height.
+
+27
+00:02:55,312 --> 00:03:00,075
+Parents can comfortably tap anywhere across the bar without aiming carefully.
+
+28
+00:03:00,075 --> 00:03:08,462
+Every morning after getting out of bed, one light tap triggers a gentle haptic buzz and switches to a reassuring checkmark saying 'Safe Today.
+
+29
+00:03:08,462 --> 00:03:17,387
+At the exact same second, family members—even if they're miles away at work—get an instant notification that their loved one is safe and sound.
+
+30
+00:03:18,740 --> 00:03:24,540
+What happens if a parent sleeps in or steps out for a morning walk and misses the scheduled check-in time?
+
+31
+00:03:24,490 --> 00:03:27,777
+Does the phone immediately trigger panic alarms?
+
+32
+00:03:27,777 --> 00:03:29,427
+Not at all.
+
+33
+00:03:29,427 --> 00:03:33,052
+We designed a gentle 25-minute buffer period.
+
+34
+00:03:33,052 --> 00:03:40,077
+During this window, the green button turns into a warm amber reminder, gently asking the parent to tap when ready.
+
+35
+00:03:40,077 --> 00:03:45,952
+The app doesn't blast loud sirens or send frightening alerts to family members during this time.
+
+36
+00:03:45,952 --> 00:03:52,677
+It simply nudges the senior with a warm visual prompt, avoiding false alarms while keeping safety on track.
+
+37
+00:03:54,060 --> 00:04:00,397
+Beyond physical safety, emotional and spiritual well-being is just as meaningful for older adults.
+
+38
+00:04:00,347 --> 00:04:09,260
+After completing their daily check-in, seniors see a daily Bible verse appear right below the button, such as 'The Lord is my shepherd; I shall not want.
+
+39
+00:04:09,260 --> 00:04:13,085
+Tapping the card opens a full, built-in Bible reader.
+
+40
+00:04:13,085 --> 00:04:21,271
+The complete text is stored directly on the device, so parents can browse chapters offline anytime without waiting for slow downloads.
+
+41
+00:04:21,271 --> 00:04:27,072
+The font sizes and line spacing are enlarged specifically to protect older eyes from fatigue.
+
+42
+00:04:28,420 --> 00:04:32,481
+What if an older adult slips at home or feels sudden chest pain?
+
+43
+00:04:32,432 --> 00:04:37,606
+In the upper corner of the senior screen, there is a dedicated red 'SOS' button.
+
+44
+00:04:37,606 --> 00:04:43,406
+The senior doesn't need to unlock their phone, open contacts, or search through phone numbers.
+
+45
+00:04:43,406 --> 00:04:50,581
+Holding the SOS button for three seconds immediately places a direct phone call to their primary emergency contact.
+
+46
+00:04:50,581 --> 00:05:00,094
+At the same time, top-priority alert notifications are sent to all designated family members, putting help just seconds away when every second counts.
+
+47
+00:05:01,460 --> 00:05:04,259
+Now let's switch to the caregiver's view.
+
+48
+00:05:04,210 --> 00:05:12,285
+If you are caring for both your father and mother, or if you're a volunteer checking on neighbors, this monitoring matrix is indispensable.
+
+49
+00:05:12,285 --> 00:05:22,485
+Each card represents one senior: green means 'checked in safely today,' amber means 'nearing deadline or in buffer period,' and red highlights an 'overdue check-in.
+
+50
+00:05:22,485 --> 00:05:29,085
+Each card clearly displays the person's name, their exact check-in time, and how much time remains.
+
+51
+00:05:29,085 --> 00:05:33,235
+You can see who is safe and who needs attention in a single glance.
+
+52
+00:05:34,620 --> 00:05:41,906
+If a family member notices a senior's card turning yellow or red, clicking on that card brings up a quick-action drawer.
+
+53
+00:05:41,856 --> 00:05:55,531
+There are two primary shortcuts: 'Direct Call,' which instantly rings the senior's phone, and 'Preset SMS,' which opens a gentle text message saying, 'Hi Mom, just checking in—please remember to tap your check-in button!
+
+54
+00:05:55,531 --> 00:06:01,007
+It's respectful, warm, and requires no copying or pasting of phone numbers.
+
+55
+00:06:01,007 --> 00:06:03,931
+Communication takes just one tap.
+
+56
+00:06:05,300 --> 00:06:08,750
+Seniors have vastly different daily routines.
+
+57
+00:06:08,699 --> 00:06:15,437
+Some wake up at 6:00 AM for morning exercise, while others need more rest and sleep until 9:00 AM.
+
+58
+00:06:15,437 --> 00:06:19,062
+PNCC Care avoids one-size-fits-all rules.
+
+59
+00:06:19,062 --> 00:06:22,711
+Each senior can have their own custom check-in deadline.
+
+60
+00:06:22,711 --> 00:06:31,012
+In the settings menu, family members can spin a time wheel to set the deadline to 8:00 AM, 9:30 AM, or even evening.
+
+61
+00:06:31,012 --> 00:06:37,062
+The app adapts completely to the senior's natural circadian rhythm rather than interrupting their sleep.
+
+62
+00:06:38,420 --> 00:06:42,531
+If a real emergency occurs, how does the system escalate?
+
+63
+00:06:42,481 --> 00:06:45,807
+We engineered a 4-tier progressive timeline.
+
+64
+00:06:45,807 --> 00:06:51,231
+At 0 minutes overdue, only a gentle yellow reminder appears on the senior's phone.
+
+65
+00:06:51,231 --> 00:06:57,019
+At 15 minutes, high-priority silent notifications are delivered to family members.
+
+66
+00:06:57,019 --> 00:07:02,132
+At 30 minutes, an alert SMS with sound is sent to primary contacts.
+
+67
+00:07:02,132 --> 00:07:10,269
+If 60 minutes pass with no response, the system triggers a critical alert that breaks through 'Do Not Disturb' mode with an audible alarm.
+
+68
+00:07:10,269 --> 00:07:15,170
+This step-by-step approach prevents panic while securing emergency response.
+
+69
+00:07:16,540 --> 00:07:25,240
+Many older adults deal with cataracts, glaucoma, or severe presbyopia, making standard phone text nearly impossible to read.
+
+70
+00:07:25,189 --> 00:07:31,189
+PNCC Care follows the highest international accessibility standard—WCAG AAA.
+
+71
+00:07:31,189 --> 00:07:38,927
+In the accessibility settings, users can drag a font size slider to enlarge text up to more than double its standard size.
+
+72
+00:07:38,927 --> 00:07:50,226
+We also built an OLED high-contrast mode with a pitch-black background and bright white typography, achieving a 12:1 contrast ratio that remains crystal clear even under bright sunlight.
+
+73
+00:07:51,580 --> 00:07:57,629
+When parents travel on vacation with family or stay in the hospital, daily check-ins aren't needed.
+
+74
+00:07:57,580 --> 00:08:07,930
+With 'Vacation Mode,' users simply pick start and end dates to pause all countdowns and reminders, letting everyone enjoy their trip without unnecessary notifications.
+
+75
+00:08:07,930 --> 00:08:13,455
+Regarding privacy, we adhere to strict global privacy standards like GDPR.
+
+76
+00:08:13,455 --> 00:08:24,055
+If a family ever decides to stop using the service, one tap on 'Erase All Data' permanently removes all personal records from both the device and cloud servers in three seconds.
+
+77
+00:08:25,420 --> 00:08:34,095
+On larger screens like iPads or Android tablets, PNCC Care automatically transforms into a desktop-grade monitoring dashboard.
+
+78
+00:08:34,045 --> 00:08:38,320
+On an iPad Pro, it presents an efficient split-view layout.
+
+79
+00:08:38,320 --> 00:08:49,845
+The left pane hosts up to a 4-column grid showing real-time status cards for dozens of seniors at once, while the right pane shows detailed history, timelines, and emergency contacts.
+
+80
+00:08:49,845 --> 00:08:58,870
+During an emergency, a full-screen dispatch card appears, making it an ideal central command station for nursing homes or community volunteers.
+
+81
+00:09:00,220 --> 00:09:06,381
+Seniors often leave their phones charging in another room, but a smartwatch stays right on their wrist.
+
+82
+00:09:06,331 --> 00:09:10,144
+PNCC Care includes a standalone Apple Watch app.
+
+83
+00:09:10,144 --> 00:09:17,182
+When parents wake up in the morning, they simply glance at their wrist and tap the green checkmark to confirm they're safe.
+
+84
+00:09:17,182 --> 00:09:22,220
+If a check-in is pending, the watch delivers gentle haptic taps on the wrist.
+
+85
+00:09:22,220 --> 00:09:31,294
+In case of an emergency, pressing the red SOS button on the watch face calls for help immediately, providing continuous protection wherever they walk.
+
+86
+00:09:32,659 --> 00:09:37,634
+We pushed convenience to its absolute limit: you don't even have to open the app.
+
+87
+00:09:37,584 --> 00:09:44,346
+On both iPhone lock screens and home screens, you can place dedicated PNCC Care status widgets.
+
+88
+00:09:44,346 --> 00:09:50,184
+The widgets feature clean color rings and status labels showing whether mom or dad has checked in.
+
+89
+00:09:50,184 --> 00:09:57,721
+When a deadline is approaching, the Dynamic Island on modern iPhones displays a live status capsule with a countdown timer.
+
+90
+00:09:57,721 --> 00:10:03,296
+Whether you're reading emails or browsing the web, a quick glance gives you total peace of mind.
+
+91
+00:10:04,659 --> 00:10:14,534
+At bedtime, when a senior places their iPhone horizontally on a nightstand charger, PNCC Care automatically transitions into StandBy Ambient Mode.
+
+92
+00:10:14,484 --> 00:10:20,284
+The screen turns into an oversized digital clock displaying the current time and safe status.
+
+93
+00:10:20,284 --> 00:10:26,859
+In a dark room, the display shifts to a warm red hue that won't disrupt sleep or strain sensitive eyes.
+
+94
+00:10:26,859 --> 00:10:31,796
+If the senior wakes up in the middle of the night, the time is visible at a glance.
+
+95
+00:10:31,796 --> 00:10:36,746
+It's a reliable safety guard by day and a calming bedside clock by night.
+
+96
+00:10:38,139 --> 00:10:48,164
+In critical emergencies—such as an urgent SOS call or extended unresponsiveness—PNCC Care's four-platform alert network springs into full action.
+
+97
+00:10:48,115 --> 00:10:55,490
+Family members' iPhones receive critical alerts that bypass mute switches and focus modes, sounding an audible alarm.
+
+98
+00:10:55,490 --> 00:11:04,339
+Tablets display an urgent dispatch card, Android phones show high-priority heads-up banners, and smartwatches vibrate persistently on the wrist.
+
+99
+00:11:04,339 --> 00:11:10,789
+Even if family members are in silent meetings or asleep, they won't miss this life-saving notification.
+
+100
+00:11:12,139 --> 00:11:21,139
+In conclusion, PNCC Care isn't just another cold tech utility; it's a digital bridge built on love, dignity, and family connection.
+
+101
+00:11:21,089 --> 00:11:28,164
+It doesn't require expensive hardware, it never invades personal privacy, and it involves zero learning curve.
+
+102
+00:11:28,164 --> 00:11:33,439
+With one humble daily tap, it connects a parent's well-being with their children's care.
+
+103
+00:11:33,439 --> 00:11:42,076
+We are committed to transparent open-source software so that every older adult can age with dignity, and every family can live with true peace of mind.
+
+104
+00:11:42,076 --> 00:11:44,014
+Thank you for watching!
