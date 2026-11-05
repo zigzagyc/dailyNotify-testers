@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:07,034
+Seniors often leave their phones charging in another room, but a smartwatch stays right on their wrist.
+
+2
+00:00:07,034 --> 00:00:10,126
+PNCC Care includes a standalone Apple Watch app.
+
+3
+00:00:10,126 --> 00:00:18,049
+When parents wake up in the morning, they simply glance at their wrist and tap the green checkmark to confirm they're safe.
+
+4
+00:00:18,049 --> 00:00:23,009
+If a check-in is pending, the watch delivers gentle haptic taps on the wrist.
+
+5
+00:00:23,009 --> 00:00:32,672
+In case of an emergency, pressing the red SOS button on the watch face calls for help immediately, providing continuous protection wherever they walk.

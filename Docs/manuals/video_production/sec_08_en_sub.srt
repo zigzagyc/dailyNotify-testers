@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:04,585
+What if an older adult slips at home or feels sudden chest pain?
+
+2
+00:00:04,585 --> 00:00:09,817
+In the upper corner of the senior screen, there is a dedicated red 'SOS' button.
+
+3
+00:00:09,817 --> 00:00:15,965
+The senior doesn't need to unlock their phone, open contacts, or search through phone numbers.
+
+4
+00:00:15,965 --> 00:00:23,486
+Holding the SOS button for three seconds immediately places a direct phone call to their primary emergency contact.
+
+5
+00:00:23,486 --> 00:00:33,296
+At the same time, top-priority alert notifications are sent to all designated family members, putting help just seconds away when every second counts.

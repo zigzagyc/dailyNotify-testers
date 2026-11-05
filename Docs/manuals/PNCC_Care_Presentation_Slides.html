@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>PNCC 关怀 (dailyNotify) - 幻灯片与演示脚本</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0F172A;
+    color: #1E293B;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .slide {
+    width: 1200px;
+    height: 675px; /* 16:9 widescreen */
+    background: #F8FAFC;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #CBD5E1;
+  }
+  .slide::before {
+    content: "";
+    height: 6px;
+    width: 100%;
+    background: #2563EB;
+  }
+  .slide-header {
+    padding: 20px 36px 10px 36px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  .category {
+    font-size: 11px;
+    font-weight: 800;
+    color: #2563EB;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .title {
+    font-size: 23px;
+    font-weight: 800;
+    color: #1E3A8A;
+    margin-bottom: 2px;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #64748B;
+    font-style: italic;
+  }
+  .slide-body {
+    flex: 1;
+    padding: 24px 36px;
+    display: flex;
+    gap: 28px;
+    overflow: hidden;
+  }
+  .left-pane {
+    flex: 5.5;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left-pane ul {
+    list-style: none;
+  }
+  .left-pane li {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #1E293B;
+    margin-bottom: 12px;
+  }
+  .script-cue {
+    background: #F1F5F9;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 11.5px;
+    color: #475569;
+    border-left: 3px solid #2563EB;
+    line-height: 1.45;
+  }
+  .right-pane {
+    flex: 6.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #E2E8F0;
+    overflow: hidden;
+  }
+  .right-pane.single img {
+    max-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: contain;
+  }
+  .right-pane.double img {
+    max-height: 380px;
+    max-width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: contain;
+  }
+  .right-pane.triple img {
+    max-height: 380px;
+    max-width: 31%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: contain;
+  }
+  .right-pane.quad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .right-pane.quad img {
+    max-height: 180px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: contain;
+  }
+  .slide-footer {
+    padding: 8px 36px;
+    background: #FFFFFF;
+    border-top: 1px solid #E2E8F0;
+    font-size: 11px;
+    color: #94A3B8;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 01 · 系统概览 · 核心使命</div>
+        <h2 class="title">PNCC 关怀 (dailyNotify)：家庭安全与灵修守护网络</h2>
+        <div class="subtitle">专为独居老人与家庭照顾者打造的零打扰安全系统</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【研发背景】：应对独居长者日益增长的居家安全隐患，防止意外发生无人知晓。</li><li>【设计哲学】：“零干扰、高尊严”。不安装侵入性摄像头，不追踪私密轨迹，用最质朴的点按确认平安。</li><li>【核心体验】：长辈每天只需在手机或手表上轻点一下，全家子女即可实时收到平安动态。</li><li>【生态覆盖】：已全面适配 iPhone、iPad、Apple Watch 独立手表端及 Android 手机平板。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>展示软件冷启动过程。画面首先在 iPhone 15 上启动，接着切换到 iPad Pro 宽屏端和 Apple Watch 桌面，呈现三端同时显示安全打卡主界面的协调联动画面。<br>
+            <strong>⏱️ 参考时长：</strong>约 60 秒
+          </div>
+        </div>
+        <div class="right-pane triple">
+          <img src="assets/07_senior_dashboard_iphone13.png" alt="07_senior_dashboard_iphone13.png"><img src="assets/11_senior_dashboard_ipad.png" alt="11_senior_dashboard_ipad.png"><img src="assets/12_apple_watch_safe.png" alt="12_apple_watch_safe.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 1 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 02 · 系统架构 · 跨平台互联</div>
+        <h2 class="title">一套代码，四端协同：全场景无缝安全守护体系</h2>
+        <div class="subtitle">跨设备实时状态同步与离线高可用架构</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【四端统一协同】：长者手机端极简打卡、照顾者主控台全局掌握、平板端多长者网格、手表端随身急救。</li><li>【离线本地优先】：网络中断时数据自动暂存于本地 SQLite 数据库，恢复连网后自动安全同步。</li><li>【低流量低功耗】：每日数据包小于 2KB，全天后台驻留耗电量低于 1.2%，老旧手机也能流畅运行。</li><li>【无缝状态流转】：任意一台设备完成打卡，家庭群组内所有子女端立即同步更新状态标记。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>在长者手机端点击打卡，镜头实时对准旁边的照顾者手机与平板主控台，展示状态秒级同步变成绿色的全过程；演示拔掉网线，点击依然流畅并提示本地已记录。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane triple">
+          <img src="assets/18_caregiver_console_phone.png" alt="18_caregiver_console_phone.png"><img src="assets/21_caregiver_matrix_ipad.png" alt="21_caregiver_matrix_ipad.png"><img src="assets/34_apple_watch_home_safe.png" alt="34_apple_watch_home_safe.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 2 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 03 · 双向互联 · 隐私授权</div>
+        <h2 class="title">双向极速扫码与账号搜索：灵活配对与长者授权机制</h2>
+        <div class="subtitle">支持子女扫老人、老人扫子女，及远程搜索申请与长者端审批</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【子女扫长者二维码】：儿女使用手机直接扫描长辈屏幕上的专属码，一键加入照顾团队。</li><li>【长者扫子女配对码】：长辈亦可使用设备主动扫描儿女的二维码，反向认证并授权看护人。</li><li>【跨地域名字账号搜索】：针对异地分居家庭，子女可输入名字或用户 ID 直接发起关怀申请。</li><li>【长者端专属授权确认】：防止陌生人随意窥探；搜索发起的看护申请必须由长辈在手机端亲自点击同意方可生效。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>演示双向扫码界面：首先展示子女扫描长辈二维码加入群组；接着展示长辈扫描子女二维码反向认证；最后展示在关怀端按名字搜索‘张奶奶’发起申请，长辈手机端弹出‘待处理的关怀请求’并点击绿色打勾‘同意’授权。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/01_login_options_phone.png" alt="01_login_options_phone.png"><img src="assets/04_role_selection_cards.png" alt="04_role_selection_cards.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 3 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 04 · 角色分配 · 体验差异</div>
+        <h2 class="title">长者安心模式 vs. 照顾者总控台：双模态随心切换</h2>
+        <div class="subtitle">一套软件通过角色切换满足长辈与子女完全不同的交互需求</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【长者安心模式】：界面精简到只剩一个巨型报平安按钮、每日金句和 SOS，杜绝多余干扰。</li><li>【照顾者主控台】：提供多成员状态监控列表、逾期时钟、紧急直拨捷径与历史打卡日志。</li><li>【随时安全切换】：误点选错角色不用担心，在偏好设置中点击身份切换，确认后即可随时变更。</li><li>【防误触二次确认】：切换角色时具备清晰的大字对话框提醒，防止长辈无意中切换至复杂界面。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>展示‘选择您的家庭角色’界面；先点击‘长者模式’，展示极简主页；随后进入设置点击‘切换角色’，弹出防误触弹窗，点击‘确定切换’后顺利变成照顾者列表。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/05_role_selection_ipad.png" alt="05_role_selection_ipad.png"><img src="assets/06_role_switch_dialog.png" alt="06_role_switch_dialog.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 4 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 05 · 长者核心 · 一键打卡</div>
+        <h2 class="title">每天只需点一下：通栏大圆角长方形安全按钮</h2>
+        <div class="subtitle">符合人体工程学的通栏无障碍大尺寸目标，轻触即可完成报平安</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【通栏横向长条设计】：采用全宽通栏（width: double.infinity）长方形按钮，手握手机时拇指在屏幕任意横向位置皆可轻松命中。</li><li>【60pt 舒适触控高度与 18pt 适老圆角】：针对长辈手抖或视力衰退优化，超大长方形触控区域，绝不按空或误触。</li><li>【即时触觉与动效反馈】：按下后伴随轻柔的物理震动回馈与绿光对勾动效，长辈立刻知道成功了。</li><li>【每日一次零负担】：打卡完成后按钮变为沉稳的深绿卡片并标注具体时间，当天不再重复弹窗打扰。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>演示长者早上醒来打开手机，轻触屏幕中央横贯通栏的长方形大按钮。按钮伴随微震瞬间变为绿色，文字清晰显示‘今日已报平安！08:30 AM’，并在顶部展示截止时间为上午 10:00 的状态条。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane triple">
+          <img src="assets/07_senior_dashboard_iphone13.png" alt="07_senior_dashboard_iphone13.png"><img src="assets/09_senior_safe_confirmed.png" alt="09_senior_safe_confirmed.png"><img src="assets/45_feature_giant_safe_card.png" alt="45_feature_giant_safe_card.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 5 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 06 · 长者核心 · 缓冲倒计时</div>
+        <h2 class="title">逾期黄色提醒与 25 分钟温和缓冲期</h2>
+        <div class="subtitle">科学防误报机制，避免长辈因睡过头造成家庭虚惊一场</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【正常截止倒计时】：距离设定时间还有 1 小时时，界面顶部显示温和倒计时提示长者。</li><li>【黄色预警缓冲机制】：一旦超过预定截止时间，界面变为黄色，进入 25 分钟内部缓冲倒计时。</li><li>【非惩罚性交互】：黄色预警期间长者依然可以随时一键补报平安，补报后立即恢复绿灯状态。</li><li>【分级通知防恐慌】：在 25 分钟缓冲期内不触发高分贝警笛，防止长辈因多睡半小时而让儿女报警惊慌。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>展示超过截止时间后的界面变化。卡片变为黄色，倒计时显示‘24:59 逾期缓冲中’；操作员再次点击黄色卡片，卡片立刻转绿并提示‘状态已恢复正常，已向家人发送解除提醒’。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/10_senior_dashboard_compact.png" alt="10_senior_dashboard_compact.png"><img src="assets/47_feature_countdown_deadline_header.png" alt="47_feature_countdown_deadline_header.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 6 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 07 · 精神慰藉 · 每日灵粮</div>
+        <h2 class="title">心灵关怀：每日圣经金句与完整离线圣经阅读</h2>
+        <div class="subtitle">安全监护与信仰生活深度融合，让关怀融入每一天的灵修</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【每日一句暖心圣经】：报平安卡片下方陈列每日精选圣经金句，支持中英双语与大号书法体。</li><li>【一键分享关爱】：长辈轻触分享按钮，即可把今日的美好祝福语句一键发送到家庭微信群。</li><li>【内置离线全本圣经】：无需连接网络，随时翻阅诗篇与福音书，字体字距专为老年视力优化排版。</li><li>【无声的精神滋养】：让报平安不再是一项枯燥的打卡任务，而是开启充满感恩与盼望的一天。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>长者完成打卡后，向下滑动展示诗篇 46 篇 1 节金句卡片；点击‘分享给家人’弹出系统分享栏；点击标题进入完整的离线圣经阅读器，平滑翻阅诗篇章节。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane triple">
+          <img src="assets/13_daily_scripture_card.png" alt="13_daily_scripture_card.png"><img src="assets/15_bible_reader_chapter_view.png" alt="15_bible_reader_chapter_view.png"><img src="assets/48_feature_daily_verse_card.png" alt="48_feature_daily_verse_card.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 7 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 08 · 紧急求助 · 遇险直拨</div>
+        <h2 class="title">遇到意外一秒呼救：红色 SOS 紧急直通车</h2>
+        <div class="subtitle">突发身体不适时，免翻通讯录一键拨通第一急救人</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【常驻高对比 SOS 按钮】：主界面醒目位置常驻鲜红高亮按钮，黑暗环境中也能一秒定位。</li><li>【一键直拨亲属电话】：轻触即可直接调用系统底层电话拨号，无需在通讯录中逐行翻找名字。</li><li>【双重求助机制】：拨打电话的同时，后台自动向所有绑定的家庭成员手机推送最高优先级报警。</li><li>【为生命争取黄金时间】：特别适合老人突发心悸、头晕或意外跌倒时，盲按即可发出求救信号。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>操作员点击主页底部的‘紧急求助 SOS’按钮，系统立刻弹出原生电话呼叫弹窗，号码已预置为主要联络人，同时后台模拟触发紧急广播通知。<br>
+            <strong>⏱️ 参考时长：</strong>约 45 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/46_feature_emergency_sos_button.png" alt="46_feature_emergency_sos_button.png"><img src="assets/07_senior_dashboard_iphone13.png" alt="07_senior_dashboard_iphone13.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 8 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 09 · 照顾者端 · 多人总览</div>
+        <h2 class="title">多长辈集中监控台：一人守护父母与全社区长者</h2>
+        <div class="subtitle">手机列表与平板大网格，实时掌握多位老人健康与电量</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【家庭多长辈聚合】：一个账号可同时绑定父母、岳父母、叔伯长辈，首页列表一览无余。</li><li>【三色状态指示体系】：绿色代表已平安打卡，黄色代表正处于逾期缓冲，白色代表正在休假暂停。</li><li>【手机电量实时回传】：卡片清晰标明长辈手机剩余电量（如 92%），提醒子女及时提醒老人充电。</li><li>【社区护理人员友好】：护理员在护士站平板上可同时监控 12 位以上独居老人，网格排布清晰明了。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>展示照顾者端界面。手机端呈现张奶奶、李爷爷、王阿姨三个人的卡片；随后切换到 iPad 大屏幕，呈现 4 列并排的多老人矩阵，清晰列出各自的打卡时间和手机电量。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/18_caregiver_console_phone.png" alt="18_caregiver_console_phone.png"><img src="assets/21_caregiver_matrix_ipad.png" alt="21_caregiver_matrix_ipad.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 9 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 10 · 照顾者端 · 主动干预</div>
+        <h2 class="title">发现逾期即刻响应：一键拨号与快捷短信提醒</h2>
+        <div class="subtitle">卡片内置快捷动作栏，无需切换软件快速建立联系</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【卡片内置直拨按键】：发现某位长辈亮黄灯，轻触卡片右下角按钮直接呼叫老人。</li><li>【一键温和短信提醒】：支持预置短信模版（‘爸爸您今天打卡了吗？’），无需打字一键发送。</li><li>【状态变更历史追溯】：点击长辈卡片可查看过去 30 天打卡记录，科学分析长辈作息规律变化。</li><li>【多人协作防重复拨打】：一位子女标记‘正在联络’后，其他家庭成员卡片同步显示，避免多方打扰。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>操作员选中李爷爷的逾期卡片，点击右侧的‘直拨电话’按钮立刻呼出电话，接着点击‘发送短信’拉起系统预置问候短信界面，演示协同操作流程。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/50_feature_caregiver_senior_card_safe.png" alt="50_feature_caregiver_senior_card_safe.png"><img src="assets/51_feature_caregiver_action_triggers.png" alt="51_feature_caregiver_action_triggers.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 10 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 11 · 灵活定制 · 个性作息</div>
+        <h2 class="title">顺应长者生物钟：自由设定每日报平安截止时间</h2>
+        <div class="subtitle">从早晨 07:00 到中午 12:00，因人而异灵活调节</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【尊重个性作息习惯】：起得早的长辈可设定为早晨 08:00，习惯睡到自然醒的长辈可设为 11:00。</li><li>【平滑滚轮调节机制】：采用符合直觉的时间选择滚轮，轻触滑动即可精准调整到指定分钟。</li><li>【云端即时同步更新】：子女端或长辈端修改截止时间后，全家所有设备在 3 秒内完成参数同步。</li><li>【独立成员分立设定】：不同长辈可设定完全不同的截止时点，互不冲突，精细化照料。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>进入偏好设置页面，点击‘报平安截止时间’；在平滑的滚轮上从‘上午 10:00’滑动调整到‘上午 09:30’，下方实时显示‘张奶奶将在 09:30 之前完成报平安’并提示已自动保存。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/29_settings_options_sim.png" alt="29_settings_options_sim.png"><img src="assets/52_feature_settings_deadline_picker.png" alt="52_feature_settings_deadline_picker.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 11 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 12 · 智能防误报 · 双定时器</div>
+        <h2 class="title">双定时器守护与 911 升级：本地提醒、家属告警与急救联动</h2>
+        <div class="subtitle">科学分离长者打卡周期与远程告警超时，杜绝狼来了虚惊</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【Timer 1 长者本地打卡周期】：仅在老人设备端轻柔提醒打卡，不惊扰子女工作与休息。</li><li>【Timer 2 看护人超时告警】：严格校验 Timer 2 大于 Timer 1，逾期未确认才向家属发出高优先级预警。</li><li>【可选 911 急救升级机制】：看护人家属超时未响应处置时，可自动预备拨打 911 紧急救护电话。</li><li>【跌倒与摇晃传感器联动】：硬件级撞击检测 30 秒消警窗口，与剧烈摇晃 10 秒求救警报无缝配合。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>在偏好设置中，展示 Timer 1（长者本地打卡频率）与 Timer 2（看护人远程告警超时）的设定过程；展示若 Timer 2 小于等于 Timer 1 时的自动纠错提示；向下滚动展示 911 紧急升级开关及延时设置。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/31_settings_ipad_splitview.png" alt="31_settings_ipad_splitview.png"><img src="assets/53_feature_settings_escalation_timers.png" alt="53_feature_settings_escalation_timers.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 12 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 13 · 适老设计 · 视力呵护</div>
+        <h2 class="title">看得清才好用：WCAG AAA 字体滑块与纯黑高对比模式</h2>
+        <div class="subtitle">为白内障、老花眼与弱视长者定制的顶级无障碍视觉方案</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【1.0x 至 1.5x 字体无级放大】：符合国际最严格的 WCAG AAA 无障碍标准，排版不折叠错位。</li><li>【纯黑底超高对比度】：为弱视长者提供真黑背景（#000000）配纯白大字，边缘锐利不刺眼。</li><li>【大触控热区保护】：所有交互按键最小高度均大于 56pt，防止老人因手指震颤而误触。</li><li>【大自然色调舒缓情绪】：主体采用温暖治愈的翡翠绿与温润天青蓝，消除长辈在医院看病时的焦虑感。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>在设置中拖动字体大小滑块，主界面所有标题、正文实时平滑等比变大；接着打开‘高对比度模式’开关，界面瞬间切换为深邃纯黑底色，文字和边框呈现超高锐度反差。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/43_screensaver_high_contrast.png" alt="43_screensaver_high_contrast.png"><img src="assets/54_feature_settings_accessibility_fonts.png" alt="54_feature_settings_accessibility_fonts.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 13 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 14 · 隐私伦理 · 人权尊严</div>
+        <h2 class="title">休假模式免打扰，GDPR 数据一键彻底抹除</h2>
+        <div class="subtitle">保障长者出行自由，赋予用户对个人隐私数据的终极控制权</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【休假模式日历暂停】：长辈与儿女同住、外出旅游或住院就医时，可设定休假起止日期暂停提醒。</li><li>【休假期间免催免报】：休假期间系统完全静默，不发催促通知，长辈卡片标为白色休假中。</li><li>【GDPR 被遗忘权保障】：提供一键‘彻底注销账户与抹除数据’按键，严格保护用户隐私。</li><li>【零残留即时擦除】：点击注销后，长者个人资料、家庭绑定关系与历史打卡日志立即在服务器物理粉碎。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>展示休假模式设定：选定本周末为休假时间，主页即刻显示‘休假模式进行中·暂停催促’；随后滑动到底部展示‘注销账户’红色选项，点击弹出严格的安全销毁说明。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/55_feature_settings_account_gdpr.png" alt="55_feature_settings_account_gdpr.png"><img src="assets/30_settings_iphone13.png" alt="30_settings_iphone13.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 14 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 15 · 平板优化 · 大屏指挥</div>
+        <h2 class="title">大屏幕优势：iPad Pro 与安卓平板双栏高效管理</h2>
+        <div class="subtitle">左边挑分类、右边调参数，护士站与家庭客厅平板专属布局</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【Split-View 分栏设计】：专为 10 至 13 英寸平板打造，左栏常驻导航目录，右栏展开丰富配置。</li><li>【减少层级跳转】：在同一个屏幕内完成查看与修改，免除长辈在深层子菜单中频繁进出的困扰。</li><li>【全视野社区总览】：大屏模式下可横向并排呈现 4 列长者卡片，社区护理员巡查效率提升 300%。</li><li>【高清横屏自动重排】：无论是摆在客厅茶几上，还是插在床头支架上，横竖屏自动完美重组布局。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>把 iPad Pro 放置在桌架上展示。进入设置页面，左侧一排导航按钮，右侧实时显示对应参数内容；点击左侧不同选项，右侧内容如行云流水般即时切换，无全屏跳转。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane double">
+          <img src="assets/11_senior_dashboard_ipad.png" alt="11_senior_dashboard_ipad.png"><img src="assets/31_settings_ipad_splitview.png" alt="31_settings_ipad_splitview.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 15 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 16 · 手腕守护 · 智能手表</div>
+        <h2 class="title">抬手即报平安：Apple Watch 独立手表端应用</h2>
+        <div class="subtitle">脱离手机独立运行，随身佩戴、摔倒无忧的安全伴侣</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【抬腕一秒打卡】：手表表盘点击进入，巨型圆形按钮轻按即报平安，老人不必到处找手机。</li><li>【独立蜂窝与网络支持】：老人下楼散步或买菜不带手机，手表通过蜂窝网络依然能独立发送安全信号。</li><li>【手腕上的红色 SOS】：长按手表屏幕即可直接呼出紧急求救警报，并伴随强烈触觉马达震动。</li><li>【微型灵修伴侣】：抬腕即可在手表屏幕上清晰阅读今日圣经金句，全天随行陪伴长者心灵。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>佩戴 Apple Watch Series 10。抬起手腕，表盘轻触打开 PNCC Care；屏幕中央出现大圆形按键，点击后轻微震动提示‘今日已平安’；滑动至第二屏长按红键，展示 SOS 求救界面；滑至第三屏清晰展示诗篇金句。<br>
+            <strong>⏱️ 参考时长：</strong>约 60 秒
+          </div>
+        </div>
+        <div class="right-pane triple">
+          <img src="assets/12_apple_watch_safe.png" alt="12_apple_watch_safe.png"><img src="assets/35_apple_watch_sos_red.png" alt="35_apple_watch_sos_red.png"><img src="assets/36_apple_watch_verse_read.png" alt="36_apple_watch_verse_read.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 16 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 17 · 桌面小组件 · 零步操作</div>
+        <h2 class="title">连软件都免打开：手机锁屏与桌面一目了然小组件</h2>
+        <div class="subtitle">支持 iOS 锁屏微件、桌面大微件及灵动岛全天候常驻状态</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【锁屏小组件即时看】：在锁屏时间下方常驻状态圆标，不用解锁手机，看一眼就知道长辈打卡没有。</li><li>【桌面 2x2 快捷微件】：点击桌面方块小组件，原地完成打卡确认，无需等待应用加载过程。</li><li>【灵动岛实时动效 (Live Activity)】：iPhone 屏幕上方药丸区域呈现柔和绿色平安标志，全天伴随。</li><li>【极度降低科技摩擦力】：将打卡操作融入日常看时间、看手机的无意识动作中，彻底消除操作阻力。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>展示 iPhone 锁屏界面，时钟下方清晰展示‘PNCC：今日已平安 08:30’圆标；滑入桌面展示 2x2 桌面小组件；点击小组件直接打卡；展示屏幕顶部灵动岛呈现绿色安全小盾牌图标。<br>
+            <strong>⏱️ 参考时长：</strong>约 55 秒
+          </div>
+        </div>
+        <div class="right-pane triple">
+          <img src="assets/40_widgets_lockscreen_home.png" alt="40_widgets_lockscreen_home.png"><img src="assets/41_widgets_grid_overview.png" alt="41_widgets_grid_overview.png"><img src="assets/44_widgets_dynamic_island.png" alt="44_widgets_dynamic_island.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 17 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 18 · 夜间守护 · 待机时钟</div>
+        <h2 class="title">横放充电变床头钟：安睡免打扰待机模式 (StandBy)</h2>
+        <div class="subtitle">夜晚熄灯守护，超大夜光时钟，轻触即醒、静默护航</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【横放无线充自动激活】：晚上把手机横放在床头充电底座上，自动变为柔和的大字夜光时钟。</li><li>【绿色安全守望标识】：时钟下方以极微弱的暖绿圆点提示‘安全守护进行中’，给长辈安稳睡眠心理暗示。</li><li>【夜间全静音防惊扰】：自动屏蔽所有非紧急声响，防止半夜消息推送惊扰老人脆弱睡眠。</li><li>【轻触唤醒与一键求助】：夜间老人若感到口渴或身体不适，轻碰屏幕即可唤醒界面并提供直拨按钮。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>把手机横放在床头木质支架上插上充电线，屏幕平滑淡入超大字体的‘10:30’数字时钟，下方伴有一行小字‘• 安全守护进行中 • 轻触屏幕唤醒’；轻拍桌面，屏幕柔和变亮。<br>
+            <strong>⏱️ 参考时长：</strong>约 45 秒
+          </div>
+        </div>
+        <div class="right-pane single">
+          <img src="assets/42_screensaver_ambient_clock.png" alt="42_screensaver_ambient_clock.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 18 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 19 · 危急响应 · 全景告警</div>
+        <h2 class="title">危急时刻分秒必争：四端全景紧急告警响应体系</h2>
+        <div class="subtitle">iOS 突破静音、锁屏强提醒、平板大屏调度与安卓强震动</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【iOS 顶部 APNs 推送】：长者逾期未应答，第一时间向家属手机下发醒目横幅与长者电话直拨按键。</li><li>【Apple Critical Alert 突破勿扰】：获得苹果最高危急警报授权，即使手机处于静音或勿扰也能响警笛。</li><li>【iPad 社区调度弹窗】：大屏幕控制中心自动弹出危机处置视窗，包含长者地址、门禁码与急救调度。</li><li>【Android Heads-up 强震动】：安卓端采用 Material 3 悬浮顶栏与高优先级震动，保障全家同步响应。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>演示触发危急警报时的真实场景。展示儿女手机原本处于‘静音勿扰模式’，屏幕瞬间亮起，发出高分贝警报声，锁屏显示‘【警报】张奶奶逾期未报平安·突破勿扰’；同时平板弹出紧急派遣弹窗，提供‘直拨长者电话’和‘派遣值班护士’操作。<br>
+            <strong>⏱️ 参考时长：</strong>约 65 秒
+          </div>
+        </div>
+        <div class="right-pane quad">
+          <img src="assets/24_emergency_push_notification.png" alt="24_emergency_push_notification.png"><img src="assets/25_critical_alert_lockscreen.png" alt="25_critical_alert_lockscreen.png"><img src="assets/26_notification_ipad_alert.png" alt="26_notification_ipad_alert.png"><img src="assets/27_notification_android.png" alt="27_notification_android.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 19 页 / 共 20 页
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-header">
+        <div class="category">SLIDE 20 · 总结展望 · 爱的守护</div>
+        <h2 class="title">科技向善，以爱守望：让每一个家庭充满安心与温度</h2>
+        <div class="subtitle">PNCC 关怀 (dailyNotify) 伴您守护至亲每一个平常日子</div>
+      </div>
+      <div class="slide-body">
+        <div class="left-pane">
+          <ul><li>【让科技有温度】：不增加复杂负担，把最尖端的移动技术化繁为简，融入长辈最质朴的日常生活。</li><li>【长效守护网络】：连接独居长者、海外子女、社区网格员与教会互助组，构筑多维度关怀网。</li><li>【完全自主可控】：持续开源与规范化推进，所有数据由家庭完全自主掌握，恪守道德伦理。</li><li>【平安是福】：每一声清脆的打卡，都是长辈送给家人最好的一份安心礼物。</li></ul>
+          <div class="script-cue">
+            <strong>🎬 视频演示动作：</strong>全景展示四台设备（iPhone、iPad、Apple Watch、Android）在明亮阳光下整齐摆放，屏幕上均呈现出温暖治愈的绿色平安状态，最后定格在应用 Logo 与‘PNCC 关怀 · 守护至亲’标语上。<br>
+            <strong>⏱️ 参考时长：</strong>约 50 秒
+          </div>
+        </div>
+        <div class="right-pane quad">
+          <img src="assets/07_senior_dashboard_iphone13.png" alt="07_senior_dashboard_iphone13.png"><img src="assets/18_caregiver_console_phone.png" alt="18_caregiver_console_phone.png"><img src="assets/21_caregiver_matrix_ipad.png" alt="21_caregiver_matrix_ipad.png"><img src="assets/12_apple_watch_safe.png" alt="12_apple_watch_safe.png">
+        </div>
+      </div>
+      <div class="slide-footer">
+        PNCC 關懷 (dailyNotify) v1.1.5 Build 25  |  第 20 页 / 共 20 页
+      </div>
+    </div>
+
+</body>
+</html>

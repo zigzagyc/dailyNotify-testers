@@ -1,0 +1,23 @@
+1
+00:00:00,400 --> 00:00:03,627
+Seniors have vastly different daily routines.
+
+2
+00:00:03,627 --> 00:00:10,656
+Some wake up at 6:00 AM for morning exercise, while others need more rest and sleep until 9:00 AM.
+
+3
+00:00:10,656 --> 00:00:13,596
+PNCC Care avoids one-size-fits-all rules.
+
+4
+00:00:13,596 --> 00:00:17,613
+Each senior can have their own custom check-in deadline.
+
+5
+00:00:17,613 --> 00:00:25,932
+In the settings menu, family members can spin a time wheel to set the deadline to 8:00 AM, 9:30 AM, or even evening.
+
+6
+00:00:25,932 --> 00:00:33,392
+The app adapts completely to the senior's natural circadian rhythm rather than interrupting their sleep.

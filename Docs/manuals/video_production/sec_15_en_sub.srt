@@ -1,0 +1,15 @@
+1
+00:00:00,400 --> 00:00:08,955
+On larger screens like iPads or Android tablets, PNCC Care automatically transforms into a desktop-grade monitoring dashboard.
+
+2
+00:00:08,955 --> 00:00:12,961
+On an iPad Pro, it presents an efficient split-view layout.
+
+3
+00:00:12,961 --> 00:00:25,386
+The left pane hosts up to a 4-column grid showing real-time status cards for dozens of seniors at once, while the right pane shows detailed history, timelines, and emergency contacts.
+
+4
+00:00:25,386 --> 00:00:35,096
+During an emergency, a full-screen dispatch card appears, making it an ideal central command station for nursing homes or community volunteers.

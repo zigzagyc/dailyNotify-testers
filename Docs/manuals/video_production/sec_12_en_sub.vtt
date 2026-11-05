@@ -1,0 +1,28 @@
+1
+00:00:00,100 --> 00:00:04,212
+If a real emergency occurs, how does the system escalate?
+
+2
+00:00:04,162 --> 00:00:07,487
+We engineered a 4-tier progressive timeline.
+
+3
+00:00:07,487 --> 00:00:12,912
+At 0 minutes overdue, only a gentle yellow reminder appears on the senior's phone.
+
+4
+00:00:12,912 --> 00:00:18,700
+At 15 minutes, high-priority silent notifications are delivered to family members.
+
+5
+00:00:18,700 --> 00:00:23,812
+At 30 minutes, an alert SMS with sound is sent to primary contacts.
+
+6
+00:00:23,812 --> 00:00:31,950
+If 60 minutes pass with no response, the system triggers a critical alert that breaks through 'Do Not Disturb' mode with an audible alarm.
+
+7
+00:00:31,950 --> 00:00:36,850
+This step-by-step approach prevents panic while securing emergency response.
+

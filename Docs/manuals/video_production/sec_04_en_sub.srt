@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:06,381
+Everyone in a family has different needs, so an app shouldn't look the same for everyone.
+
+2
+00:00:06,381 --> 00:00:08,936
+PNCC Care features two distinct modes.
+
+3
+00:00:08,936 --> 00:00:17,068
+For older parents, 'Senior Safe Mode' strips away all confusing menus and buttons, leaving only giant, friendly controls.
+
+4
+00:00:17,068 --> 00:00:25,403
+For adult children or caregivers, the 'Caregiver Console' displays an overview of all family members on one clean dashboard.
+
+5
+00:00:25,403 --> 00:00:33,872
+You can switch between them with one tap, giving seniors effortless simplicity while giving caregivers complete peace of mind.

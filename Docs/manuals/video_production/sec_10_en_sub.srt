@@ -1,0 +1,15 @@
+1
+00:00:00,400 --> 00:00:08,525
+If a family member notices a senior's card turning yellow or red, clicking on that card brings up a quick-action drawer.
+
+2
+00:00:08,525 --> 00:00:23,423
+There are two primary shortcuts: 'Direct Call,' which instantly rings the senior's phone, and 'Preset SMS,' which opens a gentle text message saying, 'Hi Mom, just checking in—please remember to tap your check-in button!
+
+3
+00:00:23,423 --> 00:00:28,637
+' It's respectful, warm, and requires no copying or pasting of phone numbers.
+
+4
+00:00:28,637 --> 00:00:30,871
+Communication takes just one tap.

@@ -1,0 +1,28 @@
+1
+00:00:00,100 --> 00:00:05,900
+What happens if a parent sleeps in or steps out for a morning walk and misses the scheduled check-in time?
+
+2
+00:00:05,850 --> 00:00:09,137
+Does the phone immediately trigger panic alarms?
+
+3
+00:00:09,137 --> 00:00:10,787
+Not at all.
+
+4
+00:00:10,787 --> 00:00:14,412
+We designed a gentle 25-minute buffer period.
+
+5
+00:00:14,412 --> 00:00:21,437
+During this window, the green button turns into a warm amber reminder, gently asking the parent to tap when ready.
+
+6
+00:00:21,437 --> 00:00:27,312
+The app doesn't blast loud sirens or send frightening alerts to family members during this time.
+
+7
+00:00:27,312 --> 00:00:34,037
+It simply nudges the senior with a warm visual prompt, avoiding false alarms while keeping safety on track.
+

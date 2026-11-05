@@ -1,0 +1,23 @@
+1
+00:00:00,400 --> 00:00:06,235
+Many apps look completely different across devices, which easily confuses older users.
+
+2
+00:00:06,235 --> 00:00:12,409
+PNCC Care uses a unified system that connects phones, tablets, and smartwatches seamlessly.
+
+3
+00:00:12,409 --> 00:00:14,852
+Best of all, it works offline-first.
+
+4
+00:00:14,852 --> 00:00:24,419
+Even if home Wi-Fi drops out or someone is in the basement with no signal, tapping the check-in button saves the record safely on the device.
+
+5
+00:00:24,419 --> 00:00:30,255
+As soon as the connection returns, it automatically syncs with the rest of the family.
+
+6
+00:00:30,255 --> 00:00:39,008
+It uses less than 2 kilobytes of data a day and barely sips battery, so even older smartphones run it smoothly without slowdowns.

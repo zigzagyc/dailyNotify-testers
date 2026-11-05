@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:03,733
+Family connection should be effortless yet secure.
+
+2
+00:00:03,733 --> 00:00:06,933
+PNCC Care offers flexible bidirectional linking.
+
+3
+00:00:06,933 --> 00:00:17,134
+In person, it works either way: children can scan the senior's QR code to join their care circle, or parents can scan their child's code to grant access.
+
+4
+00:00:17,134 --> 00:00:26,535
+For long-distance families where scanning isn't possible, children can simply search by the parent's name or user ID and send a care request.
+
+5
+00:00:26,535 --> 00:00:38,936
+To strictly protect elderly privacy, no one can link uninvited: a pending request pops up on the senior's phone, requiring their explicit tap of approval before any status can be viewed.

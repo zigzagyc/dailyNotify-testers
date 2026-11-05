@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:03,757
+Here is the daily home screen seniors interact with.
+
+2
+00:00:03,757 --> 00:00:11,376
+Right across the center is a full-width rounded rectangular emerald green button that clearly says 'I'm OK · Check In.
+
+3
+00:00:11,376 --> 00:00:19,253
+' Unlike small circular buttons where seniors with trembling fingers or weak eyesight might miss the target, PNCC Care v1.
+
+4
+00:00:19,253 --> 00:00:20,753
+1.
+
+5
+00:00:20,753 --> 00:00:27,532
+5 features a full-width rectangular bar spanning the entire screen with a generous 60-point touch height.
+
+6
+00:00:27,532 --> 00:00:32,504
+Parents can comfortably tap anywhere across the bar without aiming carefully.
+
+7
+00:00:32,504 --> 00:00:41,672
+Every morning after getting out of bed, one light tap triggers a gentle haptic buzz and switches to a reassuring checkmark saying 'Safe Today.
+
+8
+00:00:41,672 --> 00:00:50,064
+' At the exact same second, family members—even if they're miles away at work—get an instant notification that their loved one is safe and sound.

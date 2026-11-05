@@ -1,0 +1,15 @@
+1
+00:00:00,400 --> 00:00:10,044
+In critical emergencies—such as an urgent SOS call or extended unresponsiveness—PNCC Care's four-platform alert network springs into full action.
+
+2
+00:00:10,044 --> 00:00:17,826
+Family members' iPhones receive critical alerts that bypass mute switches and focus modes, sounding an audible alarm.
+
+3
+00:00:17,826 --> 00:00:27,404
+Tablets display an urgent dispatch card, Android phones show high-priority heads-up banners, and smartwatches vibrate persistently on the wrist.
+
+4
+00:00:27,404 --> 00:00:34,256
+Even if family members are in silent meetings or asleep, they won't miss this life-saving notification.

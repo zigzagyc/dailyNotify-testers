@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:03,041
+Now let's switch to the caregiver's view.
+
+2
+00:00:03,041 --> 00:00:11,998
+If you are caring for both your father and mother, or if you're a volunteer checking on neighbors, this monitoring matrix is indispensable.
+
+3
+00:00:11,998 --> 00:00:22,566
+Each card represents one senior: green means 'checked in safely today,' amber means 'nearing deadline or in buffer period,' and red highlights an 'overdue check-in.
+
+4
+00:00:22,566 --> 00:00:29,074
+' Each card clearly displays the person's name, their exact check-in time, and how much time remains.
+
+5
+00:00:29,074 --> 00:00:33,392
+You can see who is safe and who needs attention in a single glance.

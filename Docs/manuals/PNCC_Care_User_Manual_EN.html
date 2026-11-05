@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PNCC Care - Simple Illustrated User Manual</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 14mm 16mm 14mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1E293B;
+    line-height: 1.6;
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+  }
+
+  /* Cover Page */
+  .cover {
+    page-break-after: always;
+    text-align: center;
+    padding-top: 80px;
+    height: 100%;
+  }
+
+  .cover-logo {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    border-radius: 32px;
+    margin: 0 auto 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+  }
+
+  .cover-title {
+    font-size: 34pt;
+    font-weight: 800;
+    color: #0F172A;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+  }
+
+  .cover-subtitle {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #2563EB;
+    margin: 0 0 25px 0;
+  }
+
+  .cover-desc {
+    font-size: 14pt;
+    color: #475569;
+    max-width: 580px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+  }
+
+  .cover-badge-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .cover-badge {
+    background: #F1F5F9;
+    color: #334155;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 11.5pt;
+    font-weight: 600;
+  }
+
+  .cover-footer {
+    font-size: 11pt;
+    color: #94A3B8;
+    margin-top: 60px;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 15px;
+  }
+
+  /* Chapter styling */
+  .chapter {
+    page-break-before: always;
+    padding-top: 6px;
+  }
+
+  .chapter-header {
+    border-bottom: 3px solid #2563EB;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  .chapter-num {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #2563EB;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .chapter-title {
+    font-size: 21pt;
+    font-weight: 800;
+    color: #0F172A;
+    margin: 0;
+  }
+
+  .chapter-intro {
+    font-size: 13.5pt;
+    color: #334155;
+    background: #F8FAFC;
+    border-left: 4px solid #2563EB;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* Step Boxes */
+  .step-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  }
+
+  .step-title {
+    font-size: 14.5pt;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .step-num {
+    background: #2563EB;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .step-body {
+    font-size: 13pt;
+    color: #334155;
+  }
+
+  .step-body ul, .step-body ol {
+    margin: 6px 0 6px 20px;
+    padding: 0;
+  }
+
+  .step-body li {
+    margin-bottom: 4px;
+  }
+
+  /* Callout Boxes */
+  .callout {
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 12.5pt;
+  }
+
+  .callout-tip {
+    background: #EFF6FF;
+    border-left: 4px solid #3B82F6;
+    color: #1E3A8A;
+  }
+
+  .callout-success {
+    background: #F0FDF4;
+    border-left: 4px solid #22C55E;
+    color: #14532D;
+  }
+
+  .callout-warning {
+    background: #FFFBEB;
+    border-left: 4px solid #F59E0B;
+    color: #78350F;
+  }
+
+  /* Roles Grid */
+  .role-grid {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .role-card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+  }
+
+  .role-senior {
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  }
+
+  .role-caregiver {
+    background: linear-gradient(135deg, #059669, #047857);
+  }
+
+  .role-dual {
+    background: linear-gradient(135deg, #7C3AED, #6D28D9);
+  }
+
+  .role-card-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .role-card-desc {
+    font-size: 11pt;
+    opacity: 0.95;
+    line-height: 1.4;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 12pt;
+  }
+
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  th {
+    background: #F8FAFC;
+    color: #0F172A;
+    font-weight: 700;
+  }
+
+  .btn-ui {
+    display: inline-block;
+    background: #22C55E;
+    color: white;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 11pt;
+  }
+</style>
+</head>
+<body>
+
+  <!-- COVER PAGE -->
+  <div class="cover">
+    <div class="cover-logo">❤</div>
+    <h1 class="cover-title">PNCC Care</h1>
+    <div class="cover-subtitle">Senior Safety, Daily Check-In & Caregiver Companion</div>
+    <div class="cover-desc">
+      A simple, non-technical guide designed for seniors and their families.<br>
+      Large accessible buttons, high-contrast typography, tranquil scriptures, and instant peace of mind.
+    </div>
+    <div class="cover-badge-container">
+      <div class="cover-badge">📱 iPhone, iPad & Android</div>
+      <div class="cover-badge">👵 Accessible 48dp+ Buttons</div>
+      <div class="cover-badge">✝ Daily Scripture Reader</div>
+      <div class="cover-badge">🛡 Local Privacy & Safety</div>
+    </div>
+    <div class="cover-footer">
+      PNCC Care Application Version: v1.0.11 · Official English User Guide · 2026 Edition
+    </div>
+  </div>
+
+  <!-- CHAPTER 1 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">Chapter 1 · Getting Started</div>
+      <h2 class="chapter-title">Login & Multi-Device Registration</h2>
+    </div>
+    <div class="chapter-intro">No complicated server addresses or technical codes required. Start effortlessly using Google, Apple, or a simple email address.</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> Choose Your Preferred Sign-In Method</div>
+      <div class="step-body">
+        Launch the app to see three intuitive sign-in choices:
+        <ul>
+          <li><strong>Sign in with Apple</strong>: Recommended for iPhone and iPad users. One tap with Face ID or Touch ID signs you in instantly.</li>
+          <li><strong>Sign in with Google</strong>: Best for Android devices and anyone with a Gmail account. Safe and password-free.</li>
+          <li><strong>Register with Email</strong>: Enter your email and a password (at least 6 characters) to create a dedicated family account.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> Recommended Family Setup</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>Senior's Phone</strong>: Sign in with the senior's account (Account A) and choose <strong>"Senior Mode"</strong>.</li>
+          <li><strong>Caregiver's Phone</strong>: Sign in with the caregiver's account (Account B) and choose <strong>"Caregiver Mode"</strong>.</li>
+          <li>Connect Account A and Account B using the instant QR code scanner (detailed in Chapter 3).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout callout-tip">
+      💡 <strong>Multiple Personal Devices?</strong> If you use both an iPhone and an iPad, simply log in with the same credentials. All care recipients, settings, and scripture history sync automatically in real-time.
+    </div>
+  </div>
+
+  <!-- CHAPTER 2 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">Chapter 2 · Modes & Profiles</div>
+      <h2 class="chapter-title">Switching Between Senior, Caregiver & Dual Mode</h2>
+    </div>
+    <div class="chapter-intro">PNCC Care provides three distinct user profiles tailored for different family roles and generations.</div>
+
+    <div class="role-grid">
+      <div class="role-card role-senior">
+        <div class="role-card-title">Senior Mode</div>
+        <div class="role-card-desc">For elders. Features a giant "I'm Okay" button and daily scripture devotionals without clutter.</div>
+      </div>
+      <div class="role-card role-caregiver">
+        <div class="role-card-title">Caregiver Mode</div>
+        <div class="role-card-desc">For adult children & helpers. Monitor live Green/Amber/Red safety statuses, last active times, and remote check-ins.</div>
+      </div>
+      <div class="role-card role-dual">
+        <div class="role-card-title">Dual Mode</div>
+        <div class="role-card-desc">Both a senior and caregiver? Check in for your own children while watching over an elderly parent simultaneously.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> How to Switch Your Mode Anytime</div>
+      <div class="step-body">
+        You do not need to sign out to change your mode:
+        <ol>
+          <li>Tap <strong>Settings (⚙️)</strong> in the top-right corner.</li>
+          <li>Scroll to the bottom under <strong>Account</strong> and tap the blue <strong>"Switch Profile"</strong> option (⇄).</li>
+          <li>Select the card you want (Senior, Caregiver, or Dual Mode). The interface updates immediately.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="callout callout-success">
+      ✨ <strong>Navigating in Dual Mode</strong><br>
+      When Dual Mode is active, a bottom navigation bar gives you instant two-way access:
+      <ul>
+        <li>Tap <strong>"Senior"</strong> to press the "I'm Okay" button or read daily scripture.</li>
+        <li>Tap <strong>"Caregiver"</strong> to view your care dashboard and monitor loved ones.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CHAPTER 3 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">Chapter 3 · Daily Check-In</div>
+      <h2 class="chapter-title">One-Tap Check-In & Instant QR Pairing</h2>
+    </div>
+    <div class="chapter-intro">No confusing menus. Elders check in with a single tap, and family pairing takes just three seconds.</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> How Seniors Check In Daily</div>
+      <div class="step-body">
+        Open the app to see the prominent green <span class="btn-ui">I'm Okay</span> button:
+        <ul>
+          <li>A single gentle tap resets the active safety countdown timer immediately.</li>
+          <li>The app provides haptic confirmation and automatically minimizes after 500ms so elders never feel trapped.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> Instant QR Code Pairing (No Passwords)</div>
+      <div class="step-body">
+        Pairing elder and caregiver devices requires only a single scan:
+        <ol>
+          <li><strong>On Senior's Phone</strong>: Go to Settings or the menu and select <strong>"My Caregivers"</strong> to reveal the encrypted Pairing QR Code.</li>
+          <li><strong>On Caregiver's Phone</strong>: In the Caregiver Dashboard, tap the bottom-right <strong>"+"</strong> button &rarr; tap <strong>"Scan QR Code"</strong>.</li>
+          <li>Align the caregiver camera with the senior's QR code. Pairing completes instantly!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAPTER 4 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">Chapter 4 · Timers & Vacation</div>
+      <h2 class="chapter-title">Configuring Safety Alarms & Vacation Mode</h2>
+    </div>
+    <div class="chapter-intro">Customize daily check-in intervals, and pause monitoring during holidays or medical visits to prevent false alarms.</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> Understanding the Two-Tier Safety Timers</div>
+      <div class="step-body">
+        Navigate to <strong>Settings (⚙️)</strong> &rarr; <strong>Monitoring Configuration</strong>:
+        <table>
+          <thead>
+            <tr>
+              <th>Timer Setting</th>
+              <th>Recommended Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Check-In Frequency (Timer 1)</strong></td>
+              <td>1440 mins (24 Hours)</td>
+              <td>How often the senior checks in. The green safe indicator counts down within this window.</td>
+            </tr>
+            <tr>
+              <td><strong>Alert Timeout (Timer 2)</strong></td>
+              <td>1500 mins (25 Hours)</td>
+              <td>Grace period (Amber warning). If no check-in occurs when Timer 2 expires, caregivers are alerted.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> How to Disable the Safety Alarm Completely</div>
+      <div class="step-body">
+        If you wish to turn off all monitoring alarms, edit both <strong>Timer 1</strong> and <strong>Timer 2</strong> to <strong>"0"</strong>. The system will cancel all scheduled alarms and clear active alert banners.
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">3</span> Vacation Mode (Pause Monitoring)</div>
+      <div class="step-body">
+        When traveling or staying with family:
+        <ol>
+          <li>Open <strong>Settings (⚙️)</strong> &rarr; find <strong>Vacation & Pause Monitoring</strong>.</li>
+          <li>Tap "Set" and select your Start Date and End Date.</li>
+          <li>Countdown timers pause, and the Caregiver Console shows a tranquil grey <strong>"Paused / Vacation"</strong> badge.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAPTER 5 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">Chapter 5 · Fall & Devotionals</div>
+      <h2 class="chapter-title">Automatic Fall Detection & Scripture Reading</h2>
+    </div>
+    <div class="chapter-intro">Combines local sensor protection with spiritual peace of mind for complete elder wellness.</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> Automatic Fall Detection with 30-Second Cancel Window</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>Enabling</strong>: In Settings, toggle on "Enable Fall Detection" and select sensitivity (High for carpets/rugs, Medium for standard floors, Low for hard tiles).</li>
+          <li><strong>Upon Impact</strong>: The phone sounds an alert tone and presents a full-screen red emergency prompt.</li>
+          <li><strong>30-Second Grace Period</strong>: If the phone was simply dropped accidentally, tap <span class="btn-ui">I'm Okay / Cancel</span> within 30 seconds to dismiss. No caregiver alarms will be dispatched!</li>
+          <li><strong>True Emergency</strong>: If left unanswered for 30 seconds, alerts escalate to family caregivers immediately.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> Daily Scripture & Language Independence</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>Independent Language Settings</strong>: Choose English for your app buttons, and Traditional or Simplified Chinese for Bible verses independently.</li>
+          <li><strong>Offline Chapter Reader</strong>: Tap any daily verse to open the offline chapter reader. Read entire scripture chapters without internet.</li>
+          <li><strong>Supported Bible Versions</strong>: Chinese CUV (和合本), English NIV, and English KJV.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAPTER 6 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">Chapter 6 · Clock & Widgets</div>
+      <h2 class="chapter-title">Bedside Screen Saver & Home Screen Widgets</h2>
+    </div>
+    <div class="chapter-intro">Turn older devices into bedside Bible clocks, and check in directly from your home screen.</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> Bedside Screen Saver (Desk Clock)</div>
+      <div class="step-body">
+        Tap the <strong>Moon icon (🌙)</strong> in the top bar or tap "Launch Screen Saver Mode" in Settings:
+        <ul>
+          <li>Displays an OLED-friendly dark clock with large digital numbers and rotating scripture verses.</li>
+          <li><strong>Tap Anywhere to Check In</strong>: Waking up in the morning? Simply touch the screen once to exit the clock and <strong>automatically register today's check-in</strong>!</li>
+          <li><strong>Android Daydream</strong>: In Android Settings &rarr; Display &rarr; Screen Saver, select "PNCC Care Bible Clock" to start automatically whenever charging.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> Home Screen Widgets</div>
+      <div class="step-body">
+        Place the "I'm Okay" button directly on your phone's home screen:
+        <ul>
+          <li><strong>iPhone / iPad</strong>: Touch and hold any empty area on your home screen &rarr; tap "+" &rarr; search "PNCC Care" &rarr; add the large green button widget.</li>
+          <li><strong>Android</strong>: Long-press home screen &rarr; tap "Widgets" &rarr; locate "PNCC Care" &rarr; drag the check-in button onto your desktop.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout callout-success">
+      👨‍👩‍👧‍👦 <strong>Blessings and Peace to Your Family!</strong><br>
+      Official Support Center: <code>https://zigzagyc.github.io/dailyNotify/</code><br>
+      Privacy Policy: <code>https://zigzagyc.github.io/dailyNotify/privacy.html</code>
+    </div>
+  </div>
+
+</body>
+</html>

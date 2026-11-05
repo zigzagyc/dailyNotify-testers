@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>PNCC Care (PNCC 關懷) - 繁體中文使用手冊</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 14mm 16mm 14mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1E293B;
+    line-height: 1.6;
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+  }
+
+  /* Cover Page */
+  .cover {
+    page-break-after: always;
+    text-align: center;
+    padding-top: 80px;
+    height: 100%;
+  }
+
+  .cover-logo {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    border-radius: 32px;
+    margin: 0 auto 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+  }
+
+  .cover-title {
+    font-size: 34pt;
+    font-weight: 800;
+    color: #0F172A;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+  }
+
+  .cover-subtitle {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #2563EB;
+    margin: 0 0 25px 0;
+  }
+
+  .cover-desc {
+    font-size: 14pt;
+    color: #475569;
+    max-width: 580px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+  }
+
+  .cover-badge-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .cover-badge {
+    background: #F1F5F9;
+    color: #334155;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 11.5pt;
+    font-weight: 600;
+  }
+
+  .cover-footer {
+    font-size: 11pt;
+    color: #94A3B8;
+    margin-top: 60px;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 15px;
+  }
+
+  /* Chapter styling */
+  .chapter {
+    page-break-before: always;
+    padding-top: 6px;
+  }
+
+  .chapter-header {
+    border-bottom: 3px solid #2563EB;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  .chapter-num {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #2563EB;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .chapter-title {
+    font-size: 21pt;
+    font-weight: 800;
+    color: #0F172A;
+    margin: 0;
+  }
+
+  .chapter-intro {
+    font-size: 13.5pt;
+    color: #334155;
+    background: #F8FAFC;
+    border-left: 4px solid #2563EB;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* Step Boxes */
+  .step-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  }
+
+  .step-title {
+    font-size: 14.5pt;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .step-num {
+    background: #2563EB;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .step-body {
+    font-size: 13pt;
+    color: #334155;
+  }
+
+  .step-body ul, .step-body ol {
+    margin: 6px 0 6px 20px;
+    padding: 0;
+  }
+
+  .step-body li {
+    margin-bottom: 4px;
+  }
+
+  /* Callout Boxes */
+  .callout {
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 12.5pt;
+  }
+
+  .callout-tip {
+    background: #EFF6FF;
+    border-left: 4px solid #3B82F6;
+    color: #1E3A8A;
+  }
+
+  .callout-success {
+    background: #F0FDF4;
+    border-left: 4px solid #22C55E;
+    color: #14532D;
+  }
+
+  .callout-warning {
+    background: #FFFBEB;
+    border-left: 4px solid #F59E0B;
+    color: #78350F;
+  }
+
+  /* Roles Grid */
+  .role-grid {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .role-card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+  }
+
+  .role-senior {
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  }
+
+  .role-caregiver {
+    background: linear-gradient(135deg, #059669, #047857);
+  }
+
+  .role-dual {
+    background: linear-gradient(135deg, #7C3AED, #6D28D9);
+  }
+
+  .role-card-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .role-card-desc {
+    font-size: 11pt;
+    opacity: 0.95;
+    line-height: 1.4;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 12pt;
+  }
+
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  th {
+    background: #F8FAFC;
+    color: #0F172A;
+    font-weight: 700;
+  }
+
+  .btn-ui {
+    display: inline-block;
+    background: #22C55E;
+    color: white;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 11pt;
+  }
+</style>
+</head>
+<body>
+
+  <!-- 封面 -->
+  <div class="cover">
+    <div class="cover-logo">❤</div>
+    <h1 class="cover-title">PNCC Care 關懷</h1>
+    <div class="cover-subtitle">家庭長者安全守護與每日平安回報系統</div>
+    <div class="cover-desc">
+      專為長輩與家人量身打造的親情伴侶手冊。<br>
+      免除繁瑣技術設定，大字體、高對比、一鍵報平安，隨時傳遞關懷。
+    </div>
+    <div class="cover-badge-container">
+      <div class="cover-badge">📱 支援 iPhone、iPad 與 Android</div>
+      <div class="cover-badge">👵 長輩超大按鈕</div>
+      <div class="cover-badge">✝ 每日聖經默想</div>
+      <div class="cover-badge">🛡 本機隱私保護</div>
+    </div>
+    <div class="cover-footer">
+      PNCC Care 應用程式版本：v1.0.11 · 繁體中文標準版 · 2026 最新版
+    </div>
+  </div>
+
+  <!-- 第 1 章 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第 1 章 · 初次使用</div>
+      <h2 class="chapter-title">帳號註冊與多裝置登入 (Login & Register)</h2>
+    </div>
+    <div class="chapter-intro">長輩與晚輩不需要記憶複雜的伺服器位址或繁瑣代碼。只需使用隨手可得的 Google 帳號、Apple 帳號，或是簡單的電子郵件即可快速開始。</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> 選擇最方便的登入方式</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>使用 Apple 登入 (Sign in with Apple)</strong>：蘋果 iPhone / iPad 使用者最推薦，輕觸一下 Face ID 或指紋辨識即可秒速登入。</li>
+          <li><strong>使用 Google 登入 (Sign in with Google)</strong>：安卓手機或擁有 Gmail 的用戶首選，安全免記密碼。</li>
+          <li><strong>電子郵件註冊 / 登入 (Email Sign Up)</strong>：輸入常用 Email 與 6 位數以上密碼即可建立專屬帳戶。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> 長輩與晚輩的手機如何配置？</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>長輩的手機</strong>：登入長輩自己的帳號（帳號 A），進入系統後選擇「長者模式」。</li>
+          <li><strong>晚輩/兒女的手機</strong>：登入晚輩自己的帳號（帳號 B），進入系統後選擇「照顧者模式」。</li>
+          <li>透過掃描二維碼將帳號 A 與帳號 B 相互綁定（詳見第 3 章）。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout callout-tip">
+      💡 <strong>如果您有多台個人裝置</strong>（例如 iPhone 和 iPad）：只要登入同一個帳號，所有的長輩名單、設定紀錄與聖經進度都會在雲端自動即時同步，完全不需手動備份！
+    </div>
+  </div>
+
+  <!-- 第 2 章 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第 2 章 · 核心模式</div>
+      <h2 class="chapter-title">切換長者、照顧者與雙重模式 (Switch Mode)</h2>
+    </div>
+    <div class="chapter-intro">PNCC Care 擁有貼心的三種專屬身分，滿足家庭中不同年齡與角色的關懷需求。</div>
+
+    <div class="role-grid">
+      <div class="role-card role-senior">
+        <div class="role-card-title">長者模式 (Senior)</div>
+        <div class="role-card-desc">專為長輩設計。只有超大的「我很好」按鈕與每日聖經金句，不含多餘干擾，簡單直觀。</div>
+      </div>
+      <div class="role-card role-caregiver">
+        <div class="role-card-title">照顧者模式 (Caregiver)</div>
+        <div class="role-card-desc">專為子女與志工設計。一站式掌握多位長輩的即時紅黃綠安全狀態、最後活動時間與遠端打卡。</div>
+      </div>
+      <div class="role-card role-dual">
+        <div class="role-card-title">雙重模式 (Dual Mode)</div>
+        <div class="role-card-desc">身兼雙職？自己需要向子女回報平安，同時也在照顧年邁父母？開啟雙重模式即可兼備兩者！</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> 如何隨時更換模式？</div>
+      <div class="step-body">
+        不用登出帳號！請依照以下兩步切換：
+        <ol>
+          <li>點擊畫面右上角的 <strong>「設定 (⚙️)」</strong>。</li>
+          <li>滑到最下方帳號區，點選藍色的 <strong>「切換模式 (Switch Profile)」</strong>。</li>
+          <li>點選您想前往的卡片（長者模式、照顧者模式、雙重模式），畫面立刻切換。</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="callout callout-success">
+      ✨ <strong>在雙重模式下如何切換畫面？</strong><br>
+      開啟雙重模式後，手機螢幕底部會出現兩個標籤頁：
+      <ul>
+        <li>點擊 <strong>「長者端」</strong>：進行大按鈕報平安與讀經。</li>
+        <li>點擊 <strong>「照護端」</strong>：查閱被照護親友的即時健康打卡日曆。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 第 3 章 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第 3 章 · 平安打卡與配對</div>
+      <h2 class="chapter-title">長輩一鍵報平安與掃碼配對 (Check-In & Pairing)</h2>
+    </div>
+    <div class="chapter-intro">長輩無需看密密麻麻的小字。螢幕中央即是醒目的大按鈕，一按即回報家人！</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> 長輩每日如何報平安？</div>
+      <div class="step-body">
+        打開 App，螢幕正中央就是醒目的綠色按鈕 <span class="btn-ui">我很好 (I'm Okay)</span>：
+        <ul>
+          <li>輕按一下按鈕，手機會發出柔和確認音，安全倒數計時器立即自動重置為滿格！</li>
+          <li>打卡完成後，App 會在半秒後自動收合，不干擾長輩繼續使用其他應用程式。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> 三秒快速配對：無需輸入長代碼</div>
+      <div class="step-body">
+        家庭成員只需進行一次掃描綁定：
+        <ol>
+          <li><strong>長輩手機端</strong>：點擊設定或選單中的 <strong>「我的照護者」</strong>，螢幕上會出示一個加密動態二維碼 (QR Code)。</li>
+          <li><strong>晚輩手機端</strong>：進入「照顧者看板」，點擊右下角的 <strong>「＋」號</strong> &rarr; 選擇 <strong>「掃描配對」</strong>。</li>
+          <li>晚輩將相機鏡頭對準長輩手機上的 QR Code，系統立刻完成綁定！</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第 4 章 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第 4 章 · 守護排程</div>
+      <h2 class="chapter-title">設定平安鬧鐘計時與出遊休假模式 (Timers & Vacation)</h2>
+    </div>
+    <div class="chapter-intro">靈活設定多久需要報一次平安；外出旅遊或就醫時，一鍵進入休假模式，免除誤報困擾。</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> 平安打卡計時器怎麼運作？</div>
+      <div class="step-body">
+        進入 <strong>「設定」</strong> &rarr; <strong>「安全監測設定」</strong>：
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>建議預設值</th>
+              <th>功能說明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>打卡頻率 (Timer 1)</strong></td>
+              <td>1440 分鐘 (24 小時)</td>
+              <td>長輩預計打卡的時間間隔。綠色安全狀態會在此時間內持續倒數。</td>
+            </tr>
+            <tr>
+              <td><strong>預警寬限期 (Timer 2)</strong></td>
+              <td>1500 分鐘 (25 小時)</td>
+              <td>超過打卡時間後的緩衝時間（橘色預警）。若長輩仍未打卡，將在倒數完畢後正式通知晚輩。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> 如何完全關閉平安鬧鐘？</div>
+      <div class="step-body">
+        如果長輩暫時不想受到任何鬧鐘提醒，請在設定中將 <strong>「打卡頻率」</strong> 與 <strong>「預警寬限期」</strong> 兩個數字都修改為 <strong>「0」</strong>。系統將徹底靜音，取消所有已排程的警報與橫幅通知。
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">3</span> 出遊度假模式 (休假暫停打卡)</div>
+      <div class="step-body">
+        長輩外出旅遊、參加聚會或入院體檢時使用：
+        <ol>
+          <li>進入 <strong>「設定」</strong> &rarr; 找到 <strong>「假期與暫停模式 (Vacation Mode)」</strong>。</li>
+          <li>點選「設定暫停日期範圍」，在日曆上挑選出發日期與結束日期並儲存。</li>
+          <li>在休假期間，長輩端完全停止倒數催促，子女照護看板會顯示溫馨的灰色 <strong>「休假中」</strong>，避免引發家庭恐慌。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第 5 章 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第 5 章 · 安全與靈修</div>
+      <h2 class="chapter-title">自動跌倒偵測與每日聖經閱讀 (Fall Detection & Bible)</h2>
+    </div>
+    <div class="chapter-intro">結合高靈敏度動作防護與心靈平安泉源，全方位守護長輩身心安康。</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> 跌倒自動偵測與 30 秒撤銷緩衝期</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>如何開啟</strong>：進入「設定」 &rarr; 開啟「啟用跌倒偵測」，並依照家中地面類型選擇靈敏度（地毯選高、木地板選標準、硬磁磚選低）。</li>
+          <li><strong>發生劇烈撞擊時</strong>：手機會發出警示聲並在螢幕上跳出大紅字提醒。</li>
+          <li><strong>30 秒撤銷按鈕</strong>：如果是手機不小心掉在沙發上，長輩只需在 30 秒內點擊一下 <span class="btn-ui">我很好 / 取消警報</span>，系統立刻靜音解除，不會驚動子女！</li>
+          <li><strong>真實求助</strong>：若 30 秒無人點擊，系統判定需要救助，自動向子女推送求救通知。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> 每日聖經金句與字體/語言調整</div>
+      <div class="step-body">
+        <ul>
+          <li><strong>介面語言與經文獨立分開</strong>：您可以在設定中將軟體介面設為英文，同時將聖經經文設為「繁體中文」或「簡體中文」，完全互不干擾。</li>
+          <li><strong>離線整章閱讀</strong>：每天清晨主畫面會推送一節心靈金句。點擊經文卡片，可直接打開「離線聖經章節閱讀器」，完全不用網路就能朗讀整章經文。</li>
+          <li><strong>聖經譯本支援</strong>：中文支援經典 <strong>和合本 (CUV)</strong>；英文支援現代 <strong>NIV</strong> 與傳統 <strong>KJV</strong>。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第 6 章 -->
+  <div class="chapter">
+    <div class="chapter-header">
+      <div class="chapter-num">第 6 章 · 實用工具</div>
+      <h2 class="chapter-title">床頭靜心時鐘與手機桌面小工具 (Clock & Widgets)</h2>
+    </div>
+    <div class="chapter-intro">讓老舊手機或平板化身床頭安心鐘；在手機主畫面免開 App 即可一秒打卡。</div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">1</span> 床頭靜心時鐘與屏保模式</div>
+      <div class="step-body">
+        點擊畫面頂部的 <strong>月亮圖示 (🌙)</strong> 或在設定中點擊「啟動靜心屏保模式」：
+        <ul>
+          <li>螢幕轉為暗黑柔和背景，顯示超大清晰數字時鐘、日期與循環滾動的聖經金句。</li>
+          <li><strong>輕觸即打卡</strong>：長輩早晨醒來，只要用手指在時鐘螢幕上輕輕碰一下，立刻退出屏保並<strong>自動完成今天平安打卡</strong>！</li>
+          <li><strong>安卓充電自動屏保 (Daydream)</strong>：在安卓手機「設定」 &rarr; 「螢幕」 &rarr; 「螢幕保護程式」中選擇「PNCC Care Bible Clock」，插上充電座即自動化身床頭時鐘。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title"><span class="step-num">2</span> 桌面小工具 (Widgets)</div>
+      <div class="step-body">
+        把「報平安按鈕」直接放在手機最常看的桌面上：
+        <ul>
+          <li><strong>蘋果手機 (iPhone)</strong>：長按桌面空白處直至圖示晃動 &rarr; 點左上角「＋」號 &rarr; 搜尋「PNCC Care」 &rarr; 添加「我很好」大按鈕小工具。</li>
+          <li><strong>安卓手機 (Android)</strong>：長按桌面空白處 &rarr; 選擇「小工具 (Widgets)」 &rarr; 找到「PNCC Care」 &rarr; 拖動大按鈕至桌面。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout callout-success">
+      👨‍👩‍👧‍👦 <strong>祝福您的家庭長享平安！</strong><br>
+      官方支援中心：<code>https://zigzagyc.github.io/dailyNotify/</code><br>
+      隱私權保護政策：<code>https://zigzagyc.github.io/dailyNotify/privacy.html</code>
+    </div>
+  </div>
+
+</body>
+</html>

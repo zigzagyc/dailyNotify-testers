@@ -1,0 +1,23 @@
+1
+00:00:00,400 --> 00:00:01,899
+Hello everyone!
+
+2
+00:00:01,899 --> 00:00:11,277
+Today we're introducing PNCC Care, a family safety app built specifically for seniors living alone and the family members who care for them.
+
+3
+00:00:11,277 --> 00:00:18,243
+When older parents live by themselves, adult children naturally worry about falls or sudden emergencies.
+
+4
+00:00:18,243 --> 00:00:24,137
+But installing cameras all over the house feels intrusive and strips away their privacy.
+
+5
+00:00:24,137 --> 00:00:34,251
+PNCC Care takes a respectful approach: with just one simple tap on a phone or smartwatch each day, parents let their family know they're safe and well.
+
+6
+00:00:34,251 --> 00:00:42,864
+It works across iPhones, iPads, Apple Watches, and Android devices—simple, straightforward, and ready to use right out of the box.

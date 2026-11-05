@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:05,631
+We pushed convenience to its absolute limit: you don't even have to open the app.
+
+2
+00:00:05,631 --> 00:00:11,766
+On both iPhone lock screens and home screens, you can place dedicated PNCC Care status widgets.
+
+3
+00:00:11,766 --> 00:00:18,096
+The widgets feature clean color rings and status labels showing whether mom or dad has checked in.
+
+4
+00:00:18,096 --> 00:00:26,039
+When a deadline is approaching, the Dynamic Island on modern iPhones displays a live status capsule with a countdown timer.
+
+5
+00:00:26,039 --> 00:00:32,240
+Whether you're reading emails or browsing the web, a quick glance gives you total peace of mind.

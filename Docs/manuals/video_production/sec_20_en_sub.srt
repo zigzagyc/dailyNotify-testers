@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:09,017
+In conclusion, PNCC Care isn't just another cold tech utility; it's a digital bridge built on love, dignity, and family connection.
+
+2
+00:00:09,017 --> 00:00:16,253
+It doesn't require expensive hardware, it never invades personal privacy, and it involves zero learning curve.
+
+3
+00:00:16,253 --> 00:00:22,042
+With one humble daily tap, it connects a parent's well-being with their children's care.
+
+4
+00:00:22,042 --> 00:00:31,975
+We are committed to transparent open-source software so that every older adult can age with dignity, and every family can live with true peace of mind.
+
+5
+00:00:31,975 --> 00:00:33,488
+Thank you for watching!
