@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNCC Care - 客服與支援中心 (Support & Help Center)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0F172A;
+            --card-bg: #1E293B;
+            --accent-color: #3B82F6;
+            --text-color: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo-icon {
+            font-size: 48px;
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 16px;
+        }
+
+        .contact-details h4 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .contact-details p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #FFFFFF;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 14px;
+            padding-left: 12px;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-icon">🛡️</div>
+            <h1>PNCC Care</h1>
+            <p class="subtitle">客服與支援中心 / Support & Help Center</p>
+        </header>
+
+        <!-- Contact Support Card -->
+        <div class="card">
+            <h2>聯絡客服 (Contact Support)</h2>
+            <p style="margin-bottom: 20px; font-size: 14px; color: var(--text-muted);">
+                如果您在使用本應用時遇到任何問題，或需要索取技術支援，請透過以下管道與我們聯絡：<br>
+                If you encounter any issues or need technical assistance, please reach out via:
+            </p>
+
+            <div class="contact-method">
+                <span class="contact-icon">📧</span>
+                <div class="contact-details">
+                    <h4>電子郵件技術支援 (Email Support)</h4>
+                    <p><a href="mailto:zigzagyc@gmail.com" style="color: var(--accent-color); text-decoration: none;">zigzagyc@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Card -->
+        <div class="card">
+            <h2>常見問題 (Frequently Asked Questions)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q1: 如何將被關懷者與照顧者進行配對？ (How do I pair seniors and caregivers?)</div>
+                <div class="faq-answer">
+                    配對需要由被關懷者（長輩）與照顧者共同配合完成：<br>
+                    <strong>1. 被關懷者端：</strong>點選主畫面的「我的照顧者 (My Caregivers)」按鈕，畫面上會顯示您的專屬配對二維碼。<br>
+                    <strong>2. 照顧者端：</strong>登入 App 並選擇「照顧者 (Caregiver)」設定檔，點選畫面底部的「掃描配對」按鈕，掃描被關懷者手機上的二維碼。<br>
+                    <strong>3. 確認綁定：</strong>掃描後，被關懷者端的手機會彈出配對申請，點選「同意 (Accept)」即可完成雙向配對連結。<br>
+                    <br>
+                    <em>Pairing is completed by both the senior and the caregiver:</em><br>
+                    1. <strong>Senior:</strong> Tap "My Caregivers" on the dashboard to display your unique pairing QR code.<br>
+                    2. <strong>Caregiver:</strong> Log in, switch to the "Caregiver" profile, tap the scan button at the bottom of the screen, and scan the senior's QR code.<br>
+                    3. <strong>Approval:</strong> A pairing request will pop up on the senior's device. Tap "Accept" to establish the link.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q2: 如何使用被動平安偵測？ (How do I use passive check-in?)</div>
+                <div class="faq-answer">
+                    在「設定 (Settings)」中，您可以啟用「裝置移動偵測 (Movement Detection)」或「GPS 位置變更偵測 (GPS Change Detection)」。當您移動裝置或變更位置時，平安計時器將會自動重置，無需手動點擊確認。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q3: 如何申請刪除我的帳戶？ (How do I request account deletion?)</div>
+                <div class="faq-answer">
+                    請前往「設定 (Settings)」>「帳戶 (Account)」並點選「刪除帳戶 (Delete Account)」。若有多台裝置登入相同帳戶，需要所有裝置在 3 分鐘內點選確認同意；若超時或無其他裝置，帳戶與所有歷史數據將會被永久清除。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q4: 如何登入與註冊帳戶？ (How do I sign in or sign up?)</div>
+                <div class="faq-answer">
+                    本應用程式提供三種登入方式：<br>
+                    <strong>1. 第三方快速登入：</strong>點選「使用 Google 登入 (Sign in with Google)」或「使用 Apple 登入 (Sign in with Apple)」，系統會彈出帳戶選擇視窗，完成驗證即可登入。<br>
+                    <strong>2. 電子郵件登入：</strong>輸入您的電子郵件與密碼，然後點選「登入 (Sign In)」。<br>
+                    <strong>3. 註冊新帳戶：</strong>如果您是首次使用且沒有第三方帳戶，請點選「註冊 (Sign Up)」按鈕，輸入您的姓名、電子郵件及設定密碼來建立新帳戶。<br>
+                    登入成功後，請點選您要使用的角色設定檔（長輩 Senior、照顧者 Caregiver 或雙重身份 Dual）以進入主畫面。<br>
+                    <br>
+                    <em>Sign-in and sign-up methods:</em><br>
+                    1. <strong>Social Sign-In:</strong> Tap "Sign in with Google" or "Sign in with Apple" and complete the secure verification process.<br>
+                    2. <strong>Email Sign-In:</strong> Enter your registered email and password, then tap "Sign In".<br>
+                    3. <strong>Register Account:</strong> If you are a new user, tap the "Sign Up" tab, enter your name, email, and password to create a new account.<br>
+                    After signing in, select your role profile (Senior, Caregiver, or Dual) to access the dashboard.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 PNCC Care. All rights reserved. | <a href="privacy.html">隱私權政策 (Privacy Policy)</a></p>
+        </footer>
+    </div>
+</body>
+</html>

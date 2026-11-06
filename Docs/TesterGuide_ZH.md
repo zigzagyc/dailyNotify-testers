@@ -1,0 +1,101 @@
+# PNCC關懷 (dailyNotify) - 測試人員安裝與任務指南 🌟
+
+歡迎加入 **「PNCC關懷 (dailyNotify)」** 的內部閉環測試小組！
+
+> [!NOTE]
+> 💡 **零程式碼基礎說明（無須編譯源碼）**：
+> 本測試 GitHub 倉庫專門用於提供預先編譯好的安裝包（`app-release.apk`）與測試指引。**測試人員完全不需要安裝 Flutter 或編譯任何程式碼**，只需按照以下簡單步驟即可在手機上完成安裝與測試。
+
+---
+
+## 📥 安裝說明 (Installation Instructions)
+
+### 🤖 安卓手機 (Android) 使用者：
+
+#### 方法 A：手機直接點擊安裝（最推薦、最簡單）
+1. **下載安裝包**：在安卓手機瀏覽器或微信群組中點擊下載 **`app-release.apk`** 檔案。
+2. **點擊安裝**：下載完成後，點擊該 APK 檔案選擇 **「安裝」**。
+3. *安全性提示*：若手機顯示「不允許安裝來自未知來源的應用程式」，請點擊系統提示中的 **「設定」**，開啟 **「允許此來源安裝應用」** 後即可順利完成安裝。
+
+#### 方法 B：使用 ADB 命令安裝（適合有電腦的開發人員模式測試）
+若您習慣在電腦上使用命令列工具（`adb`），請按照以下步驟開啟手機的「開發人員模式」：
+1. **開啟開發人員選項**：
+   * 開啟手機的 **「設定 (Settings)」** -> 點擊 **「關於手機 (About Phone)」**。
+   * 找到 **「版本號碼 (Build Number)」**，**連續快速點擊 7 次**。
+   * 手機螢幕下方會彈出提示：*「您已成為開發人員 (You are now a developer!)」*。
+2. **啟用 USB 調試 (USB Debugging)**：
+   * 返回設定選單 -> 進入 **「系統 (System)」** -> 點擊 **「開發人員選項 (Developer Options)」**。
+   * 將 **「USB 調試 (USB Debugging)」** 的開關切換為 **開啟 (ON)**。
+3. **執行安裝**：
+   * 使用 USB 傳輸線將安卓手機連接至電腦，手機螢幕跳出「允許 USB 調試嗎？」提示時點擊 **「允許」**。
+   * 在電腦終端機（Terminal / Command Prompt）中執行以下命令：
+     ```bash
+     adb install -r app-release.apk
+     ```
+
+---
+
+### 🍏 蘋果手機 (iOS / iPhone) 使用者：
+`PNCC care` 已通過 Apple 官方審核並上架 App Store！
+1. **直接前往 App Store 下載**：在 iPhone 上打開 App Store，搜尋 **「PNCC care」**。
+2. **或直接點擊連結**：[點此前往 Apple App Store 下載 PNCC care](https://apps.apple.com/app/pncc-care/id6742517865)
+
+---
+
+## 🎯 測試核心大綱與任務認領 (Master Test Task Matrix)
+
+為了避免多名測試人員重複測試簡單功能，而導致複雜邊界情境（如跨平台、多家属照顧）無人測試，我們建立了 **[主測試任務大綱與認領表 (TEST_MATRIX.md)](./TEST_MATRIX.md)**！
+
+### 💡 零基礎快速上手認領任務指南 (Task Signup Guide)：
+> [!NOTE]
+> 💡 **多位測試人員可以「重複測試」同一個項目！**
+> 即使某個任務已經有人認領，我們也非常鼓勵更多測試人員在不同的手機品牌（如三星、小米、iPhone 12/15）上重複測試。只需在表格中加逗號加上您的名字即可（例如：`張三, 李四`）。
+
+🐞 **若在測試中發現任何問題，請點此提交 Bug 報告** ➔ **[👉 點此提交 Bug 報告 (Report a Bug)](https://github.com/zigzagyc/dailyNotify-testers/issues/new?template=bug_report.md)**
+
+您可以選擇以下 **任一方法** 認領任務：
+
+- **方法 1：網頁直接點擊「小鉛筆 ✏️」改名（推薦）**：
+  1. 打開 **[TEST_MATRIX.md](./TEST_MATRIX.md)** 頁面。
+  2. 點擊頁面右上方藍色/灰色的 **「小鉛筆圖示 ✏️ (Edit file)」**。
+  3. 找到您要測試的那一行，在 `認領測試人員` 欄位寫上 **您的名字**（若已有其他人，加逗號寫在後面）。
+  4. 滾到最底部，點擊綠色的 **「Commit changes... (保存修改)」** 按鈕即完成！
+
+- **方法 2：點連結填表單（最省心）**：
+  1. 直接點擊這個連結 ➔ **[👉 點此一鍵認領測試任務](https://github.com/zigzagyc/dailyNotify-testers/issues/new?template=task_signup.md)**。
+  2. 填寫 Task ID（如 `TASK-05`）和您的名字，點擊底部的綠色 **「Submit (提交)」** 即可！
+
+---
+
+## 📝 測試報告提交範本 (Test Report Template)
+
+當您完成一項任務或發現問題時，請複製以下範本並在 GitHub Issues 或測試群組中提交：
+
+```markdown
+### 📋 PNCC關懷 測試回報單
+
+- **認領任務編號 (Task ID)**: [例如：TASK-12]
+- **測試人員姓名/暱稱**: [例如：Tester Alex]
+- **測試設備型號與系統版本**: [例如：Pixel 4a (Android 13) & iPhone 13 (iOS 17.4)]
+- **登入帳號與身分**: [例如：tester1@gmail.com / 關懷者模式]
+- **測試結果 (Test Result)**: 
+  - [ ] 🟢 通過 (Pass) - 功能完全正常
+  - [ ] 🔴 發現問題 (Bug Found)
+- **問題描述與細節 (Description)**:
+  (若發現問題，請在此詳細說明現象)
+- **重現步驟 (Steps to Reproduce)**:
+  1. ...
+  2. ...
+- **截圖或螢幕錄影 (Screenshots/Logs)**:
+  (可附上截圖照片)
+```
+
+---
+
+## 🐞 可以在 GitHub Issues 進行 Jira 式問題追蹤
+
+我們在 GitHub 倉庫上啟用了 **GitHub Issues** 模組：
+- **認領測試任務**：可以在 GitHub Issues 中點擊 **「Claim Test Task」** 來宣告您正在測試的情境。
+- **提交 Bug 報告**：點擊 **「Report a Bug」**，填寫欄位後發布。開發團隊會將狀態標示為 `In Progress` 或 `Resolved`，您可以隨時查看修復進度！
+
+感謝您的寶貴時間與協助！🚀
